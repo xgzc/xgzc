@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="题目列表 - 洛谷            .ace_editor {position: relative;overflow: hidden;font: 12px/normal &apos;Monaco&apos;, &apos;Menlo&apos;, &apos;Ubuntu Mono&apos;, &apos;Consolas&apos;, &apos;source-code-pro&apos;, monospace;direction: ltr;}.ace_scroller {p">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gzc的Blogs">
+<meta property="og:url" content="http://yoursite.com/test.html">
+<meta property="og:site_name" content="Gzc的Blogs">
+<meta property="og:description" content="题目列表 - 洛谷            .ace_editor {position: relative;overflow: hidden;font: 12px/normal &apos;Monaco&apos;, &apos;Menlo&apos;, &apos;Ubuntu Mono&apos;, &apos;Consolas&apos;, &apos;source-code-pro&apos;, monospace;direction: ltr;}.ace_scroller {p">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/46800.png">
+<meta property="og:image" content="http://yoursite.com/%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/46800.png">
+<meta property="og:image" content="http://yoursite.com/%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/logo_white_3.png">
+<meta property="og:updated_time" content="2018-03-03T07:49:37.647Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Gzc的Blogs">
+<meta name="twitter:description" content="题目列表 - 洛谷            .ace_editor {position: relative;overflow: hidden;font: 12px/normal &apos;Monaco&apos;, &apos;Menlo&apos;, &apos;Ubuntu Mono&apos;, &apos;Consolas&apos;, &apos;source-code-pro&apos;, monospace;direction: ltr;}.ace_scroller {p">
+<meta name="twitter:image" content="http://yoursite.com/%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/46800.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/test.html"/>
+
+
+
+
+
+  <title> | Gzc的Blogs</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Gzc的Blogs</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline"></h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <!DOCTYPE html>
+<html class="js cssanimations"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>题目列表 - 洛谷</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta name="csrf-token" content="1520149762:CLFh7ZOn5gZtZ0Rk05fDVxYUEEt0tnUiyqCfsGFHVeo=">
+<link rel="shortcut icon" type="image/x-icon" href="https://cdn.luogu.org/images/favicon3.ico" media="screen">
+<link rel="stylesheet" href="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/amazeui.css">
+<link rel="stylesheet" href="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/katex.css">
+<link rel="stylesheet" href="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/luogu3.css">
+<link rel="stylesheet" href="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/highlight_tomorrow.css">
+<link rel="stylesheet" href="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/markdown-palettes.css">
+<script type="text/javascript" async src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/recaptcha__zh_cn.js"></script><script src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/jquery-2.js"></script>
+<script src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/luogu3_pre.js"></script>
+<style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {-webkit-transition: opacity 0.18s;transition: opacity 0.18s;}.ace_editor.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_line .ace_fold {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {-webkit-transition: opacity 0.4s ease 0.05s;transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {-webkit-transition: opacity 0.05s ease 0.05s;transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style id="poshytip-css-tip-twitter" type="text/css">div.tip-twitter{visibility:hidden;position:absolute;top:0;left:0;}div.tip-twitter table.tip-table, div.tip-twitter table.tip-table td{margin:0;font-family:inherit;font-size:inherit;font-weight:inherit;font-style:inherit;font-variant:inherit;vertical-align:middle;}div.tip-twitter td.tip-bg-image span{display:block;font:1px/1px sans-serif;height:10px;width:10px;overflow:hidden;}div.tip-twitter td.tip-right{background-position:100% 0;}div.tip-twitter td.tip-bottom{background-position:100% 100%;}div.tip-twitter td.tip-left{background-position:0 100%;}div.tip-twitter div.tip-inner{background-position:-10px -10px;}div.tip-twitter div.tip-arrow{visibility:hidden;position:absolute;overflow:hidden;font:1px/1px sans-serif;}</style></head>
+<body class="am-with-topbar-fixed-top">
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，洛谷暂不支持。 请 <a href="http://browsehappy.com/"
+                                                                 target="_blank">升级浏览器</a>
+    以获得更好的体验！</p>
+<![endif]-->
+<header class="am-topbar lg-header am-topbar-fixed-top ">
+<div class="am-topbar-brand" myuid="46800">
+<a data-pjax="" href="https://www.luogu.org/" class="lg-nav-logo" target="_blank" rel="noopener"></a>
+</div>
+<button class="am-topbar-btn am-topbar-toggle
+        am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}">
+<span class="am-sr-only">导航切换</span>
+<span class="am-icon-bars"></span>
+</button>
+<div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+<ul class="am-nav am-nav-pills am-topbar-nav am-topbar-left lg-header-list">
+<li><a target="_blank" href="https://class.luogu.org/" class="lg-header-li lg-md-hide">洛谷网校</a></li>
+</ul>
+<ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right lg-header-list">
+<li class="am-dropdown" data-am-dropdown="">
+<a class="am-dropdown-toggle lg-header-li" data-am-dropdown-toggle="" href="javascript:" target="_blank" rel="noopener">
+<span class="am-icon-puzzle-piece"></span>
+应用
+<span class="am-icon-caret-down"></span>
+</a>
+<ul class="am-dropdown-content">
+<li><a data-pjax="" href="https://www.luogu.org/app/upload" target="_blank" rel="noopener">图片上传</a></li>
+<li><a target="_blank" href="https://www.luogu.org/app/ide_frame">在线 IDE</a></li>
+<li><a data-pjax="" href="https://www.luogu.org/paste" target="_blank" rel="noopener">云剪贴板</a></li>
+<li><a data-pjax="" href="https://www.luogu.org/app/userproblem" target="_blank" rel="noopener">举办比赛<br>个人私有题库</a></li>
+<li><a data-pjax="" href="https://www.luogu.org/discuss/lists?forumname=service" target="_blank" rel="noopener">反馈问题<br>提交各类申请</a></li>
+</ul>
+</li>
+<li>
+<div class="am-topbar-form am-topbar-right am-form-inline lg-hide">
+<div class="am-input-group am-input-group-secondary am-input-group-sm">
+<input id="topbar-search-text" class="am-form-field am-input-sm am-radius" placeholder="题目搜索" type="text">
+<a class="am-input-group-label" id="topbar-search"><span class="am-icon-search"></span></a>
+</div>
+</div>
+</li>
+<script>
+
+                    $("#topbar-search").click(function() {
+                        goto_url("/problem/lists", {
+                            name: $("#topbar-search-text").val()
+                        });
+                    });
+					$("#topbar-search-text").keyup(function (event) {
+						if (event.keyCode == 13) {
+							if($(this).val()=='')return;
+							goto_url('/problem/lists', {name: $(this).val()})
+						}
+					})
+
+                </script>
+<li class="am-dropdown am-hide-sm-only" data-am-dropdown="">
+<a class="am-dropdown-toggle lg-header-li" data-am-dropdown-toggle="" href="javascript:;" target="_blank" rel="noopener">
+<img src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/46800.png" class="am-comment-avatar">
+xgzc <span class="am-icon-caret-down"></span>
+</a>
+<ul class="am-dropdown-content">
+<li class="am-dropdown-header">仪表盘</li>
+<li><a data-pjax="" href="https://www.luogu.org/space/show?uid=46800" target="_blank" rel="noopener">
+<span class="am-icon-newspaper-o"></span>个人信息</a></li>
+<li><a data-pjax="" onclick="to_message()" href="https://www.luogu.org/space/show?uid=46800#message" target="_blank" rel="noopener">
+<span class="am-icon-envelope"></span>私信</a></li>
+<li><a data-pjax="" onclick="to_setting()" href="https://www.luogu.org/space/show?uid=46800#setting" target="_blank" rel="noopener">
+<span class="am-icon-gears"></span>信息修改与设置</a></li>
+<li class="am-divider"></li>
+<li class="am-dropdown-header">洛谷博客</li>
+<li><a href="https://www.luogu.org/blog/xgzc/" target="_blank">
+<span class="am-icon-rss"></span>我的博客</a></li>
+<li><a href="https://www.luogu.org/blogAdmin" target="_blank">
+<span class="am-icon-gear"></span>博客管理</a></li>
+<li class="am-divider"></li>
+<li class="am-dropdown-header">账户</li>
+<li><a href="https://www.luogu.org/login/lock?csrf_token=1520149762:CLFh7ZOn5gZtZ0Rk05fDVxYUEEt0tnUiyqCfsGFHVeo=" target="_blank" rel="noopener"><span class="am-icon-key"></span>锁定账户</a></li>
+<li><a href="https://www.luogu.org/login/logout?uid=46800" target="_blank" rel="noopener"><span class="am-icon-power-off"></span>注销</a></li>
+<li class="am-divider"></li>
+<li class="am-dropdown-header">我的团队</li>
+<li> <a data-pjax="" href="https://www.luogu.org/team/show?teamid=2624" target="_blank" rel="noopener">长郡中学初中信息组</a></li><li> <a data-pjax="" href="https://www.luogu.org/team/show?teamid=3104" target="_blank" rel="noopener">长沙市长郡中学2017级</a></li><li> <a data-pjax="" href="https://www.luogu.org/team/show?teamid=4653" target="_blank" rel="noopener">Gzc 小团</a></li> <li class="am-divider"></li>
+<li class="am-dropdown-header">我参加的比赛</li>
+<li><a>还没有参加任何比赛</a></li></ul>
+</li>
+</ul>
+</div>
+</header>
+<div class="am-cf lg-main">
+<div class="lg-rail-sidebar">
+<div class="lg-sidebar am-offcanvas" id="lg-offcanvas" style="touch-action: pan-y; -moz-user-select: none;">
+<div class="am-offcanvas-bar lg-offcanvas-bar">
+<ul class="am-list lg-sidebar-list">
+<li class="am-dropdown am-show-sm-only" data-am-dropdown="">
+<a class="am-dropdown-toggle lg-bg-bluedark" data-am-dropdown-toggle="">
+<img src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/46800.png" class="lg-sidebar-icon">
+<div class="lg-inline-up lg-sidebar-user">
+<span class="lg-sidebar-username">xgzc <span class="am-icon-caret-down"></span></span><br>
+<span class="am-badge lg-bg-red">普通用户</span>
+</div>
+</a>
+<ul class="am-dropdown-content">
+<li class="am-dropdown-header">仪表盘</li>
+<li><a data-pjax="" href="https://www.luogu.org/space/show?uid=46800" target="_blank" rel="noopener">
+<span class="am-icon-newspaper-o"></span>个人信息</a></li>
+<li><a data-pjax="" onclick="to_message()" href="https://www.luogu.org/space/show?uid=46800#message" target="_blank" rel="noopener">
+<span class="am-icon-envelope"></span>私信</a></li>
+<li><a data-pjax="" onclick="to_setting()" href="https://www.luogu.org/space/show?uid=46800#setting" target="_blank" rel="noopener">
+<span class="am-icon-gears"></span>信息修改与设置</a></li>
+<li class="am-divider"></li>
+<li class="am-dropdown-header">洛谷博客</li>
+<li><a href="https://www.luogu.org/blog/xgzc/" target="_blank">
+<span class="am-icon-rss"></span>我的博客</a></li>
+<li><a href="https://www.luogu.org/blogAdmin" target="_blank">
+<span class="am-icon-gear"></span>博客管理</a></li>
+<li class="am-divider"></li>
+<li class="am-dropdown-header">账户</li>
+<li><a href="https://www.luogu.org/login/lock?csrf_token=1520149762:CLFh7ZOn5gZtZ0Rk05fDVxYUEEt0tnUiyqCfsGFHVeo=" target="_blank" rel="noopener"><span class="am-icon-key"></span>锁定账户</a></li>
+<li><a href="https://www.luogu.org/login/logout?uid=46800" target="_blank" rel="noopener"><span class="am-icon-power-off"></span>注销</a></li>
+<li class="am-divider"></li>
+<li class="am-dropdown-header">我的团队</li>
+<li> <a data-pjax="" href="https://www.luogu.org/team/show?teamid=2624" target="_blank" rel="noopener">长郡中学初中信息组</a></li><li> <a data-pjax="" href="https://www.luogu.org/team/show?teamid=3104" target="_blank" rel="noopener">长沙市长郡中学2017级</a></li><li> <a data-pjax="" href="https://www.luogu.org/team/show?teamid=4653" target="_blank" rel="noopener">Gzc 小团</a></li> <li class="am-divider"></li>
+<li class="am-dropdown-header">我参加的比赛</li>
+<li><a>还没有参加任何比赛</a></li></ul>
+</li>
+<li class="lg-nav-home ">
+<a data-pjax="" href="https://www.luogu.org/" class="lg-nav-btn" title="首页" target="_blank" rel="noopener">
+<span class="am-icon-home "></span>
+<span class="lg-sidebar-small">首页</span>
+</a>
+</li>
+<li class="lg-nav-problem">
+<a data-pjax="" href="https://www.luogu.org/problem/lists" class="lg-nav-btn" title="题目" target="_blank" rel="noopener">
+<span class="am-icon-book"></span>
+<span class="lg-sidebar-small">题目</span>
+</a>
+</li>
+<li class="lg-nav-training">
+<a data-pjax="" href="https://www.luogu.org/training/mainpage" class="lg-nav-btn" title="试炼场" target="_blank" rel="noopener">
+<span class="am-icon-lightbulb-o"></span>
+<span class="lg-sidebar-small">试炼场</span>
+</a>
+</li>
+<li class="lg-nav-contest">
+<a data-pjax="" href="https://www.luogu.org/contest/lists" class="lg-nav-btn" title="比赛" target="_blank" rel="noopener">
+<span class="am-icon-bar-chart"></span>
+<span class="lg-sidebar-small">比赛</span>
+</a>
+</li>
+<li class="lg-nav-record">
+<a data-pjax="" href="https://www.luogu.org/recordnew/lists?uid=46800" class="lg-nav-btn" title="评测记录" target="_blank" rel="noopener">
+<span class="am-icon-pie-chart"></span>
+<span class="lg-sidebar-small">评测记录</span>
+</a>
+</li>
+<li class="lg-nav-team">
+<a data-pjax="" href="https://www.luogu.org/team/lists" class="lg-nav-btn" title="团队" target="_blank" rel="noopener">
+<span class="am-icon-users"></span>
+<span class="lg-sidebar-small">团队</span>
+</a>
+</li>
+<li class="lg-nav-discuss">
+<a data-pjax="" href="https://www.luogu.org/discuss/lists" class="lg-nav-btn" title="讨论" target="_blank" rel="noopener">
+<span class="am-icon-comments"></span>
+<span class="lg-sidebar-small">讨论</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-content">
+<link rel="stylesheet" href="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/jsmind.css">
+<div class="am-sticky-placeholder" style="height: 50px; margin: 0px;"><div class="lg-toolbar" data-am-sticky="" style="margin: 0px;"><h1>题目列表</h1></div></div>
+<div class="am-g lg-main-content">
+<div class="am-u-md-4 am-u-lg-3 lg-right">
+<section class="am-panel am-panel-default lg-summary">
+<h2>查找题目</h2>
+<div class="am-dropdown" id="name-dropdown-js" data-am-dropdown="">
+<div class="am-input-group am-input-group-sm am-input-group-danger" id="name-input">
+<input class="am-form-field" placeholder="算法、标题或题目编号" name="name" autocomplete="off" type="text">
+<span class="am-input-group-label lg-pointer" name="ps" type="names"><i class="am-icon-search"></i></span>
+</div>
+<div class="am-dropdown-content" name="push-tagsearch">...</div>
+</div>
+<p>
+<input value="pid" name="orderitem" type="hidden">
+<button class="am-btn am-btn-primary am-btn-sm lg-pointer" name="ps" type="name" title="按照名称（来源）排序">
+<i class="am-icon-sort-alpha-asc"></i></button>
+<button class="am-btn am-btn-primary am-btn-sm lg-pointer" name="ps" type="difficulty" title="按照难度排序"><i class="am-icon-sort-amount-asc"></i></button>
+<button class="am-btn am-btn-primary am-btn-sm lg-pointer" name="showtag" title="显示所有算法标签"><i class="am-icon-tags"></i></button>
+<button class="am-btn am-btn-warning am-btn-sm lg-pointer" name="select" title="洛谷精选题库"><i class="am-icon-diamond"></i></button>
+</p>
+<p>
+<button class="am-btn am-btn-primary am-show-sm-only" id="showtagsopt">展开标签搜索筛选</button>
+</p>
+<div class="am-hide-sm-only" id="tagsopt">
+<div class="am-g">
+<div class="am-u-sm-12"><strong>题库</strong></div>
+<div class="am-u-sm-12">
+<span class="lg-pointer lg-tags-opt am-badge am-radius lg-problem-type lg-bg-purple" data-type-id="1">洛谷题库</span>
+<span class="lg-pointer lg-tags-opt am-badge am-radius lg-problem-type lg-bg-purple" data-type-id="13">CodeForces</span>
+<span class="lg-pointer lg-tags-opt am-badge am-radius lg-problem-type lg-bg-purple" data-type-id="14">SPOJ</span>
+<span class="lg-pointer lg-tags-opt am-badge am-radius lg-problem-type lg-bg-purple" data-type-id="16">UVa</span>
+</div>
+</div>
+<hr>
+<input value="" name="tags" type="hidden">
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="lg-mind">
+<div class="am-modal-dialog">
+<div class="am-modal-hd">思维导图 - 算法标签<br>(点击"+"展开，暂时不能选择，请在搜索框直接输入算法名称)
+<a href="javascript:%20void(0)" class="am-close am-close-spin" data-am-modal-close="" target="_blank" rel="noopener">×</a>
+</div>
+<div class="am-modal-bd">
+<div id="jsmind_container"></div>
+</div>
+</div>
+</div>
+<div id="lg-tag-result" class="am-g">
+<div class="am-u-sm-12">
+<strong>常用标签&amp;标签搜索</strong>
+</div>
+<div class="am-u-sm-12">
+<div name="tagsearch"></div>
+<span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="2">字符串</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="3">动态规划,动规,dp</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="4">搜索</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="5">数论,数学</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="6">图论</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="160">最短路</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="42">线段树</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="51">二叉堆</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="79">网络流</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="1">模拟</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="7">贪心</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="12">递推</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="54">递归</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="113">排序</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark" name="ps" type="tag" tagid="45">二分答案</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="opmind">更多算法标签...</span>
+</div>
+</div>
+<hr>
+<div class="am-g">
+<div class="am-u-sm-12"><strong>来源</strong></div>
+<div class="am-u-sm-12">
+<span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="46">USACO</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="48">各省省选</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="52">WC/CTSC/集训队</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="57">POI</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="70">福建省历届夏令营</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="77">NOI系列</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="81">洛谷原创</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="82">NOIp普及组</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="83">NOIp提高组</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="84">NOIp初赛</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="85">APIO</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="99">NOI导刊</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="102">IOI</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="331">清华集训</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="332">网络流24题</span> </div>
+</div>
+<hr>
+<div class="am-g">
+<div class="am-u-sm-12"><strong>时间</strong></div>
+<div class="am-u-sm-12">
+<span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="14">1997</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="15">1998</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="16">1999</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="17">2000</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="18">2001(或之前)</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="19">2002</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="20">2003</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="21">2004</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="22">2005</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="23">2006</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="24">2007</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="25">2008</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="26">2009</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="27">2010</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="28">2011</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="29">2012</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="30">2013</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="31">2014</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="32">2015</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="33">2016</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="34">2017</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="35">2018</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="36">2019</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="37">2020</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="58">2021</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="59">2022</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="60">2023</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="61">2024</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluelight" name="ps" type="tag" tagid="62">2025</span> </div>
+</div>
+<hr>
+<div class="am-g">
+<div class="am-u-sm-12"><strong>地区</strong></div>
+<div class="am-u-sm-12">
+<span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="38">重庆</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="39">四川</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="40">河南</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="88">浙江</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="89">上海</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="90">福建</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="91">江苏</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="92">安徽</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="93">湖南</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="94">北京</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="95">河北</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="96">广东</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="97">山东</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="98">吉林</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-green" name="ps" type="tag" tagid="328">天津</span> </div>
+</div>
+<hr>
+<div class="am-g">
+<div class="am-u-sm-12"><strong>特殊题目</strong></div>
+<div class="am-u-sm-12">
+<span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-orange" name="ps" type="tag" tagid="103">交互题</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-orange" name="ps" type="tag" tagid="104">提交答案</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-orange" name="ps" type="tag" tagid="106">初赛</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-orange" name="ps" type="tag" tagid="107">Special Judge</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-orange" name="ps" type="tag" tagid="108">O2优化</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-orange" name="ps" type="tag" tagid="109">新云端</span> <span class="lg-pointer lg-tags-opt am-badge am-radius  lg-bg-orange" name="ps" type="tag" tagid="319">高性能</span> </div>
+</div>
+<script>
+
+    var mind = {
+        "meta": {
+            "name": "luogu_mind",
+            "author": "luogu",
+            "version": "0.2",
+        },
+        "format": "node_array",
+        "data":[{"id":"73","isroot":true,"topic":"OI\u7684\u77e5\u8bc6"},{"id":"2","parentid":"73","topic":"\u5b57\u7b26\u4e32","direction":"right","expanded":false},{"id":"101","parentid":"2","topic":"\u540e\u7f00\u81ea\u52a8\u673a,SAM","expanded":false},{"id":"300","parentid":"2","topic":"\u5b57\u5178\u6811,Trie\u6811","expanded":false},{"id":"301","parentid":"2","topic":"AC\u81ea\u52a8\u673a","expanded":false},{"id":"302","parentid":"2","topic":"KMP","expanded":false},{"id":"303","parentid":"2","topic":"\u540e\u7f00\u6570\u7ec4,SA","expanded":false},{"id":"304","parentid":"2","topic":"\u540e\u7f00\u6811","expanded":false},{"id":"305","parentid":"2","topic":"\u6709\u9650\u72b6\u6001\u81ea\u52a8\u673a","expanded":false},{"id":"306","parentid":"2","topic":"\u54c8\u592b\u66fc,Huffman","expanded":false},{"id":"307","parentid":"2","topic":"\u7b80\u5355\u5bc6\u7801\u5b66","expanded":false},{"id":"325","parentid":"2","topic":"\u56de\u6587\u81ea\u52a8\u673aPAM","expanded":false},{"id":"329","parentid":"2","topic":"Manacher\u7b97\u6cd5","expanded":false},{"id":"3","parentid":"73","topic":"\u52a8\u6001\u89c4\u5212,\u52a8\u89c4,dp","direction":"right","expanded":false},{"id":"138","parentid":"3","topic":"\u52a8\u6001\u89c4\u5212\u521d\u6b65","expanded":false},{"id":"139","parentid":"3","topic":"\u80cc\u5305","expanded":false},{"id":"140","parentid":"3","topic":"\u73af\u578b\u52a8\u89c4,\u73af\u578bdp","expanded":false},{"id":"141","parentid":"3","topic":"\u6570\u4f4d\u52a8\u89c4,\u6570\u4f4ddp","expanded":false},{"id":"143","parentid":"3","topic":"\u591a\u7ef4\u72b6\u6001","expanded":false},{"id":"144","parentid":"3","topic":"\u533a\u95f4\u52a8\u89c4,\u533a\u95f4dp","expanded":false},{"id":"145","parentid":"3","topic":"\u5b50\u6bcd\u6811","expanded":false},{"id":"146","parentid":"3","topic":"\u52a8\u6001\u89c4\u5212\u4f18\u5316","expanded":false},{"id":"56","parentid":"146","topic":"\u5355\u8c03\u961f\u5217"},{"id":"147","parentid":"146","topic":"\u964d\u4f4e\u7ef4\u5ea6,\u964d\u7ef4"},{"id":"148","parentid":"146","topic":"\u4f18\u5148\u961f\u5217"},{"id":"149","parentid":"146","topic":"\u77e9\u9635\u52a0\u901f,\u77e9\u9635\u4f18\u5316"},{"id":"150","parentid":"146","topic":"\u659c\u7387\u4f18\u5316"},{"id":"151","parentid":"146","topic":"\u72b6\u6001\u538b\u7f29,\u72b6\u538b"},{"id":"153","parentid":"146","topic":"\u51f8\u5b8c\u5168\u5355\u8c03\u6027,\u51f8\u5355\u8c03"},{"id":"154","parentid":"146","topic":"\u56db\u8fb9\u5f62\u4e0d\u7b49\u5f0f"},{"id":"152","parentid":"3","topic":"\u6811\u5f62\u52a8\u89c4","expanded":false},{"id":"323","parentid":"3","topic":"\u63d2\u5934dp","expanded":false},{"id":"4","parentid":"73","topic":"\u641c\u7d22","direction":"right","expanded":false},{"id":"126","parentid":"4","topic":"\u5e7f\u5ea6\u4f18\u5148\u641c\u7d22,BFS","expanded":false},{"id":"127","parentid":"4","topic":"\u6df1\u5ea6\u4f18\u5148\u641c\u7d22,DFS","expanded":false},{"id":"128","parentid":"4","topic":"\u526a\u679d","expanded":false},{"id":"129","parentid":"4","topic":"\u8bb0\u5fc6\u5316\u641c\u7d22","expanded":false},{"id":"130","parentid":"4","topic":"\u542f\u53d1\u5f0f\u641c\u7d22","expanded":false},{"id":"132","parentid":"130","topic":"\u542f\u53d1\u5f0f\u8fed\u4ee3\u52a0\u6df1,IDA*"},{"id":"133","parentid":"130","topic":"Dancing Links"},{"id":"134","parentid":"130","topic":"\u722c\u5c71\u6cd5"},{"id":"135","parentid":"130","topic":"\u6a21\u62df\u9000\u706b"},{"id":"137","parentid":"130","topic":"\u9057\u4f20"},{"id":"263","parentid":"130","topic":"A*\u7b97\u6cd5"},{"id":"131","parentid":"4","topic":"\u8fed\u4ee3\u52a0\u6df1","expanded":false},{"id":"136","parentid":"4","topic":"\u968f\u673a\u8c03\u6574","expanded":false},{"id":"5","parentid":"73","topic":"\u6570\u8bba,\u6570\u5b66","direction":"right","expanded":false},{"id":"72","parentid":"5","topic":"\u6574\u6570\u7814\u7a76","expanded":false},{"id":"239","parentid":"72","topic":"\u7d20\u6570\u5224\u65ad,\u8d28\u6570,\u7b5b\u6cd5"},{"id":"241","parentid":"72","topic":"\u6700\u5927\u516c\u7ea6\u6570,gcd"},{"id":"242","parentid":"72","topic":"\u6269\u5c55\u6b27\u51e0\u91cc\u5fb7,\u6269\u6b27"},{"id":"243","parentid":"72","topic":"\u4e0d\u5b9a\u65b9\u7a0b"},{"id":"244","parentid":"72","topic":"\u8fdb\u5236"},{"id":"250","parentid":"72","topic":"\u540c\u4f59,\u4e2d\u56fd\u5269\u4f59\u5b9a\u7406"},{"id":"251","parentid":"72","topic":"\u83ab\u6bd4\u4e4c\u65af\u53cd\u6f14"},{"id":"276","parentid":"72","topic":"\u9006\u5143"},{"id":"245","parentid":"5","topic":"\u96c6\u5408\u8bba","expanded":false},{"id":"246","parentid":"5","topic":"\u7fa4\u8bba","expanded":false},{"id":"247","parentid":"246","topic":"\u7f6e\u6362"},{"id":"248","parentid":"246","topic":"Polya\u539f\u7406"},{"id":"252","parentid":"5","topic":"\u7ec4\u5408\u6570\u5b66","expanded":false},{"id":"253","parentid":"252","topic":"\u6392\u5217\u7ec4\u5408"},{"id":"255","parentid":"252","topic":"\u4e8c\u9879\u5f0f\u5b9a\u7406"},{"id":"256","parentid":"252","topic":"\u5eb7\u6258\u5c55\u5f00"},{"id":"257","parentid":"252","topic":"\u888b\u4e0e\u7403\u95ee\u9898"},{"id":"258","parentid":"252","topic":"\u9e3d\u7b3c"},{"id":"259","parentid":"252","topic":"\u5bb9\u65a5"},{"id":"260","parentid":"252","topic":"\u6590\u6ce2\u90a3\u5951,Fibonacci"},{"id":"261","parentid":"252","topic":"\u5361\u7279\u5170,Catalan"},{"id":"262","parentid":"252","topic":"Stirling"},{"id":"264","parentid":"252","topic":"\u751f\u6210\u51fd\u6570"},{"id":"265","parentid":"5","topic":"\u7ebf\u6027\u89c4\u5212","expanded":false},{"id":"266","parentid":"5","topic":"\u6982\u7387\u8bba,\u7edf\u8ba1","expanded":false},{"id":"240","parentid":"266","topic":"\u4f17\u6570"},{"id":"267","parentid":"266","topic":"\u7b80\u5355\u6982\u7387"},{"id":"268","parentid":"266","topic":"\u6761\u4ef6\u6982\u7387"},{"id":"269","parentid":"266","topic":"Bayes"},{"id":"270","parentid":"266","topic":"\u671f\u671b"},{"id":"271","parentid":"5","topic":"\u7ebf\u6027\u4ee3\u6570","expanded":false},{"id":"71","parentid":"271","topic":"\u77e9\u9635\u8fd0\u7b97"},{"id":"272","parentid":"271","topic":"\u77e9\u9635\u4e58\u6cd5"},{"id":"273","parentid":"271","topic":"\u7ebf\u6027\u9012\u63a8,\u9012\u63a8\u5f0f"},{"id":"274","parentid":"271","topic":"\u9ad8\u65af\u6d88\u5143"},{"id":"275","parentid":"271","topic":"\u5f02\u6216\u65b9\u7a0b\u7ec4"},{"id":"277","parentid":"271","topic":"\u7ebf\u6027\u57fa"},{"id":"278","parentid":"5","topic":"\u5fae\u79ef\u5206\u521d\u6b65","expanded":false},{"id":"279","parentid":"278","topic":"\u6781\u9650"},{"id":"280","parentid":"278","topic":"\u5bfc\u6570"},{"id":"281","parentid":"278","topic":"\u79ef\u5206"},{"id":"282","parentid":"278","topic":"\u5b9a\u79ef\u5206"},{"id":"283","parentid":"278","topic":"\u7acb\u4f53\u89e3\u6790\u51e0\u4f55"},{"id":"284","parentid":"278","topic":"\u7ea7\u6570"},{"id":"322","parentid":"5","topic":"Lucas","expanded":false},{"id":"6","parentid":"73","topic":"\u56fe\u8bba","direction":"right","expanded":false},{"id":"155","parentid":"6","topic":"\u56fe\u7684\u5efa\u7acb,\u5efa\u56fe","expanded":false},{"id":"156","parentid":"155","topic":"\u90bb\u63a5\u77e9\u9635"},{"id":"157","parentid":"155","topic":"\u90bb\u63a5\u8868"},{"id":"158","parentid":"6","topic":"\u56fe\u904d\u5386","expanded":false},{"id":"159","parentid":"6","topic":"\u62d3\u6251\u6392\u5e8f","expanded":false},{"id":"183","parentid":"159","topic":"AOV"},{"id":"184","parentid":"159","topic":"AOE"},{"id":"160","parentid":"6","topic":"\u6700\u77ed\u8def","expanded":false},{"id":"161","parentid":"160","topic":"Floyd"},{"id":"162","parentid":"160","topic":"Dijkstra"},{"id":"163","parentid":"160","topic":"Bellman-Ford"},{"id":"164","parentid":"160","topic":"SPFA"},{"id":"165","parentid":"160","topic":"K\u77ed\u8def"},{"id":"185","parentid":"160","topic":"\u5dee\u5206\u7ea6\u675f"},{"id":"166","parentid":"6","topic":"\u751f\u6210\u6811","expanded":false},{"id":"167","parentid":"166","topic":"Prim"},{"id":"168","parentid":"166","topic":"Kruskal"},{"id":"169","parentid":"166","topic":"\u751f\u6210\u6811\u7684\u53e6\u7c7b\u7b97\u6cd5"},{"id":"170","parentid":"166","topic":"\u6b21\u5c0f\u751f\u6210\u6811"},{"id":"171","parentid":"166","topic":"\u7279\u6b8a\u751f\u6210\u6811"},{"id":"172","parentid":"6","topic":"\u5708\u548c\u5757","expanded":false},{"id":"173","parentid":"172","topic":"\u6700\u5c0f\u73af"},{"id":"174","parentid":"172","topic":"\u8d1f\u6743\u73af"},{"id":"175","parentid":"172","topic":"\u8fde\u901a\u5757"},{"id":"176","parentid":"172","topic":"2-SAT"},{"id":"177","parentid":"172","topic":"\u6b27\u62c9\u516c\u5f0f"},{"id":"178","parentid":"172","topic":"\u56db\u8272\u5b9a\u7406"},{"id":"182","parentid":"172","topic":"\u6b27\u62c9\u56de\u8def"},{"id":"179","parentid":"6","topic":"\u5f3a\u8fde\u901a\u5206\u91cf,\u7f29\u70b9","expanded":false},{"id":"180","parentid":"179","topic":"Tarjan"},{"id":"181","parentid":"179","topic":"\u5272\u70b9"},{"id":"186","parentid":"6","topic":"\u4ed9\u4eba\u638c","expanded":false},{"id":"8","parentid":"73","topic":"\u8ba1\u7b97\u51e0\u4f55","direction":"right","expanded":false},{"id":"291","parentid":"8","topic":"\u51f8\u5305","expanded":false},{"id":"292","parentid":"8","topic":"\u53c9\u79ef","expanded":false},{"id":"293","parentid":"8","topic":"\u7ebf\u6bb5\u76f8\u4ea4","expanded":false},{"id":"294","parentid":"8","topic":"\u70b9\u79ef","expanded":false},{"id":"295","parentid":"8","topic":"\u534a\u5e73\u9762\u76f8\u4ea4,\u534a\u5e73\u9762\u4ea4","expanded":false},{"id":"296","parentid":"8","topic":"\u6700\u8fd1\u70b9\u5bf9","expanded":false},{"id":"297","parentid":"8","topic":"\u51f8\u591a\u8fb9\u5f62\u7684\u4ea4","expanded":false},{"id":"298","parentid":"8","topic":"\u79bb\u6563\u5316\u626b\u63cf","expanded":false},{"id":"299","parentid":"8","topic":"\u65cb\u8f6c\u5361\u58f3","expanded":false},{"id":"11","parentid":"73","topic":"\u6811\u5f62\u7ed3\u6784","direction":"right","expanded":false},{"id":"42","parentid":"11","topic":"\u7ebf\u6bb5\u6811","expanded":false},{"id":"224","parentid":"42","topic":"\u4e8c\u7ef4\u7ebf\u6bb5\u6811"},{"id":"225","parentid":"42","topic":"\u77e9\u5f62\u6811"},{"id":"226","parentid":"42","topic":"zkw\u7ebf\u6bb5\u6811"},{"id":"233","parentid":"42","topic":"\u4e3b\u5e2d\u6811"},{"id":"49","parentid":"11","topic":"\u70b9\u5206\u6cbb","expanded":false},{"id":"50","parentid":"11","topic":"\u5e73\u8861\u6811","expanded":false},{"id":"218","parentid":"50","topic":"AVL"},{"id":"219","parentid":"50","topic":"Treap"},{"id":"220","parentid":"50","topic":"SBT"},{"id":"221","parentid":"50","topic":"Splay"},{"id":"222","parentid":"50","topic":"\u9759\u6001\u6392\u5e8f\u6811"},{"id":"223","parentid":"50","topic":"\u66ff\u7f6a\u7f8a\u6811"},{"id":"51","parentid":"11","topic":"\u4e8c\u53c9\u5806","expanded":false},{"id":"215","parentid":"51","topic":"\u5de6\u504f\u6811"},{"id":"216","parentid":"51","topic":"\u659c\u5806"},{"id":"217","parentid":"51","topic":"\u4e8c\u9879\u5806"},{"id":"53","parentid":"11","topic":"\u6811\u72b6\u6570\u7ec4","expanded":false},{"id":"100","parentid":"11","topic":"cdq\u5206\u6cbb","expanded":false},{"id":"209","parentid":"11","topic":"\u6811\u4e0a\u8ddd\u79bb","expanded":false},{"id":"210","parentid":"209","topic":"\u8282\u70b9\u5230\u6839\u7684\u8ddd\u79bb"},{"id":"211","parentid":"209","topic":"\u6700\u8fd1\u516c\u5171\u7956\u5148,LCA"},{"id":"212","parentid":"209","topic":"\u8282\u70b9\u95f4\u7684\u8ddd\u79bb"},{"id":"213","parentid":"209","topic":"\u6811\u7684\u76f4\u5f84"},{"id":"227","parentid":"11","topic":"\u52a8\u6001\u6811","expanded":false},{"id":"228","parentid":"227","topic":"\u6811\u94fe\u5256\u5206,\u6811\u5256"},{"id":"229","parentid":"227","topic":"Link-Cut Tree,LCT"},{"id":"230","parentid":"11","topic":"\u6811\u7684\u5e94\u7528","expanded":false},{"id":"47","parentid":"230","topic":"\u5e76\u67e5\u96c6"},{"id":"208","parentid":"230","topic":"\u6811\u7684\u904d\u5386"},{"id":"214","parentid":"230","topic":"\u54c8\u592b\u66fc\u6811"},{"id":"231","parentid":"230","topic":"RMQ"},{"id":"232","parentid":"230","topic":"\u6811\u5957\u6811"},{"id":"234","parentid":"230","topic":"\u53ef\u6301\u4e45\u5316"},{"id":"249","parentid":"230","topic":"\u865a\u6811"},{"id":"316","parentid":"11","topic":"\u6574\u4f53\u4e8c\u5206","expanded":false},{"id":"320","parentid":"11","topic":"\u73af\u5957\u6811","expanded":false},{"id":"321","parentid":"11","topic":"K-D Tree","expanded":false},{"id":"44","parentid":"73","topic":"\u7ebf\u6027\u7ed3\u6784","direction":"left","expanded":false},{"id":"41","parentid":"44","topic":"\u83ab\u961f","expanded":false},{"id":"254","parentid":"44","topic":"\u524d\u7f00\u548c","expanded":false},{"id":"285","parentid":"44","topic":"\u57fa\u672c\u6570\u7ec4","expanded":false},{"id":"286","parentid":"44","topic":"\u5411\u91cf","expanded":false},{"id":"287","parentid":"44","topic":"\u6808","expanded":false},{"id":"288","parentid":"44","topic":"\u961f\u5217","expanded":false},{"id":"289","parentid":"44","topic":"\u5757\u72b6\u94fe\u8868,\u5757\u72b6\u6570\u7ec4,\u5206\u5757","expanded":false},{"id":"290","parentid":"44","topic":"st\u8868,\u7a00\u758f\u8868","expanded":false},{"id":"330","parentid":"44","topic":"\u5dee\u5206","expanded":false},{"id":"79","parentid":"73","topic":"\u7f51\u7edc\u6d41","direction":"left","expanded":false},{"id":"194","parentid":"79","topic":"\u6700\u5927\u6d41","expanded":false},{"id":"195","parentid":"194","topic":"Dinic"},{"id":"196","parentid":"194","topic":"Sap"},{"id":"197","parentid":"194","topic":"\u6709\u4e0a\u4e0b\u754c\u7684\u6700\u5927\u6d41"},{"id":"198","parentid":"79","topic":"\u6700\u5c0f\u5272","expanded":false},{"id":"199","parentid":"198","topic":"\u95ed\u5408\u56fe"},{"id":"200","parentid":"198","topic":"\u6700\u5c0f\u70b9\u6743\u8986\u76d6\u96c6"},{"id":"201","parentid":"198","topic":"\u6700\u5927\u70b9\u6743\u72ec\u7acb\u96c6"},{"id":"202","parentid":"198","topic":"\u5206\u6570\u89c4\u5212"},{"id":"203","parentid":"198","topic":"\u6700\u5927\u5bc6\u5ea6\u5b50\u56fe"},{"id":"204","parentid":"79","topic":"\u8d39\u7528\u6d41","expanded":false},{"id":"205","parentid":"204","topic":"\u6700\u77ed\u8def\u589e\u5e7f\u8d39\u7528\u6d41"},{"id":"206","parentid":"204","topic":"zkw\u8d39\u7528\u6d41"},{"id":"207","parentid":"204","topic":"\u6700\u5c0f\u8d39\u7528\u53ef\u884c\u6d41"},{"id":"110","parentid":"73","topic":"\ufeff\u57fa\u7840\u7b97\u6cd5","direction":"left","expanded":false},{"id":"1","parentid":"110","topic":"\u6a21\u62df","expanded":false},{"id":"7","parentid":"110","topic":"\u8d2a\u5fc3","expanded":false},{"id":"12","parentid":"110","topic":"\u9012\u63a8","expanded":false},{"id":"54","parentid":"110","topic":"\u9012\u5f52","expanded":false},{"id":"111","parentid":"110","topic":"\u679a\u4e3e,\u66b4\u529b","expanded":false},{"id":"112","parentid":"110","topic":"\u5206\u6cbb","expanded":false},{"id":"113","parentid":"73","topic":"\u6392\u5e8f","direction":"left","expanded":false},{"id":"114","parentid":"113","topic":"\u5192\u6ce1\u6392\u5e8f","expanded":false},{"id":"115","parentid":"113","topic":"\u9009\u62e9\u6392\u5e8f","expanded":false},{"id":"116","parentid":"113","topic":"\u6876\u6392","expanded":false},{"id":"117","parentid":"113","topic":"\u63d2\u5165\u6392\u5e8f","expanded":false},{"id":"118","parentid":"113","topic":"\u5f52\u5e76\u6392\u5e8f","expanded":false},{"id":"119","parentid":"113","topic":"\u5feb\u901f\u6392\u5e8f,\u5feb\u6392","expanded":false},{"id":"120","parentid":"113","topic":"\u5806\u6392\u5e8f","expanded":false},{"id":"121","parentid":"113","topic":"\u5e0c\u5c14\u6392\u5e8f","expanded":false},{"id":"122","parentid":"113","topic":"\u5916\u90e8\u6392\u5e8f","expanded":false},{"id":"123","parentid":"73","topic":"\u67e5\u627e\u7b97\u6cd5","direction":"left","expanded":false},{"id":"45","parentid":"123","topic":"\u4e8c\u5206\u7b54\u6848","expanded":false},{"id":"124","parentid":"123","topic":"\u987a\u5e8f\u67e5\u627e","expanded":false},{"id":"125","parentid":"123","topic":"\u4e8c\u5206\u67e5\u627e","expanded":false},{"id":"187","parentid":"73","topic":"\u4e8c\u5206\u56fe","direction":"left","expanded":false},{"id":"55","parentid":"187","topic":"\u6700\u5927\u5339\u914d","expanded":false},{"id":"188","parentid":"55","topic":"\u5308\u7259\u5229\u7b97\u6cd5"},{"id":"189","parentid":"55","topic":"\u4e00\u822c\u56fe\u7684\u6700\u5927\u5339\u914d"},{"id":"190","parentid":"55","topic":"Konig\u5b9a\u7406"},{"id":"191","parentid":"187","topic":"\u5e26\u6743\u4e8c\u5206\u56fe\u5339\u914d","expanded":false},{"id":"193","parentid":"187","topic":"\u7a33\u5b9a\u5a5a\u59fb\u7cfb\u7edf","expanded":false},{"id":"308","parentid":"73","topic":"\u5176\u5b83\u6280\u5de7","direction":"left","expanded":false},{"id":"9","parentid":"308","topic":"\u66b4\u529b\u6570\u636e\u7ed3\u6784","expanded":false},{"id":"10","parentid":"308","topic":"\u9ad8\u7cbe","expanded":false},{"id":"13","parentid":"308","topic":"\u535a\u5f08\u8bba","expanded":false},{"id":"310","parentid":"13","topic":"Nim\u6e38\u620f"},{"id":"311","parentid":"13","topic":"\u535a\u5f08\u6811"},{"id":"312","parentid":"13","topic":"Shannon\u5f00\u5173\u6e38\u620f"},{"id":"43","parentid":"308","topic":"\u500d\u589e","expanded":false},{"id":"78","parentid":"308","topic":"\u79bb\u6563\u5316","expanded":false},{"id":"235","parentid":"308","topic":"\u54c8\u5e0c,HASH","expanded":false},{"id":"236","parentid":"235","topic":"ELFhash"},{"id":"237","parentid":"235","topic":"SDBM"},{"id":"238","parentid":"235","topic":"BKDR"},{"id":"309","parentid":"308","topic":"\u968f\u673a\u8d2a\u5fc3,\u968f\u673a\u5316","expanded":false},{"id":"313","parentid":"308","topic":"\u5feb\u901f\u5085\u91cc\u53f6\u53d8\u6362,DFT,FFT","expanded":false},{"id":"314","parentid":"308","topic":"\u4f4d\u8fd0\u7b97,\u6309\u4f4d","expanded":false},{"id":"315","parentid":"308","topic":"\u9a97\u5206","expanded":false},{"id":"317","parentid":"308","topic":"NP\u95ee\u9898","expanded":false},{"id":"318","parentid":"308","topic":"\u6784\u9020","expanded":false},{"id":"324","parentid":"308","topic":"\u5feb\u901f\u6570\u8bba\u53d8\u6362NTT","expanded":false},{"id":"326","parentid":"308","topic":"\u5feb\u901f\u6c83\u5c14\u4ec0\u53d8\u6362FWT","expanded":false},{"id":"327","parentid":"308","topic":"\u5feb\u901f\u6c83\u5c14\u4ec0\u53d8\u6362FWT","expanded":false}]    };
+    var options = {
+        container: 'jsmind_container',
+        editable: true,
+        theme: 'primary',
+        layout: {
+            hspace: 100,          // 节点之间的水平间距
+            vspace: 5,          // 节点之间的垂直间距
+            pspace: 15           // 节点收缩/展开控制器的尺寸
+        },
+    };
+    var jm;
+    var max =10;
+    function tag_set(thisele) {
+        var tags = thisele.prop("outerHTML");
+        var id = thisele.attr('tagid'), flag = 1;
+        $('[name=tagselect]>span').each(function () {
+            if ($(this).attr('tagid') == id) {
+                $(this).remove();
+                flag = 0;
+            }
+        });
+        if (flag) {
+            if ($('[name=tagselect]>span').length >= max) {
+                show_alert('好像有点问题', '你选择了过多的标签');
+                return;
+            }
+            $('[name=tagselect]').append(tags + ' ');
+            $("[name=tagselect]>span").click(function () {
+                thisele = $(this);
+                tag_set(thisele)
+            });
+        }
+    }
+	//var tag_ready = function(){
+    //$(document).ready(function () {
+        $('[name=opmind]').click(function () {
+            $('#lg-mind').modal();
+            $('#jsmind_container').html('');
+            jm = jsMind.show(options, mind);
+        });
+				if($('#name-dropdown-js').dropdown===undefined){
+			var a=1;
+		}
+		else{
+			$('#name-dropdown-js').dropdown();
+		}
+		
+		        $('[name=name]').keyup(function () {
+            var search = mind.data;
+            var kw = $(this).val().toUpperCase();
+            if (kw == '') $('[name=tagsearch]').html('');
+            var reg = /^[A-Za-z,]$/;
+            if (reg.test(kw)||kw.length < 1){
+				$('#name-dropdown-js').dropdown('close');
+				return;
+			}
+			
+			
+            var label = '';
+            $.each(search, function (i, value) {
+                //console.log(value);
+                if (value.topic.toUpperCase().indexOf(kw) >= 0)
+                    label += "<span class='lg-pointer lg-tags-opt am-badge am-radius  lg-bg-bluedark' name='ps2' type='tag' tagid='" + value.id + "'>"
+                        + value.topic + '</span> ';
+                //alert(value.topic);
+            });
+            
+		
+						if(label!=''){
+				$('#name-dropdown-js').dropdown('open');
+				$('[name=push-tagsearch]').html(label + '');
+			}
+			else{
+				$('#name-dropdown-js').dropdown('close');
+			}
+			$("[name=ps2]").click(function () {
+				thisele = $(this);
+				$('[name=name]').val('');
+				problem_list_search(thisele)
+			});
+			        });
+		
+		
+        $("[name=ps]").click(function () {
+            thisele = $(this);
+            tag_set(thisele)
+        });
+    //});
+
+</script>
+</div>
+</section>
+</div>
+<div class="am-u-md-8 am-u-lg-9 lg-right">
+<div class="lg-content-table-left">
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1000" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> <span class="am-badge am-badge-warning am-radius"><i class="am-icon-diamond"></i></span> P1000 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1000">超级玛丽游戏</a>
+<span class="lg-right am-text-right">
+<span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="2">字符串</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 45.262293586352%">24806 /54805 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1001" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> <span class="am-badge am-badge-warning am-radius"><i class="am-icon-diamond"></i></span> P1001 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1001">A+B Problem </a>
+<span class="lg-right am-text-right">
+<span class="am-badge am-radius lg-bg-red">入门难度</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="1">模拟</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 59.510375916724%">61914 /104039 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1002" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1002 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1002">过河卒</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="19">2002</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="3">动态规划,动规,dp</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="10">高精</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 31.407183110438%">11202 /35667 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1003" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1003 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1003">铺地毯</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="28">2011</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="111">枚举,暴力</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="1">模拟</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 41.247648584066%">16226 /39338 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1004" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1004 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1004">方格取数</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="17">2000</span> <span class="am-badge am-radius lg-bg-green">普及+/提高</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="3">动态规划,动规,dp</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="204">费用流</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="54">递归</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 52.836879432624%">6407 /12126 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1005" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1005 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1005">矩阵取数游戏</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="24">2007</span> <span class="am-badge am-radius lg-bg-bluelight">提高+/省选-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="3">动态规划,动规,dp</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="244">进制</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="10">高精</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 29.318280503691%">3376 /11515 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1006" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1006 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1006">传纸条</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="25">2008</span> <span class="lg-tag am-badge am-radius lg-bg-orange" data-tagid="319">高性能</span> <span class="am-badge am-radius lg-bg-green">普及+/提高</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="3">动态规划,动规,dp</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="204">费用流</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 48.037479710786%">6511 /13554 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1007" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1007 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1007">独木桥</a>
+<span class="lg-right am-text-right">
+<span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="1">模拟</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="7">贪心</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 40.857542333385%">5260 /12874 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1008" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> <span class="am-badge am-badge-warning am-radius"><i class="am-icon-diamond"></i></span> P1008 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1008">三连击</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="15">1998</span> <span class="lg-tag am-badge am-radius lg-bg-orange" data-tagid="104">提交答案</span> <span class="am-badge am-radius lg-bg-red">入门难度</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="111">枚举,暴力</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="1">模拟</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 46.248031860702%">24967 /53985 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1009" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1009 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1009">阶乘之和</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="15">1998</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="5">数论,数学</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="10">高精</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 29.536182091475%">5502 /18628 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1010" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1010 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1010">幂次方</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="15">1998</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="112">分治</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="5">数论,数学</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 68.573007321453%">4964 /7239 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1011" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1011 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1011">车站</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="15">1998</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="5">数论,数学</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="260">斐波那契,Fibonacci</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 58.52519723072%">3635 /6211 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1012" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1012 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1012">拼数</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="15">1998</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="2">字符串</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="113">排序</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 48.234705546026%">6749 /13992 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1013" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1013 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1013">进制位</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="15">1998</span> <span class="am-badge am-radius lg-bg-bluelight">提高+/省选-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="4">搜索</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="244">进制</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 31.716814159292%">896 /2825 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1014" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1014 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1014">Cantor表</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="16">1999</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="111">枚举,暴力</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="1">模拟</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 63.816925734024%">8868 /13896 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1015" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1015 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1015">回文数</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="16">1999</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="2">字符串</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="1">模拟</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 37.711917618988%">3003 /7963 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1016" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1016 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1016">旅行家的预算</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="16">1999</span> <span class="am-badge am-radius lg-bg-green">普及+/提高</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="7">贪心</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="54">递归</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 38.41902931283%">1599 /4162 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1017" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1017 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1017">进制转换</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="17">2000</span> <span class="am-badge am-radius lg-bg-yellow">普及/提高-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="5">数论,数学</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="244">进制</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 55.408616592623%">5363 /9679 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1018" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1018 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1018">乘积最大</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="17">2000</span> <span class="am-badge am-radius lg-bg-yellow">普及/提高-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="3">动态规划,动规,dp</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="10">高精</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 35.787923416789%">2916 /8148 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1019" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1019 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1019">单词接龙</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="17">2000</span> <span class="am-badge am-radius lg-bg-yellow">普及/提高-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="2">字符串</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="4">搜索</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 45.777823324452%">4467 /9758 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1020" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1020 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1020">导弹拦截</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="16">1999</span> <span class="lg-tag am-badge am-radius lg-bg-orange" data-tagid="107">Special Judge</span> <span class="am-badge am-radius lg-bg-yellow">普及/提高-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="3">动态规划,动规,dp</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="7">贪心</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 25.832089681741%">7443 /28813 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1021" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1021 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1021">邮票面值设计</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="16">1999</span> <span class="am-badge am-radius lg-bg-yellow">普及/提高-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="4">搜索</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 50.759641604986%">1303 /2567 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1022" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1022 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1022">计算器的改良 </a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="17">2000</span> <span class="am-badge am-radius lg-bg-yellow">普及/提高-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="2">字符串</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="5">数论,数学</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="1">模拟</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 38.994023904382%">2349 /6024 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1023" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1023 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1023">税收与补贴问题</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="17">2000</span> <span class="am-badge am-radius lg-bg-yellow">普及/提高-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="5">数论,数学</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="111">枚举,暴力</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 42.011589403974%">2030 /4832 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1024" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1024 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1024">一元三次方程求解</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="18">2001(或之前)</span> <span class="am-badge am-radius lg-bg-yellow">普及/提高-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="45">二分答案</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="112">分治</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="5">数论,数学</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="111">枚举,暴力</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 42.337940896092%">3553 /8392 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1025" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1025 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1025">数的划分</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="18">2001(或之前)</span> <span class="am-badge am-radius lg-bg-yellow">普及/提高-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="128">剪枝</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="4">搜索</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="12">递推</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 51.975945017182%">5445 /10476 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1026" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1026 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1026">统计单词个数</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="18">2001(或之前)</span> <span class="am-badge am-radius lg-bg-bluelight">提高+/省选-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="3">动态规划,动规,dp</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="2">字符串</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="111">枚举,暴力</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 32.687765706188%">1384 /4234 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1027" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1027 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1027">Car的旅行路线</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="18">2001(或之前)</span> <span class="am-badge am-radius lg-bg-bluelight">提高+/省选-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="6">图论</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="8">计算几何</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 51.430084745763%">971 /1888 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1028" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1028 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1028">数的计算</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="18">2001(或之前)</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="54">递归</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="12">递推</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 56.05701592003%">15141 /27010 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1029" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1029 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1029">最大公约数和最小公倍数问题</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="18">2001(或之前)</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="5">数论,数学</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="241">最大公约数,gcd</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="111">枚举,暴力</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 52.852402868458%">4938 /9343 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1030" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1030 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1030">求先序排列</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="18">2001(或之前)</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="2">字符串</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="11">树形结构</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="127">深度优先搜索,DFS</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="54">递归</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 61.786558595069%">3659 /5922 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1031" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1031 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1031">均分纸牌</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="19">2002</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="266">概率论,统计</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="1">模拟</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="7">贪心</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 56.533036377134%">7615 /13470 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1032" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1032 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1032">字串变换</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="19">2002</span> <span class="am-badge am-radius lg-bg-green">普及+/提高</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="128">剪枝</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="2">字符串</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="126">广度优先搜索,BFS</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="4">搜索</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 26.651571656899%">2001 /7508 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1033" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1033 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1033">自由落体</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="19">2002</span> <span class="am-badge am-radius lg-bg-yellow">普及/提高-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="5">数论,数学</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 47.544453852667%">1123 /2362 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1034" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> <span class="am-badge am-badge-warning am-radius"><i class="am-icon-diamond"></i></span> P1034 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1034">矩形覆盖</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="19">2002</span> <span class="am-badge am-radius lg-bg-bluelight">提高+/省选-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="4">搜索</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="8">计算几何</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 49.124613800206%">954 /1942 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1035" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1035 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1035">级数求和</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="19">2002</span> <span class="am-badge am-radius lg-bg-red">入门难度</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="5">数论,数学</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 45.518330117523%">23355 /51309 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1036" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1036 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1036">选数</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="19">2002</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="4">搜索</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="127">深度优先搜索,DFS</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="239">素数判断,质数,筛法</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 43.834651865965%">10583 /24143 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1037" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1037 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1037">产生数</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="19">2002</span> <span class="am-badge am-radius lg-bg-yellow">普及/提高-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="127">深度优先搜索,DFS</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="10">高精</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 29.570006354586%">1396 /4721 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1038" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1038 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1038">神经网络</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="20">2003</span> <span class="am-badge am-radius lg-bg-green">普及+/提高</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="6">图论</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="159">拓扑排序</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="113">排序</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="1">模拟</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="12">递推</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 33.318593853637%">1507 /4523 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1039" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1039 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1039">侦探推理</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="20">2003</span> <span class="am-badge am-radius lg-bg-bluelight">提高+/省选-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="45">二分答案</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="2">字符串</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="111">枚举,暴力</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="1">模拟</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 30.904109589041%">564 /1825 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1040" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1040 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1040">加分二叉树</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="20">2003</span> <span class="am-badge am-radius lg-bg-green">普及+/提高</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="3">动态规划,动规,dp</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="111">枚举,暴力</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="54">递归</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 65.826538176427%">2664 /4047 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1041" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1041 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1041">传染病控制</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="83">NOIp提高组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="20">2003</span> <span class="lg-tag am-badge am-radius lg-bg-orange" data-tagid="319">高性能</span> <span class="am-badge am-radius lg-bg-bluelight">提高+/省选-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="4">搜索</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 32.234303753069%">919 /2851 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1042" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1042 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1042">乒乓球</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="20">2003</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="2">字符串</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="1">模拟</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 26.623435107629%">5912 /22206 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1043" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1043 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1043">数字游戏</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="20">2003</span> <span class="am-badge am-radius lg-bg-yellow">普及/提高-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="254">前缀和</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="3">动态规划,动规,dp</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="4">搜索</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 45.681322107889%">1465 /3207 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1044" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1044 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1044">栈</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="20">2003</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="3">动态规划,动规,dp</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="261">卡特兰,Catalan</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="5">数论,数学</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="287">栈</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="12">递推</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 62.35234559568%">3695 /5926 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1045" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1045 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1045">麦森数</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="20">2003</span> <span class="lg-tag am-badge am-radius lg-bg-orange" data-tagid="319">高性能</span> <span class="am-badge am-radius lg-bg-yellow">普及/提高-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="5">数论,数学</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="10">高精</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 41.610738255034%">2418 /5811 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1046" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1046 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1046">陶陶摘苹果</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="22">2005</span> <span class="am-badge am-radius lg-bg-red">入门难度</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="1">模拟</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="78">离散化</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 65.082116269819%">22905 /35194 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1047" target="_blank"><strong class="lg-fg-green"><i class="am-icon-check"></i></strong></a> P1047 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1047">校门外的树</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="22">2005</span> <span class="am-badge am-radius lg-bg-red">入门难度</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="1">模拟</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="42">线段树</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 47.98767863455%">19006 /39606 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1048" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1048 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1048">采药</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="22">2005</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="3">动态规划,动规,dp</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="139">背包</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 50.417884639137%">12246 /24289 </div>
+</div>
+</div>
+</div>
+<div class="am-g lg-table-row lg-table-bg0">
+<div class="am-u-md-10 lg-table-big t"><a href="https://www.luogu.org/recordnew/lists?uid=46800&amp;pid=1049" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a> P1049 <a target="_blank" href="https://www.luogu.org/problemnew/show/P1049">装箱问题</a>
+<span class="lg-right am-text-right">
+<span class="lg-tag am-badge am-radius lg-bg-bluelight" data-tagid="82">NOIp普及组</span> <span class="lg-tag am-badge am-radius lg-bg-green" data-tagid="18">2001(或之前)</span> <span class="am-badge am-radius lg-bg-orange">普及-</span><div class="am-text-right"><span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="3">动态规划,动规,dp</span> <span class="lg-tag am-badge am-radius lg-bg-pink am-hide" data-tagid="54">递归</span> </div> </span></div>
+<div class="am-u-md-2 lg-table-small">
+<div class="am-progress">
+<div class="am-progress-bar am-progress-bar-secondary" style="width: 49.733362959671%">8953 /18002 </div>
+</div>
+</div>
+</div>
+<div class="pagination-centered"><ul class="am-pagination am-pagination-centered"><li class="am-active"><a>1</a></li><li><a href="https://www.luogu.org/problem/lists?_pjax=.lg-content&amp;page=2" data-pjax="data-pjax" data-ci-pagination-page="2" target="_blank" rel="noopener">2</a></li><li><a href="https://www.luogu.org/problem/lists?_pjax=.lg-content&amp;page=3" data-pjax="data-pjax" data-ci-pagination-page="3" target="_blank" rel="noopener">3</a></li><li><a href="https://www.luogu.org/problem/lists?_pjax=.lg-content&amp;page=4" data-pjax="data-pjax" data-ci-pagination-page="4" target="_blank" rel="noopener">4</a></li><li><a href="https://www.luogu.org/problem/lists?_pjax=.lg-content&amp;page=5" data-pjax="data-pjax" data-ci-pagination-page="5" target="_blank" rel="noopener">5</a></li><li><a href="https://www.luogu.org/problem/lists?_pjax=.lg-content&amp;page=6" data-pjax="data-pjax" data-ci-pagination-page="6" target="_blank" rel="noopener">6</a></li><li><a href="https://www.luogu.org/problem/lists?_pjax=.lg-content&amp;page=2" data-pjax="data-pjax" data-ci-pagination-page="2" rel="noopener" target="_blank">&gt;</a></li><li><a href="https://www.luogu.org/problem/lists?_pjax=.lg-content&amp;page=66" data-pjax="data-pjax" data-ci-pagination-page="66" target="_blank" rel="noopener">»</a></li></ul></div> </div>
+</div>
+</div>
+<script>
+    function problem_list_search(thisele) {
+        var param = {name: '', orderitem: '', tag: ''};
+        param.name = $("[name=name]").val();
+        if (thisele.attr('type') === 'name')
+            param.orderitem = 'name';
+        else if (thisele.attr('type') === 'difficulty')
+            param.orderitem = 'difficulty';
+        else
+            param.orderitem = 'pid';
+
+        var $luoguSelect = $('[name=select]');
+        if ($luoguSelect.hasClass("am-btn-danger")) {
+            param.select = 1;
+        }
+        var types = [];
+        $(".lg-problem-type.lg-bg-red").each(function(i, e) {
+            types.push( $(e).attr("data-type-id"));
+        });
+        param.type = types.join('|');
+        param.tag = $('[name=tags]').val();
+        if (thisele.attr('type') === 'tag') {
+
+            var tag = thisele.attr('tagid');
+
+            if (param.tag != '') {
+                var flag = 1;
+                var tagarr = param.tag.split(',');
+
+                for (var key in tagarr)
+                    if (tagarr[key] == tag) {
+                        tagarr.splice(key, 1);
+                        flag = 0;
+                    }
+                if (flag)
+                    tagarr.push(tag);
+                var tag_search = [];
+                for (var key in tagarr) {
+                    type = $('[tagid=' + tagarr[key] + ']').parent().parent().index();
+                    if (tag_search[type] === undefined)
+                        tag_search[type] = [];
+                    tag_search[type].push(tagarr[key]);
+                }
+
+                param.tag = []
+                for (var key in tag_search) {
+                    param.tag.push(tag_search[key].join(','));
+                }
+                param.tag = param.tag.join('|');
+            }
+            else
+                param.tag = tag;
+        }
+        goto_url("/problem/lists", param);
+    }
+
+
+    $(document).ready(function () {
+        $("#showtagsopt").click(
+            function () {
+                $("#tagsopt").removeClass("am-hide-sm-only");
+            }
+        );
+        $("[name=name]").keyup(function (event) {
+            if (event.keyCode == 13) {
+                thisele = $(this);
+                problem_list_search(thisele)
+            }
+        });
+
+        $("[name=ps]").click(
+            function () {
+                thisele = $(this);
+                problem_list_search(thisele)
+            }
+        );
+        $("button[title].am-btn").poshytip({
+            className: 'tip-twitter',
+            showTimeout: 1,
+            alignTo: 'target',
+            alignX: 'center',
+            alignY: 'bottom'
+        });
+        $('[name=showtag]').click(function () {
+            $('.am-badge.am-hide').removeClass('am-hide');
+        });
+        $('[name=select]').click(function () {
+            var $luoguSelect = $('[name=select]');
+            if ($luoguSelect.hasClass("am-btn-warning")) {
+                $luoguSelect.removeClass("am-btn-warning").addClass("am-btn-danger");
+            } else {
+
+                $luoguSelect.removeClass("am-btn-danger").addClass("am-btn-warning");
+            }
+            problem_list_search($(this))
+        })
+        $(".lg-problem-type").click(function() {
+            $(this).toggleClass('lg-bg-purple').toggleClass('lg-bg-red');
+            problem_list_search($(this));
+        })
+    });
+
+</script>
+<style>.lg-tag {
+        cursor: pointer;
+    }</style>
+<script>
+    $(".lg-tag").click(function () {
+        goto_url("/problem/lists?tag=" + $(this).attr('data-tagid'));
+    })
+</script></div>
+</div>
+<a href="#" class="am-show-sm-only lg-menu" data-am-offcanvas="{target: '#lg-offcanvas'}">
+<span class="am-icon-btn am-icon-th-list"></span>
+</a>
+<div class="lg-footer">
+<div class="lg-footer-top"></div>
+<div class="lg-index-tool am-g">
+<div class="am-u-md-3 am-hide-sm">
+<img src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/logo_white_3.png" class="lg-inline-up" width="175">
+</div>
+<div class="am-u-md-4 am-hide-sm"><h1 style="color: #999;margin: 0">在洛谷，<br>享受Coding的欢乐</h1></div>
+<div class="am-u-md-5 am-md-text-right">
+<a href="https://www.luogu.org/wiki/show?name=%E5%85%B3%E4%BA%8E%E6%B4%9B%E8%B0%B7" target="_blank" rel="noopener">关于洛谷</a> |
+<a href="https://www.luogu.org/wiki/show?name=%E5%B8%AE%E5%8A%A9" target="_blank" rel="noopener">帮助中心</a> |
+<a href="https://www.luogu.org/wiki/show?name=%E6%B4%9B%E8%B0%B7%E7%A4%BE%E5%8C%BA%E8%A7%84%E5%88%99" target="_blank" rel="noopener">洛谷社区规则</a> |
+<a href="https://www.luogu.org/wiki/show?name=%E6%B4%9B%E8%B0%B7%E7%94%A8%E6%88%B7%E5%8D%8F%E8%AE%AE" target="_blank" rel="noopener">用户协议</a> |
+<a href="https://www.luogu.org/discuss/lists?forumname=miaomiaowu" target="_blank" rel="noopener">小黑屋</a> |
+<a href="https://www.luogu.org/wiki/show?name=%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC" target="_blank" rel="noopener">联系我们</a><br>
+2013-2018 , 洛谷 ©
+Developed by the <a href="https://github.com/luogu-dev" target="_blank">Luogu Dev Team</a><br>
+All rights reserved <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="noopener"> 陕ICP备17005722号-1</a>.
+<script src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/stat.js" language="JavaScript"></script><script src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/core.js" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=5476811" target="_blank" title="站长统计">站长统计</a>
+<br>
+Master: <b>TrySail</b> /
+DB: <b>IndexL</b> /
+CGI: <b>Numazu</b>
+</div>
+</div>
+</div>
+<div class="am-modal am-modal-alert" tabindex="-1" id="lg-alert">
+<div class="am-modal-dialog">
+<div class="am-modal-hd" id="lg-alert-title"></div>
+<div class="am-modal-bd" id="lg-alert-message"></div>
+<div class="am-modal-footer">
+<span class="am-modal-btn">确定</span>
+</div>
+</div>
+</div>
+<script src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/ace.js"></script>
+<script src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/vendor.js" data-manual=""></script>
+<script src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/jsmind.js" data-manual=""></script>
+<script src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/amazeui.js"></script>
+<script src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/highcharts.js"></script>
+<script src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/katex.js"></script>
+<script src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/auto-render.js"></script>
+<script src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/markdown-palettes.js"></script>
+<script src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/luogu3.js"></script>
+<script src="%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8%20-%20%E6%B4%9B%E8%B0%B7_files/api.js" async defer="defer"></script>
+
+
+<div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-twitter"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div></body></html>
+        
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="xgzc" />
+          <p class="site-author-name" itemprop="name">xgzc</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友链
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://cjoier-gjh.ml" title="最强的C2大佬:Gjh" target="_blank">最强的C2大佬:Gjh</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.cnblogs.com/cjyyb" title="yyb大佬" target="_blank">yyb大佬</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.cnblogs.com/cjoieryl" title="ppl大佬" target="_blank">ppl大佬</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.luogu.org/blog/Lhc-fl" title="Lhc_fl" target="_blank">Lhc_fl</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">题目列表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">查找题目</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">在洛谷，享受Coding的欢乐</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xgzc</span>
+</div>
+
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+</body>
+</html>
