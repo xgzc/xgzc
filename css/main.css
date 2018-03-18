@@ -1807,7 +1807,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff223c;
+  background: #731f0a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3042,8 +3042,16 @@ blog-common.css…1xRM9NIXfnM1:1,
   background-color: rgba(247,247,247,0.3);
   border: none !important;
 }
-body {
-  background: url("/images/back.jpg");
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("/images/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+  }
+  #footer a {
+    color: #eee;
+  }
 }
 .dayTitle a:link,
 .dayTitle a:visited,
