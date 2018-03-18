@@ -1807,7 +1807,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffffaf;
+  background: #c6467f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2997,7 +2997,7 @@ a.headermaintitle:visited {
   margin: 5px 0;
   color: #000;
 }
-#cnblogs_post_body {
+.post-body {
   font-family: "Monaco";
   word-break: break-word;
 }
