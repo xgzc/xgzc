@@ -1807,7 +1807,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffc49f;
+  background: #032d45;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2941,6 +2941,20 @@ hr {
   background: #00d4ff;
   border-radius: 6px 6px 6px 6px;
   box-shadow: 0 0 0 1px #00d4ff, 1px 1px 6px 1px rgba(10,10,0,0.5);
+  color: #fff;
+  font-family: "微软雅黑", "宋体", "黑体", Arial;
+  font-size: 15px;
+  font-weight: bold;
+  height: 33px;
+  line-height: 23px;
+  margin: 12px 0 !important;
+  padding: 5px 0 5px 10px;
+  text-shadow: 2px 2px 3px #222;
+}
+.post-body h5 {
+  background: MediumSpringGreen;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 0 0 1px MediumSpringGreen, 1px 1px 6px 1px rgba(10,10,0,0.5);
   color: #fff;
   font-family: "微软雅黑", "宋体", "黑体", Arial;
   font-size: 15px;
