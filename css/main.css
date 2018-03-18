@@ -1807,7 +1807,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4d8185;
+  background: #884611;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2923,7 +2923,7 @@ hr {
   margin-left: -22em;
   width: 100%;
 }
-.post_body h1 {
+.post-body h3 {
   background: rgba(0,35,255,0.82);
   border-radius: 6px 6px 6px 6px;
   box-shadow: 0 0 0 1px rgba(0,35,255,0.82), 1px 1px 6px 1px rgba(10,10,0,0.5);
@@ -2937,7 +2937,7 @@ hr {
   padding: 8px 0 5px 5px;
   text-shadow: 2px 2px 3px #222;
 }
-.post_body h3 {
+.post-body h4 {
   background: #00d4ff;
   border-radius: 6px 6px 6px 6px;
   box-shadow: 0 0 0 1px #00d4ff, 1px 1px 6px 1px rgba(10,10,0,0.5);
@@ -2987,7 +2987,7 @@ a.headermaintitle:visited {
 #logo {
   padding: 35px;
 }
-.cnblogs_code {
+.code {
   background-color: rgba(247,247,247,0.3);
   font-family: Courier New !important;
   font-size: 12px !important;
