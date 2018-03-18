@@ -1807,7 +1807,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a418ff;
+  background: #cce7ba;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3007,6 +3007,14 @@ body {
   background-repeat: repeat;
   cursor: url("https://jiage.la/upload/2017102416304981711808.png"), auto;
   cursor: cur;
+  font-size: 12px;
+  min-height: 101%;
+}
+body {
+  color: #000;
+  background: url("http://images.cnblogs.com/cnblogs_com/cj-xxz/1099628/o_11.jpg") fixed;
+  background-size: cover;
+  background-repeat: repeat;
   font-size: 12px;
   min-height: 101%;
 }
