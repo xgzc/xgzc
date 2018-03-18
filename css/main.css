@@ -1807,7 +1807,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c6467f;
+  background: #ff223c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2924,9 +2924,9 @@ hr {
   width: 100%;
 }
 .post-body h3 {
-  background: MediumSpringGreen;
+  background: rgba(0,35,255,0.82);
   border-radius: 6px 6px 6px 6px;
-  box-shadow: 0 0 0 1px MediumSpringGreen, 1px 1px 6px 1px rgba(10,10,0,0.5);
+  box-shadow: 0 0 0 1px rgba(0,35,255,0.82), 1px 1px 6px 1px rgba(10,10,0,0.5);
   color: #fff;
   font-family: "微软雅黑", "宋体", "黑体", Arial;
   font-size: 18px;
@@ -3041,6 +3041,9 @@ blog-common.css…1xRM9NIXfnM1:1,
 .cnblogs_code_toolbar a:visited img {
   background-color: rgba(247,247,247,0.3);
   border: none !important;
+}
+body {
+  background: url("/images/back.jpg");
 }
 .dayTitle a:link,
 .dayTitle a:visited,
