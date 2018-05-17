@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="Gzc的Blogs">
 <meta property="og:description" content="题面今天的数学课上，Crash小朋友学习了最小公倍数(Least Common Multiple)。对于两个正整数a和b，$lcm(a, b)​$表示能同时整除a和b的最小正整数。例如，$lcm(6, 8) = 24​$。 回到家后，Crash还在想着课上学的东西，为了研究最小公倍数，他画了一张N×M的表格。每个格子里写了一个数字，其中第i行第j列的那个格子里写着数为$lcm(i, j)$。一个4">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-17T13:38:06.269Z">
+<meta property="og:updated_time" content="2018-05-17T13:40:40.897Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【国家集训队】Crash的数字表格">
 <meta name="twitter:description" content="题面今天的数学课上，Crash小朋友学习了最小公倍数(Least Common Multiple)。对于两个正整数a和b，$lcm(a, b)​$表示能同时整除a和b的最小正整数。例如，$lcm(6, 8) = 24​$。 回到家后，Crash还在想着课上学的东西，为了研究最小公倍数，他画了一张N×M的表格。每个格子里写了一个数字，其中第i行第j列的那个格子里写着数为$lcm(i, j)$。一个4">
@@ -340,44 +340,44 @@
 <p>以下的一切都默认$n&lt;m$</p>
 <p>我们都知道$lcm(i,j)=\frac{ij}{gcd(i,j)}$</p>
 <p>所以所求化简</p>
-<p>$\sum_{i=1}^n\sum_{j=1}^m\frac{ij}{gcd(i,j)}$</p>
+<p>$$\sum_{i=1}^n\sum_{j=1}^m\frac{ij}{gcd(i,j)}$$</p>
 <p>看到$gcd(i,j)$很不爽，于是就再提出来</p>
-<p>$\sum_{d=1}^n\sum_{i=1}^n\sum_{j=1}^m[gcd(i, j)==d]\frac{ij}{d}$</p>
+<p>$$\sum_{d=1}^n\sum_{i=1}^n\sum_{j=1}^m[gcd(i, j)==d]\frac{ij}{d}$$</p>
 <p>也就是</p>
-<p>$\sum_{d=1}^n\sum_{i=1}^{\frac{n}{d}}\sum_{j=1}^{\frac{m}{d}}[gcd(i, j)==1]ijd$</p>
+<p>$$\sum_{d=1}^n\sum_{i=1}^{\frac{n}{d}}\sum_{j=1}^{\frac{m}{d}}[gcd(i, j)==1]ijd$$</p>
 <p>把$d$提出来</p>
-<p>$ans=\sum_{d=1}^nd\sum_{i=1}^{\frac{n}{d}}\sum_{j=1}^{\frac{m}{d}}[gcd(i, j)==1]ij$</p>
+<p>$$ans=\sum_{d=1}^nd\sum_{i=1}^{\frac{n}{d}}\sum_{j=1}^{\frac{m}{d}}[gcd(i, j)==1]ij$$</p>
 <p>前面这一堆看起来管不了了</p>
 <p>看后面的一段</p>
-<p>$\sum_{i=1}^{\frac{n}{d}}\sum_{j=1}^{\frac{m}{d}}[gcd(i, j)==1]ij$</p>
+<p>$$\sum_{i=1}^{\frac{n}{d}}\sum_{j=1}^{\frac{m}{d}}[gcd(i, j)==1]ij$$</p>
 <p>看到$\frac{n}{d}$这种东西很不爽呀</p>
 <p>就写成这样吧。。</p>
-<p>$\sum_{i=1}^{x}\sum_{j=1}^{y}[gcd(i, j)==1]ij$</p>
+<p>$$\sum_{i=1}^{x}\sum_{j=1}^{y}[gcd(i, j)==1]ij$$</p>
 <p>这种东西怎么求？</p>
 <p>令</p>
-<p>$f(d)=\sum_{i=1}^{x}\sum_{j=1}^{y}[gcd(i, j)==d]ij$</p>
+<p>$$f(d)=\sum_{i=1}^{x}\sum_{j=1}^{y}[gcd(i, j)==d]ij$$</p>
 <p>根据莫比乌斯反演的常见套路</p>
 <p>设</p>
-<p>$g(d)=\sum_{i=1}^x\sum_{j=1}^y[d|gcd(i, j)]ij$</p>
+<p>$$g(d)=\sum_{i=1}^x\sum_{j=1}^y[d|gcd(i, j)]ij$$</p>
 <p>直接把$d$提出来</p>
-<p>$g(d)=d^2\sum_{i=1}^{\frac{x}{d}}\sum_{j=1}^{\frac{y}{d}}[1|gcd(i, j)]ij$</p>
+<p>$$g(d)=d^2\sum_{i=1}^{\frac{x}{d}}\sum_{j=1}^{\frac{y}{d}}[1|gcd(i, j)]ij$$</p>
 <p>$1|gcd(i, j)$是显然成立的</p>
 <p>所以</p>
-<p>$g(d)=d^2\sum_{i=1}^{\frac{x}{d}}\sum_{j=1}^{\frac{y}{d}}ij$</p>
+<p>$$g(d)=d^2\sum_{i=1}^{\frac{x}{d}}\sum_{j=1}^{\frac{y}{d}}ij$$</p>
 <p>这玩意明显可以$O(1)$求（相当于两个等差数列相乘）</p>
 <p>所以，要求的东西就是</p>
-<p>$f(1)=\sum_{i=1}^xμ(i)g(i)$</p>
+<p>$$f(1)=\sum_{i=1}^xμ(i)g(i)$$</p>
 <p>这道题就解决了一大半了</p>
 <p>现在我们的复杂度是$O(n\sqrt{n})$与$O(n^2)$之间</p>
 <p>需要继续优化</p>
 <p>很显然的</p>
-<p>$ans=\sum_{d=1}^nd\sum_{i=1}^{\frac{n}{d}}\sum_{j=1}^{\frac{m}{d}}[gcd(i, j)==1]ij$</p>
+<p>$$ans=\sum_{d=1}^nd\sum_{i=1}^{\frac{n}{d}}\sum_{j=1}^{\frac{m}{d}}[gcd(i, j)==1]ij$$</p>
 <p>这个式子可以数论分块一波，复杂度少了$O(\sqrt{n})$</p>
 <p>还不够</p>
 <p>继续看，</p>
-<p>$f(1)=\sum_{i=1}^xμ(i)g(i)$</p>
+<p>$$f(1)=\sum_{i=1}^xμ(i)g(i)$$</p>
 <p>这个式子把$g(x)$展开</p>
-<p>$f(1)=\sum_{i=1}^xμ(i)i^2\sum_{p=1}^{\frac{x}{i}}\sum_{q=1}^{\frac{y}{j}}pq$</p>
+<p>$$f(1)=\sum_{i=1}^xμ(i)i^2\sum_{p=1}^{\frac{x}{i}}\sum_{q=1}^{\frac{y}{j}}pq$$</p>
 <p>还是可以数论分块</p>
 <p>但是要预处理$μ(i)∗i^2$的前缀和</p>
 <p>然后复杂度就成了$O(n)$啦</p>
