@@ -114,7 +114,7 @@
 <meta property="og:site_name" content="xgzc的Blogs">
 <meta property="og:description" content="结果题面题解T1此题数据较弱,一些错误的做法也能通过全部数据。本题只要记录一个前缀$OR$和$Pre_i$以及后缀$OR和$Suf_i$,枚举修改的位置即可。 T2首先对于一个人$i$,显而易见,他所能到达的格子一定是$gcd(a_i,n)$的倍数。只要枚举$n$的约数,令当前枚举到的数为$d$,若存在一个$i$, 使得$gcd(a_i,n)|d$说明所有$gcd(i, n) = d$的格子都能被">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-01T03:46:16.879Z">
+<meta property="og:updated_time" content="2018-10-01T03:50:31.442Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018-09-30考试">
 <meta name="twitter:description" content="结果题面题解T1此题数据较弱,一些错误的做法也能通过全部数据。本题只要记录一个前缀$OR$和$Pre_i$以及后缀$OR和$Suf_i$,枚举修改的位置即可。 T2首先对于一个人$i$,显而易见,他所能到达的格子一定是$gcd(a_i,n)$的倍数。只要枚举$n$的约数,令当前枚举到的数为$d$,若存在一个$i$, 使得$gcd(a_i,n)|d$说明所有$gcd(i, n) = d$的格子都能被">
@@ -763,6 +763,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
