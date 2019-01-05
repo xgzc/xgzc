@@ -157,7 +157,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 576 个字)
+                    4 分钟 读完 (大约 577 个字)
                 </span>
                 
             </div>
@@ -169,7 +169,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a><a href="https://www.luogu.org/problemnew/show/P2886" target="_blank" rel="noopener">题目</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><ul>
+            <a id="more"></a>
+<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a><a href="https://www.luogu.org/problemnew/show/P2886" target="_blank" rel="noopener">题目</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><ul>
 <li>看到这个边的数量，一下子→Floyd。</li>
 <li>那么对于Floyd，每次加入一个点扩展是不是就多了一条边呢？所以会想到扩展k次点来得到最短路。但是k很大，那么考虑一下，对于一个图的邻接矩阵G而言(初始连通1，不连通0)一开始的读入后得到的G就是表示两点是否直接可达。</li>
 <li>每一次选择中间扩展点k的时候，[i,k]+[k,j]是不是很眼熟？Floyd的过程实际上是类似于矩阵乘法的,只不过要求松弛而已。使用矩乘，就可以模拟扩展点的时候计算此时经过了n条边的最短路径长度。</li>

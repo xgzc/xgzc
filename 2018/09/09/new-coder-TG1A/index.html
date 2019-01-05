@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="题面题解 对于第一档数据,可以枚举选取的合法的子区间,再重新排序, 直接得到中位数。时间复杂度$O(n^3)$。 对于第二档数据,可以枚举子区间的左端点,依次往右增加新的数,现在要做的就是往一个有序列表里加数,然后查询第k小的值。这个可以用平衡树维护。总复杂度就是$O(n^2logn)$。 对于第三档数据,直接枚举最终可能的答案x。把数字大于等于$x$的记为1,小于$x$的记为-1。检验是否存在和">
+    <meta name="description" content="题面题解 对于第一档数据,可以枚举选取的合法的子区间,再重新排序, 直接得到中位数。时间复杂度$O(n^3)$。 对于第二档数据,可以枚举子区间的左端点,依次往右增加新的数,现在要做的就是往一个有序列表里加数,然后查询第k小的值。这个可以用平衡树维护。总复杂度就是$O(n^2logn)$。 对于第三档数据,直接枚举最终可能的答案x。把数字大于等于$x$的记为1,小于$x$的记为-1。检验是否存在">
 <meta name="keywords" content="二分答案">
 <meta property="og:type" content="article">
 <meta property="og:title" content="牛客网NOIP赛前集训营-提高组（第一场）中位数">
 <meta property="og:url" content="http://yoursite.com/2018/09/09/new-coder-TG1A/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题面题解 对于第一档数据,可以枚举选取的合法的子区间,再重新排序, 直接得到中位数。时间复杂度$O(n^3)$。 对于第二档数据,可以枚举子区间的左端点,依次往右增加新的数,现在要做的就是往一个有序列表里加数,然后查询第k小的值。这个可以用平衡树维护。总复杂度就是$O(n^2logn)$。 对于第三档数据,直接枚举最终可能的答案x。把数字大于等于$x$的记为1,小于$x$的记为-1。检验是否存在和">
+<meta property="og:description" content="题面题解 对于第一档数据,可以枚举选取的合法的子区间,再重新排序, 直接得到中位数。时间复杂度$O(n^3)$。 对于第二档数据,可以枚举子区间的左端点,依次往右增加新的数,现在要做的就是往一个有序列表里加数,然后查询第k小的值。这个可以用平衡树维护。总复杂度就是$O(n^2logn)$。 对于第三档数据,直接枚举最终可能的答案x。把数字大于等于$x$的记为1,小于$x$的记为-1。检验是否存在">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-09T14:00:48.857Z">
+<meta property="og:updated_time" content="2019-01-05T12:08:12.444Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="牛客网NOIP赛前集训营-提高组（第一场）中位数">
-<meta name="twitter:description" content="题面题解 对于第一档数据,可以枚举选取的合法的子区间,再重新排序, 直接得到中位数。时间复杂度$O(n^3)$。 对于第二档数据,可以枚举子区间的左端点,依次往右增加新的数,现在要做的就是往一个有序列表里加数,然后查询第k小的值。这个可以用平衡树维护。总复杂度就是$O(n^2logn)$。 对于第三档数据,直接枚举最终可能的答案x。把数字大于等于$x$的记为1,小于$x$的记为-1。检验是否存在和">
+<meta name="twitter:description" content="题面题解 对于第一档数据,可以枚举选取的合法的子区间,再重新排序, 直接得到中位数。时间复杂度$O(n^3)$。 对于第二档数据,可以枚举子区间的左端点,依次往右增加新的数,现在要做的就是往一个有序列表里加数,然后查询第k小的值。这个可以用平衡树维护。总复杂度就是$O(n^2logn)$。 对于第三档数据,直接枚举最终可能的答案x。把数字大于等于$x$的记为1,小于$x$的记为-1。检验是否存在">
 
 
 
@@ -151,7 +151,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 374 个字)
+                    3 分钟 读完 (大约 375 个字)
                 </span>
                 
             </div>
@@ -163,7 +163,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.nowcoder.com/acm/contest/172/A" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><ul>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.nowcoder.com/acm/contest/172/A" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><ul>
 <li>对于第一档数据,可以枚举选取的合法的子区间,再重新排序, 直接得到中位数。时间复杂度$O(n^3)$。</li>
 <li>对于第二档数据,可以枚举子区间的左端点,依次往右增加新的数,现在要做的就是往一个有序列表里加数,然后查询第k小的值。这个可以用平衡树维护。总复杂度就是$O(n^2logn)$。</li>
 <li>对于第三档数据,直接枚举最终可能的答案x。把数字大于等于$x$的记为1,小于$x$的记为-1。检验是否存在和$&gt;=0$的区间。可以维护一个前缀和的前缀最大值。时间复杂度$O(Mn)$, M为不同的数的个数。</li>

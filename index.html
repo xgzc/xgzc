@@ -147,7 +147,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 482 个字)
+                    3 分钟 读完 (大约 483 个字)
                 </span>
                 
             </div>
@@ -159,7 +159,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P4178" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>感觉和$CDQ$分治一样套路啊</p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P4178" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>感觉和$CDQ$分治一样套路啊</p>
 <p>首先，构建出点分树</p>
 <p>对于每一层分治重心，求出它到子树中任意点的距离</p>
 <p>然后$two-pointers$计算满足小于等于$K$的点对数目，加入答案</p>
@@ -192,7 +193,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    5 分钟 读完 (大约 694 个字)
+                    5 分钟 读完 (大约 695 个字)
                 </span>
                 
             </div>
@@ -204,7 +205,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P4556" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>线段树合并</p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P4556" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>线段树合并</p>
 <p>我们看到这道题目首先可以想到树上差分，然后$dfs$合并</p>
 <p>发现题目让我们求的东西很好用线段树维护</p>
 <p>于是可以想到线段树合并</p>
@@ -238,7 +240,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 69 个字)
+                    几秒 读完 (大约 70 个字)
                 </span>
                 
             </div>
@@ -250,7 +252,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P2252" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>威佐夫博弈</p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P2252" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>威佐夫博弈</p>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RG register</span></span><br><span class="line"></span><br><span class="line">const double Phi((sqrt(5) + 1.) / 2.);</span><br><span class="line"><span class="hljs-keyword">int</span> a, b;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">abs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a)</span> </span>&#123; <span class="hljs-keyword">return</span> a &lt; <span class="hljs-number">0</span> ? a : -a; &#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">while</span>(~<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d%d"</span>, &amp;a, &amp;b))</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">if</span>(a &gt; b) <span class="hljs-built_in">std</span>::swap(a, b);</span><br><span class="line">		<span class="hljs-keyword">int</span> c = <span class="hljs-built_in">abs</span>(a - b) * Phi;</span><br><span class="line">		<span class="hljs-keyword">if</span>(c == a) <span class="hljs-built_in">puts</span>(<span class="hljs-string">"0"</span>);</span><br><span class="line">		<span class="hljs-keyword">else</span> <span class="hljs-built_in">puts</span>(<span class="hljs-string">"1"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
         </div>
@@ -279,7 +282,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 203 个字)
+                    1 分钟 读完 (大约 204 个字)
                 </span>
                 
             </div>
@@ -291,7 +294,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P2014" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>树形背包板子题。</p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P2014" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>树形背包板子题。</p>
 <p>设$f[i][j]$表示在以$x$为根的子树选$j$门课（包括$x$）能够获得的最高学分，用分组背包转移即可。</p>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RG register</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> data = <span class="hljs-number">0</span>, w = <span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">char</span> ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch != <span class="hljs-string">'-'</span> &amp;&amp; (ch &lt; <span class="hljs-string">'0'</span> || ch &gt; <span class="hljs-string">'9'</span>)) ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">if</span>(ch == <span class="hljs-string">'-'</span>) w = <span class="hljs-number">-1</span>, ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch &gt;= <span class="hljs-string">'0'</span> &amp;&amp; ch &lt;= <span class="hljs-string">'9'</span>) data = data * <span class="hljs-number">10</span> + (ch ^ <span class="hljs-number">48</span>), ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">return</span> data*w;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> <span class="hljs-title">maxn</span><span class="hljs-params">(<span class="hljs-number">310</span>)</span></span>;</span><br><span class="line"><span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; g[maxn];</span><br><span class="line"><span class="hljs-keyword">typedef</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;::iterator iter;</span><br><span class="line"><span class="hljs-keyword">int</span> s[maxn], f[maxn][maxn], n, m;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">dfs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	f[x][<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG iter it = g[x].begin(); it != g[x].end(); ++it)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">int</span> to = *it; dfs(to);</span><br><span class="line">		<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> v = m + <span class="hljs-number">1</span>; v; --v)</span><br><span class="line">			<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; v; ++j)</span><br><span class="line">				f[x][v] = <span class="hljs-built_in">std</span>::max(f[x][v], f[x][v - j] + f[to][j]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	n = read(); m = read();</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++)</span><br><span class="line">		g[read()].push_back(i), f[i][<span class="hljs-number">1</span>] = s[i] = read();</span><br><span class="line">	dfs(<span class="hljs-number">0</span>); <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>, f[<span class="hljs-number">0</span>][m + <span class="hljs-number">1</span>]);</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -321,7 +325,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 452 个字)
+                    3 分钟 读完 (大约 453 个字)
                 </span>
                 
             </div>
@@ -333,7 +337,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="http://codeforces.com/contest/535/problem/E" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>我们可以尝试寻找临界值。枚举，那么令$\frac{A}{a_i}+\frac{B}{b_i}=\frac{A}{a_j}+\frac{B}{b_j}$，如果这对$A,B$在$i,j$取到最值，那么$i,j$有用。</p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="http://codeforces.com/contest/535/problem/E" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>我们可以尝试寻找临界值。枚举，那么令$\frac{A}{a_i}+\frac{B}{b_i}=\frac{A}{a_j}+\frac{B}{b_j}$，如果这对$A,B$在$i,j$取到最值，那么$i,j$有用。</p>
 <p>将每个型号看成平面上的点$(\frac1{a_i},\frac1{b_i})$，我们的问题变成了：给定任意$A,B$，最小化$z=Ax+By$（$x,y$即为点的坐标）。因为$A,B$为正实数,所以目标函数的斜率为负。于是，有用的点分布在该点集的左下凸包上。使用类似斜率优化的方法求出凸包即可。</p>
 <p>时间复杂度$O(nlogn)$</p>
 <figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RG register</span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> clear(x, y) memset(x, y, sizeof(x));</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> data = <span class="hljs-number">0</span>, w = <span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">char</span> ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch != <span class="hljs-string">'-'</span> &amp;&amp; (ch &lt; <span class="hljs-string">'0'</span> || ch &gt; <span class="hljs-string">'9'</span>)) ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">if</span>(ch == <span class="hljs-string">'-'</span>) w = <span class="hljs-number">-1</span>, ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch &gt;= <span class="hljs-string">'0'</span> &amp;&amp; ch &lt;= <span class="hljs-string">'9'</span>) data = data * <span class="hljs-number">10</span> + (ch ^ <span class="hljs-number">48</span>), ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">return</span> data*w;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> <span class="hljs-title">maxn</span><span class="hljs-params">(<span class="hljs-number">3e5</span> + <span class="hljs-number">10</span>)</span></span>;</span><br><span class="line"><span class="hljs-keyword">int</span> q[maxn], top, next[maxn], ok[maxn], n;</span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">point</span> &#123;</span> <span class="hljs-keyword">int</span> x, y, id; &#125; p[maxn];</span><br><span class="line"><span class="hljs-keyword">double</span> k[maxn];</span><br><span class="line"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">bool</span> <span class="hljs-keyword">operator</span> &lt; (<span class="hljs-keyword">const</span> point &amp;lhs, <span class="hljs-keyword">const</span> point &amp;rhs)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="hljs-keyword">return</span> lhs.x &gt; rhs.x || (lhs.x == rhs.x &amp;&amp; lhs.y &gt; rhs.y);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">double</span> <span class="hljs-title">slope</span><span class="hljs-params">(<span class="hljs-keyword">const</span> point &amp;i, <span class="hljs-keyword">const</span> point &amp;j)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">1.</span> * i.x * j.x * (j.y - i.y) / (<span class="hljs-number">1.</span> * i.y * j.y * (j.x - i.x));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	n = read(); <span class="hljs-keyword">int</span> minx, miny = <span class="hljs-number">0</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		p[i] = (point) &#123;read(), read(), i&#125;;</span><br><span class="line">		<span class="hljs-keyword">if</span>(miny &lt; p[i].y || (miny == p[i].y &amp;&amp; minx &lt; p[i].x))</span><br><span class="line">			minx = p[i].x, miny = p[i].y;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="hljs-built_in">std</span>::sort(p + <span class="hljs-number">1</span>, p + n + <span class="hljs-number">1</span>);</span><br><span class="line">	q[top = <span class="hljs-number">1</span>] = <span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i = <span class="hljs-number">2</span>; i &lt;= n &amp;&amp; minx &lt;= p[i].x; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">if</span>(p[q[top]].x == p[i].x)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="hljs-keyword">if</span>(p[q[top]].y == p[i].y)</span><br><span class="line">				next[p[i].id] = next[p[q[top]].id], next[p[q[top]].id] = p[i].id;</span><br><span class="line">			<span class="hljs-keyword">continue</span>;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="hljs-keyword">while</span>(top &gt; <span class="hljs-number">1</span> &amp;&amp; k[top] &gt; slope(p[q[top]], p[i])) --top;</span><br><span class="line">		q[++top] = i; k[top] = slope(p[q[top - <span class="hljs-number">1</span>]], p[i]);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i = top; i; --i)</span><br><span class="line">		<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> j = p[q[i]].id; j; j = next[j]) ok[j] = <span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) <span class="hljs-keyword">if</span>(ok[i]) <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>, i);</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -364,7 +369,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 544 个字)
+                    4 分钟 读完 (大约 545 个字)
                 </span>
                 
             </div>
@@ -376,7 +381,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h3><h4 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h4><p>这是一道基础分治练习题。<br>给你三个数列${a_i}, {b_i}, {c_i},$保证每个数列都恰好是一个排列。你需要求出满足$a_i &lt; a_j , b_i &lt;<br>b_j , c_i &lt; c_j$的有序对$(i, j)$ 的数目。</p>
+            <a id="more"></a>
+<h3 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h3><h4 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h4><p>这是一道基础分治练习题。<br>给你三个数列${a_i}, {b_i}, {c_i},$保证每个数列都恰好是一个排列。你需要求出满足$a_i &lt; a_j , b_i &lt;<br>b_j , c_i &lt; c_j$的有序对$(i, j)$ 的数目。</p>
 <h4 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h4><p>一眼三维偏序模板，<del>于是就打了暴力CDQ爆44…</del></p>
 <p>不过这个题和普通的三维偏序模板有一些区别。</p>
 <p><a style="color: red;">三个数列都是排列!</a></p>
@@ -411,7 +417,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 176 个字)
+                    1 分钟 读完 (大约 177 个字)
                 </span>
                 
             </div>
@@ -423,7 +429,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="http://codeforces.com/problemset/problem/1042/D" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>这道题目到底叫什么好呢？？</p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="http://codeforces.com/problemset/problem/1042/D" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>这道题目到底叫什么好呢？？</p>
 <p><del>史上最短CDQ分治题</del></p>
 <p>记一个前缀和，然后CDQ分治即可。</p>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RG register</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> data = <span class="hljs-number">0</span>, w = <span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">char</span> ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch != <span class="hljs-string">'-'</span> &amp;&amp; (ch &lt; <span class="hljs-string">'0'</span> || ch &gt; <span class="hljs-string">'9'</span>)) ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">if</span>(ch == <span class="hljs-string">'-'</span>) w = <span class="hljs-number">-1</span>, ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch &gt;= <span class="hljs-string">'0'</span> &amp;&amp; ch &lt;= <span class="hljs-string">'9'</span>) data = data * <span class="hljs-number">10</span> + (ch ^ <span class="hljs-number">48</span>), ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">return</span> data*w;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> <span class="hljs-title">maxn</span><span class="hljs-params">(<span class="hljs-number">2e5</span> + <span class="hljs-number">10</span>)</span></span>;</span><br><span class="line"><span class="hljs-keyword">int</span> n;</span><br><span class="line"><span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> sum[maxn], t, ans;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Div</span><span class="hljs-params">(<span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> *beg, <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> *end)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">if</span>(end - beg &lt;= <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span>;</span><br><span class="line">	<span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> *mid = beg + ((end - beg) &gt;&gt; <span class="hljs-number">1</span>);</span><br><span class="line">	Div(beg, mid); Div(mid, end);</span><br><span class="line"></span><br><span class="line">	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> *i = beg, *j = mid; i != mid; ++i, ans += j - mid)</span><br><span class="line">		<span class="hljs-keyword">while</span>(j != end &amp;&amp; (*j) &lt; t + (*i)) ++j;</span><br><span class="line">	<span class="hljs-built_in">std</span>::inplace_merge(beg, mid, end);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	n = read(); t = read();</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) sum[i] = sum[i - <span class="hljs-number">1</span>] + read();</span><br><span class="line">	Div(sum, sum + n + <span class="hljs-number">1</span>); <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%lld\n"</span>, ans);</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -454,7 +461,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    7 分钟 读完 (大约 1055 个字)
+                    7 分钟 读完 (大约 1056 个字)
                 </span>
                 
             </div>
@@ -466,7 +473,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P3242" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>这道题要求关于第k大的东西，所以可以想到用主席树或整体二分</p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P3242" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>这道题要求关于第k大的东西，所以可以想到用主席树或整体二分</p>
 <p>我们可以发现，这道题主要的难点就是路径之间的包含关系，那么我们分情况讨论：</p>
 <h4 id="1-LCA不是两个端点"><a href="#1-LCA不是两个端点" class="headerlink" title="1. LCA不是两个端点"></a>1. LCA不是两个端点</h4><p>令这个盘子的两个端点为$a,b$</p>
 <p>如果被一个水果完全覆盖，</p>
@@ -514,7 +522,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    15 分钟 读完 (大约 2198 个字)
+                    15 分钟 读完 (大约 2199 个字)
                 </span>
                 
             </div>
@@ -526,7 +534,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h3><h4 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h4><p>智者奥尔曼曾说过： 有缘的人即使相隔海角天涯， 也会在梦境中相遇。</p>
+            <a id="more"></a>
+<h3 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h3><h4 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h4><p>智者奥尔曼曾说过： 有缘的人即使相隔海角天涯， 也会在梦境中相遇。</p>
 <p>IcePrince_1968 和 IcePrincess_1968 便是如此。 有一天 IcePrincess_1968 突发奇想： 为什么不用梦境操控仪器来增加她和 IcePrince_1968 的缘分呢？</p>
 <p>IcePrincess_1968 的梦境可以用 n 个区间来表示，第 i 个区间[li,ri]表示她的第 i 个梦境会在 li 时刻开始，  在 ri 时刻结束（ 包含 li 和 ri 两个时刻） 。 因为IcePrincess_1968 经常做白日梦， 所以 n 可能很大。</p>
 <p>两个人的梦境不是什么时候都能融合的。只有在一些关键的与另一个人相关的梦境转折点两个人的梦境相遇， 才能完成融合， 形成浪漫的梦境。 </p>
@@ -579,7 +588,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    5 分钟 读完 (大约 760 个字)
+                    5 分钟 读完 (大约 761 个字)
                 </span>
                 
             </div>
@@ -591,7 +600,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P4175" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>带修改的主席树？？？<del>我可没有那么勤快去写个树套树</del></p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P4175" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>带修改的主席树？？？<del>我可没有那么勤快去写个树套树</del></p>
 <p>只要它不强制在线，我就可以用整体二分做</p>
 <p>思路大致与<a href="https://www.cnblogs.com/cj-xxz/p/9800668.html" target="_blank" rel="noopener">【ZJOI2013】K大数查询</a>相似</p>
 <p>只不过放在树上做，<del>还带修改</del></p>

@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="T1题面这是一道基础分治练习题。给你三个数列${a_i}, {b_i}, {c_i},$保证每个数列都恰好是一个排列。你需要求出满足$a_i &amp;lt; a_j , b_i &amp;lt;b_j , c_i &amp;lt; c_j$的有序对$(i, j)$ 的数目。 题解一眼三维偏序模板，于是就打了暴力CDQ爆44… 不过这个题和普通的三维偏序模板有一些区别。 三个数列都是排列! 我们考虑计算下面三个东西。$$">
+    <meta name="description" content="T1题面这是一道基础分治练习题。给你三个数列${a_i}, {b_i}, {c_i},$保证每个数列都恰好是一个排列。你需要求出满足$a_i &amp;lt; a_j , b_i &amp;lt;b_j , c_i &amp;lt; c_j$的有序对$(i, j)$ 的数目。 题解一眼三维偏序模板，于是就打了暴力CDQ爆44… 不过这个题和普通的三维偏序模板有一些区别。 三个数列都是排列! 我们考虑计算下面三个东西。$">
 <meta name="keywords" content="考试">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2018-10-18考试">
 <meta property="og:url" content="http://yoursite.com/2018/10/20/2018-10-18考试/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="T1题面这是一道基础分治练习题。给你三个数列${a_i}, {b_i}, {c_i},$保证每个数列都恰好是一个排列。你需要求出满足$a_i &amp;lt; a_j , b_i &amp;lt;b_j , c_i &amp;lt; c_j$的有序对$(i, j)$ 的数目。 题解一眼三维偏序模板，于是就打了暴力CDQ爆44… 不过这个题和普通的三维偏序模板有一些区别。 三个数列都是排列! 我们考虑计算下面三个东西。$$">
+<meta property="og:description" content="T1题面这是一道基础分治练习题。给你三个数列${a_i}, {b_i}, {c_i},$保证每个数列都恰好是一个排列。你需要求出满足$a_i &amp;lt; a_j , b_i &amp;lt;b_j , c_i &amp;lt; c_j$的有序对$(i, j)$ 的数目。 题解一眼三维偏序模板，于是就打了暴力CDQ爆44… 不过这个题和普通的三维偏序模板有一些区别。 三个数列都是排列! 我们考虑计算下面三个东西。$">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-20T14:14:22.896Z">
+<meta property="og:updated_time" content="2019-01-05T12:05:33.611Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018-10-18考试">
-<meta name="twitter:description" content="T1题面这是一道基础分治练习题。给你三个数列${a_i}, {b_i}, {c_i},$保证每个数列都恰好是一个排列。你需要求出满足$a_i &amp;lt; a_j , b_i &amp;lt;b_j , c_i &amp;lt; c_j$的有序对$(i, j)$ 的数目。 题解一眼三维偏序模板，于是就打了暴力CDQ爆44… 不过这个题和普通的三维偏序模板有一些区别。 三个数列都是排列! 我们考虑计算下面三个东西。$$">
+<meta name="twitter:description" content="T1题面这是一道基础分治练习题。给你三个数列${a_i}, {b_i}, {c_i},$保证每个数列都恰好是一个排列。你需要求出满足$a_i &amp;lt; a_j , b_i &amp;lt;b_j , c_i &amp;lt; c_j$的有序对$(i, j)$ 的数目。 题解一眼三维偏序模板，于是就打了暴力CDQ爆44… 不过这个题和普通的三维偏序模板有一些区别。 三个数列都是排列! 我们考虑计算下面三个东西。$">
 
 
 
@@ -151,7 +151,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 544 个字)
+                    4 分钟 读完 (大约 545 个字)
                 </span>
                 
             </div>
@@ -163,7 +163,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h3><h4 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h4><p>这是一道基础分治练习题。<br>给你三个数列${a_i}, {b_i}, {c_i},$保证每个数列都恰好是一个排列。你需要求出满足$a_i &lt; a_j , b_i &lt;<br>b_j , c_i &lt; c_j$的有序对$(i, j)$ 的数目。</p>
+            <a id="more"></a>
+<h3 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h3><h4 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h4><p>这是一道基础分治练习题。<br>给你三个数列${a_i}, {b_i}, {c_i},$保证每个数列都恰好是一个排列。你需要求出满足$a_i &lt; a_j , b_i &lt;<br>b_j , c_i &lt; c_j$的有序对$(i, j)$ 的数目。</p>
 <h4 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h4><p>一眼三维偏序模板，<del>于是就打了暴力CDQ爆44…</del></p>
 <p>不过这个题和普通的三维偏序模板有一些区别。</p>
 <p><a style="color: red;">三个数列都是排列!</a></p>

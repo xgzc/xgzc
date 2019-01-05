@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="题面$MYC$ 带着他的行李去考清华集训了。对 $MYC$ 来说,进候选队不在话下。。。$MYC$ 有 $n$ 件行李,编号为 $1,2,…,n$。行李的质量是模 $P$ 意义下的($P$ 不一定是质数)。$MYC$有 $k$ 个背包,要装下这些行李,为了方便 $MYC$ 在背包中找行李,每个背包中的行李编号是连续的,允许有背包为空。$MYC$ 想让最重的背包尽量轻。由于 $MYC$ 毕竟是要进候">
+    <meta name="description" content="题面$MYC$ 带着他的行李去考清华集训了。对 $MYC$ 来说,进候选队不在话下。。。$MYC$ 有 $n$ 件行李,编号为 $1,2,…,n$。行李的质量是模 $P$ 意义下的($P$ 不一定是质数)。$MYC$有 $k$ 个背包,要装下这些行李,为了方便 $MYC$ 在背包中找行李,每个背包中的行李编号是连续的,允许有背包为空。$MYC$ 想让最重的背包尽量轻。由于 $MYC$ 毕竟是要进">
 <meta name="keywords" content="二分答案,贪心,随机化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Moiezen">
 <meta property="og:url" content="http://yoursite.com/2018/10/20/Moiezen/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题面$MYC$ 带着他的行李去考清华集训了。对 $MYC$ 来说,进候选队不在话下。。。$MYC$ 有 $n$ 件行李,编号为 $1,2,…,n$。行李的质量是模 $P$ 意义下的($P$ 不一定是质数)。$MYC$有 $k$ 个背包,要装下这些行李,为了方便 $MYC$ 在背包中找行李,每个背包中的行李编号是连续的,允许有背包为空。$MYC$ 想让最重的背包尽量轻。由于 $MYC$ 毕竟是要进候">
+<meta property="og:description" content="题面$MYC$ 带着他的行李去考清华集训了。对 $MYC$ 来说,进候选队不在话下。。。$MYC$ 有 $n$ 件行李,编号为 $1,2,…,n$。行李的质量是模 $P$ 意义下的($P$ 不一定是质数)。$MYC$有 $k$ 个背包,要装下这些行李,为了方便 $MYC$ 在背包中找行李,每个背包中的行李编号是连续的,允许有背包为空。$MYC$ 想让最重的背包尽量轻。由于 $MYC$ 毕竟是要进">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-20T14:01:27.109Z">
+<meta property="og:updated_time" content="2019-01-05T12:07:57.183Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Moiezen">
-<meta name="twitter:description" content="题面$MYC$ 带着他的行李去考清华集训了。对 $MYC$ 来说,进候选队不在话下。。。$MYC$ 有 $n$ 件行李,编号为 $1,2,…,n$。行李的质量是模 $P$ 意义下的($P$ 不一定是质数)。$MYC$有 $k$ 个背包,要装下这些行李,为了方便 $MYC$ 在背包中找行李,每个背包中的行李编号是连续的,允许有背包为空。$MYC$ 想让最重的背包尽量轻。由于 $MYC$ 毕竟是要进候">
+<meta name="twitter:description" content="题面$MYC$ 带着他的行李去考清华集训了。对 $MYC$ 来说,进候选队不在话下。。。$MYC$ 有 $n$ 件行李,编号为 $1,2,…,n$。行李的质量是模 $P$ 意义下的($P$ 不一定是质数)。$MYC$有 $k$ 个背包,要装下这些行李,为了方便 $MYC$ 在背包中找行李,每个背包中的行李编号是连续的,允许有背包为空。$MYC$ 想让最重的背包尽量轻。由于 $MYC$ 毕竟是要进">
 
 
 
@@ -151,7 +151,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 354 个字)
+                    2 分钟 读完 (大约 355 个字)
                 </span>
                 
             </div>
@@ -163,7 +163,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>$MYC$ 带着他的行李去考清华集训了。对 $MYC$ 来说,进候选队不在话下。。。<br>$MYC$ 有 $n$ 件行李,编号为 $1,2,…,n$。行李的质量是模 $P$ 意义下的($P$ 不一定是质数)。$MYC$有 $k$ 个背包,要装下这些行李,为了方便 $MYC$ 在背包中找行李,每个背包中的行李编号是连续的,允许有背包为空。$MYC$ 想让最重的背包尽量轻。<br>由于 $MYC$ 毕竟是要进候选队的人,他有特技可以用。他会选择一个 $x(0&lt;=x&lt;P)$,给所有行李的质量$+x$并$\%P$,然后才装到背包里去。<br>你要帮助 $MYC$ 先选择一个 $x$,再选择一种行李分配方案,使得最重的背包尽量轻。<br>$MYC$ 相信,你一定能帮他装好行李,给拼搏于候选队的逐梦之路上的 $MYC$,提供一个有力的援助。</p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>$MYC$ 带着他的行李去考清华集训了。对 $MYC$ 来说,进候选队不在话下。。。<br>$MYC$ 有 $n$ 件行李,编号为 $1,2,…,n$。行李的质量是模 $P$ 意义下的($P$ 不一定是质数)。$MYC$有 $k$ 个背包,要装下这些行李,为了方便 $MYC$ 在背包中找行李,每个背包中的行李编号是连续的,允许有背包为空。$MYC$ 想让最重的背包尽量轻。<br>由于 $MYC$ 毕竟是要进候选队的人,他有特技可以用。他会选择一个 $x(0&lt;=x&lt;P)$,给所有行李的质量$+x$并$\%P$,然后才装到背包里去。<br>你要帮助 $MYC$ 先选择一个 $x$,再选择一种行李分配方案,使得最重的背包尽量轻。<br>$MYC$ 相信,你一定能帮他装好行李,给拼搏于候选队的逐梦之路上的 $MYC$,提供一个有力的援助。</p>
 <h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p><del>随机化</del></p>
 <p>考虑暴力，枚举$x$，二分背包最小重量即可</p>
 <p>时间复杂度$O(Pnlogn)$，跑不过</p>

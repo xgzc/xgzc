@@ -169,14 +169,15 @@
             
         </h1>
         <div class="content">
-            <h3 id="课件"><a href="#课件" class="headerlink" title="课件"></a>课件</h3><h4 id="组合数学基础"><a href="#组合数学基础" class="headerlink" title="组合数学基础"></a>组合数学基础</h4><h5 id="常用公式"><a href="#常用公式" class="headerlink" title="常用公式"></a>常用公式</h5><p>$\binom{n}{m} = \frac{n!}{m!(n-m)!}$</p>
+            <a id="more"></a>
+<h3 id="课件"><a href="#课件" class="headerlink" title="课件"></a>课件</h3><h4 id="组合数学基础"><a href="#组合数学基础" class="headerlink" title="组合数学基础"></a>组合数学基础</h4><h5 id="常用公式"><a href="#常用公式" class="headerlink" title="常用公式"></a>常用公式</h5><p>$\binom{n}{m} = \frac{n!}{m!(n-m)!}$</p>
 <p>$\binom{n}{m} = \binom{n}{n-m}$</p>
 <p>$\binom{n}{m} = \binom{n - 1}{m} + \binom{n - 1}{m - 1}$</p>
 <p>$\binom{n}{m + 1} = \binom{n}{m} × \frac{n - m}{m + 1}$</p>
 <h6 id="二项式定理"><a href="#二项式定理" class="headerlink" title="二项式定理"></a>二项式定理</h6><p>$(a + b)^n = \sum_{i=0}^n\binom{n}{i}×a^i×b^{n - i}$</p>
 <h6 id="可重组合"><a href="#可重组合" class="headerlink" title="可重组合"></a>可重组合</h6><p>$\binom{n + m - 1}{m}$</p>
 <h6 id="第-i-种颜色的球有-a-i-个-求排列的方案数"><a href="#第-i-种颜色的球有-a-i-个-求排列的方案数" class="headerlink" title="第$i$种颜色的球有$a_i$个,求排列的方案数"></a>第$i$种颜色的球有$a_i$个,求排列的方案数</h6><p>$\frac{(\sum a_i)!}{\prod a_i!}$</p>
-<h6 id="从-0-0-走到-n-m-不碰到直线-y-x-b​-的方案数"><a href="#从-0-0-走到-n-m-不碰到直线-y-x-b​-的方案数" class="headerlink" title="从$(0,0)$走到$(n,m)$,不碰到直线$y=x+b​$的方案数"></a>从$(0,0)$走到$(n,m)$,不碰到直线$y=x+b​$的方案数</h6><p>$\binom{n + m}{n} - \binom{n + m}{n - b}$</p>
+<h6 id="从-0-0-走到-n-m-不碰到直线-y-x-b-的方案数"><a href="#从-0-0-走到-n-m-不碰到直线-y-x-b-的方案数" class="headerlink" title="从$(0,0)$走到$(n,m)$,不碰到直线$y=x+b$的方案数"></a>从$(0,0)$走到$(n,m)$,不碰到直线$y=x+b$的方案数</h6><p>$\binom{n + m}{n} - \binom{n + m}{n - b}$</p>
 <h5 id="斯特林数"><a href="#斯特林数" class="headerlink" title="斯特林数"></a>斯特林数</h5><ol>
 <li><p>第一类斯特林数:$n$个人坐$m$张圆桌的方案数 $[<em>m^n] = [</em>{m-1}^{n-1}] + (n - 1)×[_m^{n-1}]$</p>
 </li>
@@ -323,7 +324,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 143 个字)
+                    1 分钟 读完 (大约 150 个字)
                 </span>
                 
             </div>
@@ -335,7 +336,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="http://poj.org/problem?id=2598" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>忘了，只记得是用$sin(x)$的积分搞<br>还要进行伯努利实验</p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="http://poj.org/problem?id=2598" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>忘了，只记得是用$sin(x)$的积分搞<br>还要进行伯努利实验判断输出多少</p>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RG register</span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"></span><br><span class="line">const double PI(acos(-1));</span><br><span class="line"><span class="hljs-keyword">double</span> L, p, sum[<span class="hljs-number">1010</span>];</span><br><span class="line"><span class="hljs-keyword">int</span> x, y;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">double</span> <span class="hljs-title">Bernulli</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n, <span class="hljs-keyword">int</span> m, <span class="hljs-keyword">double</span> p, <span class="hljs-keyword">double</span> q)</span> </span>&#123; <span class="hljs-keyword">return</span> <span class="hljs-built_in">log</span>(p) * m + <span class="hljs-built_in">log</span>(q) * (n - m) + sum[n] - sum[n-m] - sum[m]; &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;<span class="hljs-number">1010</span>;i++) sum[i] = sum[i<span class="hljs-number">-1</span>] + <span class="hljs-built_in">log</span>(i);</span><br><span class="line">    <span class="hljs-keyword">while</span>(~<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%lf"</span>, &amp;L))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span>(L &lt; <span class="hljs-number">1</span>) p = <span class="hljs-number">2</span> * L;</span><br><span class="line">        <span class="hljs-keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="hljs-keyword">double</span> k = <span class="hljs-built_in">asin</span>(<span class="hljs-keyword">double</span>(<span class="hljs-number">1</span> / L));</span><br><span class="line">            p = <span class="hljs-number">2</span> * L * (<span class="hljs-number">1</span> - <span class="hljs-built_in">cos</span>(k)) + PI - <span class="hljs-number">2</span> * k;</span><br><span class="line">        &#125;</span><br><span class="line">        p /= PI;</span><br><span class="line">        y = (x = <span class="hljs-keyword">int</span>(p * <span class="hljs-number">1000</span>)) + <span class="hljs-number">1</span>;</span><br><span class="line">        <span class="hljs-keyword">double</span> l = Bernulli(<span class="hljs-number">1000</span>, x, p, <span class="hljs-number">1</span>-p), r = Bernulli(<span class="hljs-number">1000</span>, y, p, <span class="hljs-number">1</span>-p);</span><br><span class="line">        <span class="hljs-keyword">if</span>(l &lt; r) swap(x, y);</span><br><span class="line">        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>, x);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
         </div>
@@ -364,7 +366,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 123 个字)
+                    1 分钟 读完 (大约 124 个字)
                 </span>
                 
             </div>
@@ -376,24 +378,17 @@
             
         </h1>
         <div class="content">
-            <p>具体就是求特征方程啊。<br>比如说：</p>
-<h3 id="情况一"><a href="#情况一" class="headerlink" title="情况一:"></a>情况一:</h3><p>$x$是一重根</p>
-<p>$$a_n=2a_{n-1}+3a_{n-2}$$</p>
-<p>特征方程:</p>
-<p>$$x^2-2x-3=0$$</p>
-<p>所以</p>
-<p>$$x_1=-1, x_2=3$$</p>
-<p>$$&lt;=&gt;a_n=αx_1^n+βx_2^n$$</p>
-<p>将${a_n}$的初值代入即可。</p>
-<h3 id="情况二"><a href="#情况二" class="headerlink" title="情况二:"></a>情况二:</h3><p>$x$是$k$重根</p>
-<p>则在通项内加入：</p>
-<p>$$x^n\sum_{i=0}^{k-1}ψn^i,\;n^0=1$$</p>
-<h3 id="情况三"><a href="#情况三" class="headerlink" title="情况三:"></a>情况三:</h3><p>若一对$x$是共轭复根$a±b$</p>
-<p>则在通项内加入：</p>
-<p>$$r^n(cos(nθ)+sin(nθ)),\;θ=arctan(\frac{b}{a}),\;r=\sqrt{a^2+b^2}$$</p>
-<h3 id="Over"><a href="#Over" class="headerlink" title="Over"></a>Over</h3>
+            <p>具体就是求特征方程啊。</p>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2018/05/17/关于齐次数列通项公式的一点点看法/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>

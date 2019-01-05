@@ -157,7 +157,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 582 个字)
+                    4 分钟 读完 (大约 583 个字)
                 </span>
                 
             </div>
@@ -169,7 +169,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P1829" target="_blank" rel="noopener">题面</a></h3><p>今天的数学课上，Crash小朋友学习了最小公倍数(Least Common Multiple)。对于两个正整数a和b，$lcm(a, b)​$表示能同时整除a和b的最小正整数。例如，$lcm(6, 8) = 24​$。</p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P1829" target="_blank" rel="noopener">题面</a></h3><p>今天的数学课上，Crash小朋友学习了最小公倍数(Least Common Multiple)。对于两个正整数a和b，$lcm(a, b)​$表示能同时整除a和b的最小正整数。例如，$lcm(6, 8) = 24​$。</p>
 <p>回到家后，Crash还在想着课上学的东西，为了研究最小公倍数，他画了一张N×M的表格。每个格子里写了一个数字，其中第i行第j列的那个格子里写着数为$lcm(i, j)$。一个4×5的表格如下：</p>
 <figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">1</span>    <span class="hljs-number">2</span>    <span class="hljs-number">3</span>    <span class="hljs-number">4</span>    <span class="hljs-number">5</span></span><br><span class="line"><span class="hljs-number">2</span>    <span class="hljs-number">2</span>    <span class="hljs-number">6</span>    <span class="hljs-number">4</span>    <span class="hljs-number">10</span></span><br><span class="line"><span class="hljs-number">3</span>    <span class="hljs-number">6</span>    <span class="hljs-number">3</span>    <span class="hljs-number">12</span>   <span class="hljs-number">15</span></span><br><span class="line"><span class="hljs-number">4</span>    <span class="hljs-number">4</span>    <span class="hljs-number">12</span>   <span class="hljs-number">4</span>    <span class="hljs-number">20</span></span><br></pre></td></tr></table></figure>
 <p>看着这个表格，Crash想到了很多可以思考的问题。不过他最想解决的问题却是一个十分简单的问题：这个表格中所有数的和是多少。当$N$和$M$很大时，Crash就束手无策了，因此他找到了聪明的你用程序帮他解决这个问题。由于最终结果可能会很大，Crash只想知道表格里所有数的和 $mod\;20101009$ 的值。</p>

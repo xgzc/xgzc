@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="题面题解首先离散化 考虑如何翻转 用快排的方式可以将区间划分成两段$[l,\;mid],\;[mid+1,\;r]$ 可以将这一段序列转化成$01$序列 $&amp;lt;=mid$的为$0$, $&amp;gt;mid$的为$1$ 对于这个序列进行归并排序 具体来说, 归并前的序列为一个    [l, mid] [mid + 1, r]     0000…01111 00001…1111    那么将中间的$1">
+    <meta name="description" content="题面题解首先离散化 考虑如何翻转 用快排的方式可以将区间划分成两段$[l,\;mid],\;[mid+1,\;r]$ 可以将这一段序列转化成$01$序列 $&amp;lt;=mid$的为$0$, $&amp;gt;mid$的为$1$ 对于这个序列进行归并排序 具体来说, 归并前的序列为一个    [l, mid] [mid + 1, r]     0000…01111 00001…1111    那么将中间的$">
 <meta name="keywords" content="分治">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NOI.AC[32] 排序">
 <meta property="og:url" content="http://yoursite.com/2018/09/08/sort-in-NOI-AC/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题面题解首先离散化 考虑如何翻转 用快排的方式可以将区间划分成两段$[l,\;mid],\;[mid+1,\;r]$ 可以将这一段序列转化成$01$序列 $&amp;lt;=mid$的为$0$, $&amp;gt;mid$的为$1$ 对于这个序列进行归并排序 具体来说, 归并前的序列为一个    [l, mid] [mid + 1, r]     0000…01111 00001…1111    那么将中间的$1">
+<meta property="og:description" content="题面题解首先离散化 考虑如何翻转 用快排的方式可以将区间划分成两段$[l,\;mid],\;[mid+1,\;r]$ 可以将这一段序列转化成$01$序列 $&amp;lt;=mid$的为$0$, $&amp;gt;mid$的为$1$ 对于这个序列进行归并排序 具体来说, 归并前的序列为一个    [l, mid] [mid + 1, r]     0000…01111 00001…1111    那么将中间的$">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-08T14:12:37.912Z">
+<meta property="og:updated_time" content="2019-01-05T12:09:33.258Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NOI.AC[32] 排序">
-<meta name="twitter:description" content="题面题解首先离散化 考虑如何翻转 用快排的方式可以将区间划分成两段$[l,\;mid],\;[mid+1,\;r]$ 可以将这一段序列转化成$01$序列 $&amp;lt;=mid$的为$0$, $&amp;gt;mid$的为$1$ 对于这个序列进行归并排序 具体来说, 归并前的序列为一个    [l, mid] [mid + 1, r]     0000…01111 00001…1111    那么将中间的$1">
+<meta name="twitter:description" content="题面题解首先离散化 考虑如何翻转 用快排的方式可以将区间划分成两段$[l,\;mid],\;[mid+1,\;r]$ 可以将这一段序列转化成$01$序列 $&amp;lt;=mid$的为$0$, $&amp;gt;mid$的为$1$ 对于这个序列进行归并排序 具体来说, 归并前的序列为一个    [l, mid] [mid + 1, r]     0000…01111 00001…1111    那么将中间的$">
 
 
 
@@ -151,7 +151,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 351 个字)
+                    2 分钟 读完 (大约 352 个字)
                 </span>
                 
             </div>
@@ -163,7 +163,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="http://noi.ac/problem/32" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>首先离散化</p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="http://noi.ac/problem/32" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>首先离散化</p>
 <p>考虑如何翻转</p>
 <p>用快排的方式可以将区间划分成两段$[l,\;mid],\;[mid+1,\;r]$</p>
 <p>可以将这一段序列转化成$01$序列</p>

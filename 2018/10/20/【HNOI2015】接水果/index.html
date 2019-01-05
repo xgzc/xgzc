@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="题面题解这道题要求关于第k大的东西，所以可以想到用主席树或整体二分 我们可以发现，这道题主要的难点就是路径之间的包含关系，那么我们分情况讨论： 1. LCA不是两个端点令这个盘子的两个端点为$a,b$ 如果被一个水果完全覆盖， 那么，这个水果的两端分别在$a,b$的子树中 设$pos[a]$是$a$的$dfs$序，$end_pos[a]$是子树中最大的$pos$，水果两端分别为$c, d$ 则 $">
+    <meta name="description" content="题面题解这道题要求关于第k大的东西，所以可以想到用主席树或整体二分 我们可以发现，这道题主要的难点就是路径之间的包含关系，那么我们分情况讨论： 1. LCA不是两个端点令这个盘子的两个端点为$a,b$ 如果被一个水果完全覆盖， 那么，这个水果的两端分别在$a,b$的子树中 设$pos[a]$是$a$的$dfs$序，$end_pos[a]$是子树中最大的$pos$，水果两端分别为$c, d$ 则">
 <meta name="keywords" content="整体二分,扫描线">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【HNOI2015】接水果">
 <meta property="og:url" content="http://yoursite.com/2018/10/20/【HNOI2015】接水果/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题面题解这道题要求关于第k大的东西，所以可以想到用主席树或整体二分 我们可以发现，这道题主要的难点就是路径之间的包含关系，那么我们分情况讨论： 1. LCA不是两个端点令这个盘子的两个端点为$a,b$ 如果被一个水果完全覆盖， 那么，这个水果的两端分别在$a,b$的子树中 设$pos[a]$是$a$的$dfs$序，$end_pos[a]$是子树中最大的$pos$，水果两端分别为$c, d$ 则 $">
+<meta property="og:description" content="题面题解这道题要求关于第k大的东西，所以可以想到用主席树或整体二分 我们可以发现，这道题主要的难点就是路径之间的包含关系，那么我们分情况讨论： 1. LCA不是两个端点令这个盘子的两个端点为$a,b$ 如果被一个水果完全覆盖， 那么，这个水果的两端分别在$a,b$的子树中 设$pos[a]$是$a$的$dfs$序，$end_pos[a]$是子树中最大的$pos$，水果两端分别为$c, d$ 则">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-20T14:11:03.657Z">
+<meta property="og:updated_time" content="2019-01-05T12:07:39.320Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【HNOI2015】接水果">
-<meta name="twitter:description" content="题面题解这道题要求关于第k大的东西，所以可以想到用主席树或整体二分 我们可以发现，这道题主要的难点就是路径之间的包含关系，那么我们分情况讨论： 1. LCA不是两个端点令这个盘子的两个端点为$a,b$ 如果被一个水果完全覆盖， 那么，这个水果的两端分别在$a,b$的子树中 设$pos[a]$是$a$的$dfs$序，$end_pos[a]$是子树中最大的$pos$，水果两端分别为$c, d$ 则 $">
+<meta name="twitter:description" content="题面题解这道题要求关于第k大的东西，所以可以想到用主席树或整体二分 我们可以发现，这道题主要的难点就是路径之间的包含关系，那么我们分情况讨论： 1. LCA不是两个端点令这个盘子的两个端点为$a,b$ 如果被一个水果完全覆盖， 那么，这个水果的两端分别在$a,b$的子树中 设$pos[a]$是$a$的$dfs$序，$end_pos[a]$是子树中最大的$pos$，水果两端分别为$c, d$ 则">
 
 
 
@@ -151,7 +151,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    7 分钟 读完 (大约 1055 个字)
+                    7 分钟 读完 (大约 1056 个字)
                 </span>
                 
             </div>
@@ -163,7 +163,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P3242" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>这道题要求关于第k大的东西，所以可以想到用主席树或整体二分</p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P3242" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>这道题要求关于第k大的东西，所以可以想到用主席树或整体二分</p>
 <p>我们可以发现，这道题主要的难点就是路径之间的包含关系，那么我们分情况讨论：</p>
 <h4 id="1-LCA不是两个端点"><a href="#1-LCA不是两个端点" class="headerlink" title="1. LCA不是两个端点"></a>1. LCA不是两个端点</h4><p>令这个盘子的两个端点为$a,b$</p>
 <p>如果被一个水果完全覆盖，</p>

@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="题面题解可以发现原方程为:$$f[i]=min_{0&amp;lt;=j&amp;lt;i} (f[j]+((i+sum[i]-L-1)-(sum[j]+j))^2)$$ 设$a[i]=i+sum[i]-L-1,b[j]=sum[j]+j$, 则$f[i]=min_{0&amp;lt;=j&amp;lt;i} (f[j]+(a[i]-b[j])^2)=min_{0&amp;lt;=j&amp;lt;i} (f[j]+a[i]^2+b[j]^2-">
+    <meta name="description" content="题面题解可以发现原方程为:$$f[i]=min_{0&amp;lt;=j&amp;lt;i} (f[j]+((i+sum[i]-L-1)-(sum[j]+j))^2)$$ 设$a[i]=i+sum[i]-L-1,b[j]=sum[j]+j$, 则$f[i]=min_{0&amp;lt;=j&amp;lt;i} (f[j]+(a[i]-b[j])^2)=min_{0&amp;lt;=j&amp;lt;i} (f[j]+a[i]^2+b[j]^2">
 <meta name="keywords" content="洛谷,动态规划,斜率优化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【HNOI2008】玩具装箱">
 <meta property="og:url" content="http://yoursite.com/2018/04/13/【HNOI2008】玩具装箱/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题面题解可以发现原方程为:$$f[i]=min_{0&amp;lt;=j&amp;lt;i} (f[j]+((i+sum[i]-L-1)-(sum[j]+j))^2)$$ 设$a[i]=i+sum[i]-L-1,b[j]=sum[j]+j$, 则$f[i]=min_{0&amp;lt;=j&amp;lt;i} (f[j]+(a[i]-b[j])^2)=min_{0&amp;lt;=j&amp;lt;i} (f[j]+a[i]^2+b[j]^2-">
+<meta property="og:description" content="题面题解可以发现原方程为:$$f[i]=min_{0&amp;lt;=j&amp;lt;i} (f[j]+((i+sum[i]-L-1)-(sum[j]+j))^2)$$ 设$a[i]=i+sum[i]-L-1,b[j]=sum[j]+j$, 则$f[i]=min_{0&amp;lt;=j&amp;lt;i} (f[j]+(a[i]-b[j])^2)=min_{0&amp;lt;=j&amp;lt;i} (f[j]+a[i]^2+b[j]^2">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-13T12:19:34.449Z">
+<meta property="og:updated_time" content="2019-01-05T12:07:29.411Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【HNOI2008】玩具装箱">
-<meta name="twitter:description" content="题面题解可以发现原方程为:$$f[i]=min_{0&amp;lt;=j&amp;lt;i} (f[j]+((i+sum[i]-L-1)-(sum[j]+j))^2)$$ 设$a[i]=i+sum[i]-L-1,b[j]=sum[j]+j$, 则$f[i]=min_{0&amp;lt;=j&amp;lt;i} (f[j]+(a[i]-b[j])^2)=min_{0&amp;lt;=j&amp;lt;i} (f[j]+a[i]^2+b[j]^2-">
+<meta name="twitter:description" content="题面题解可以发现原方程为:$$f[i]=min_{0&amp;lt;=j&amp;lt;i} (f[j]+((i+sum[i]-L-1)-(sum[j]+j))^2)$$ 设$a[i]=i+sum[i]-L-1,b[j]=sum[j]+j$, 则$f[i]=min_{0&amp;lt;=j&amp;lt;i} (f[j]+(a[i]-b[j])^2)=min_{0&amp;lt;=j&amp;lt;i} (f[j]+a[i]^2+b[j]^2">
 
 
 
@@ -151,7 +151,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 229 个字)
+                    2 分钟 读完 (大约 230 个字)
                 </span>
                 
             </div>
@@ -163,7 +163,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P3195" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>可以发现原方程为:<br>$$f[i]=min_{0&lt;=j&lt;i} (f[j]+((i+sum[i]-L-1)-(sum[j]+j))^2)$$</p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P3195" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>可以发现原方程为:<br>$$f[i]=min_{0&lt;=j&lt;i} (f[j]+((i+sum[i]-L-1)-(sum[j]+j))^2)$$</p>
 <p>设$a[i]=i+sum[i]-L-1,b[j]=sum[j]+j$,</p>
 <p>则$f[i]=min_{0&lt;=j&lt;i} (f[j]+(a[i]-b[j])^2)=min_{0&lt;=j&lt;i} (f[j]+a[i]^2+b[j]^2-2a[i]b[j])$</p>
 <p>再设$x[i]=b[j],y[j]=f[j]+b[j]^2$</p>

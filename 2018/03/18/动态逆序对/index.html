@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="题面题解是【CQOI2011】动态逆序对的双倍经验。区别：  这题目没有保证数据$&amp;lt;=n$（所以我们要离散化） 给出的是删除的数的位置，而不是数值。 先输出总的逆序对个数，然后输出每个删除后逆序对的个数。 这道题的数据弱多了代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546">
+    <meta name="description" content="题面题解是【CQOI2011】动态逆序对的双倍经验。区别：  这题目没有保证数据$&amp;lt;=n$（所以我们要离散化） 给出的是删除的数的位置，而不是数值。 先输出总的逆序对个数，然后输出每个删除后逆序对的个数。 这道题的数据弱多了代码1234567891011121314151617181920212223242526272829303132333435363738394041424344454">
 <meta name="keywords" content="分治,洛谷,CDQ分治,树状数组">
 <meta property="og:type" content="article">
 <meta property="og:title" content="动态逆序对">
 <meta property="og:url" content="http://yoursite.com/2018/03/18/动态逆序对/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题面题解是【CQOI2011】动态逆序对的双倍经验。区别：  这题目没有保证数据$&amp;lt;=n$（所以我们要离散化） 给出的是删除的数的位置，而不是数值。 先输出总的逆序对个数，然后输出每个删除后逆序对的个数。 这道题的数据弱多了代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546">
+<meta property="og:description" content="题面题解是【CQOI2011】动态逆序对的双倍经验。区别：  这题目没有保证数据$&amp;lt;=n$（所以我们要离散化） 给出的是删除的数的位置，而不是数值。 先输出总的逆序对个数，然后输出每个删除后逆序对的个数。 这道题的数据弱多了代码1234567891011121314151617181920212223242526272829303132333435363738394041424344454">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-08T14:15:23.057Z">
+<meta property="og:updated_time" content="2019-01-05T12:10:47.096Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="动态逆序对">
-<meta name="twitter:description" content="题面题解是【CQOI2011】动态逆序对的双倍经验。区别：  这题目没有保证数据$&amp;lt;=n$（所以我们要离散化） 给出的是删除的数的位置，而不是数值。 先输出总的逆序对个数，然后输出每个删除后逆序对的个数。 这道题的数据弱多了代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546">
+<meta name="twitter:description" content="题面题解是【CQOI2011】动态逆序对的双倍经验。区别：  这题目没有保证数据$&amp;lt;=n$（所以我们要离散化） 给出的是删除的数的位置，而不是数值。 先输出总的逆序对个数，然后输出每个删除后逆序对的个数。 这道题的数据弱多了代码1234567891011121314151617181920212223242526272829303132333435363738394041424344454">
 
 
 
@@ -151,7 +151,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 491 个字)
+                    3 分钟 读完 (大约 492 个字)
                 </span>
                 
             </div>
@@ -163,7 +163,8 @@
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P1393" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>是<a href="https://www.luogu.org/problemnew/show/P3157" target="_blank" rel="noopener">【CQOI2011】动态逆序对</a>的双倍经验。<br>区别：</p>
+            <a id="more"></a>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P1393" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>是<a href="https://www.luogu.org/problemnew/show/P3157" target="_blank" rel="noopener">【CQOI2011】动态逆序对</a>的双倍经验。<br>区别：</p>
 <ol>
 <li>这题目没有保证数据$&lt;=n$（所以我们要离散化）</li>
 <li>给出的是删除的数的位置，而不是数值。</li>

@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="序开考前我看是$NOIP$模拟，结果考了好久都没下考，原来… 原来没有”$P$”…(晕) 结果题目题解T1原本两维息息相关，相当麻烦，容易想到转$45$度坐标，可以使得两维独立。那么原本$x^ny^m$会变成$(\frac{x+y}{2})^n(\frac{x-y}{2})^m$。可以用二项式展开真正使得两维独立，接下来需要解决的是求$E(a^k)$。可以简单设一个dp。用$F_{i,j}$表示$">
+    <meta name="description" content="序开考前我看是$NOIP$模拟，结果考了好久都没下考，原来… 原来没有”$P$”…(晕)">
 <meta name="keywords" content="考试">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2018-03-17考试">
 <meta property="og:url" content="http://yoursite.com/2018/03/18/2018-03-17考试/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="序开考前我看是$NOIP$模拟，结果考了好久都没下考，原来… 原来没有”$P$”…(晕) 结果题目题解T1原本两维息息相关，相当麻烦，容易想到转$45$度坐标，可以使得两维独立。那么原本$x^ny^m$会变成$(\frac{x+y}{2})^n(\frac{x-y}{2})^m$。可以用二项式展开真正使得两维独立，接下来需要解决的是求$E(a^k)$。可以简单设一个dp。用$F_{i,j}$表示$">
+<meta property="og:description" content="序开考前我看是$NOIP$模拟，结果考了好久都没下考，原来… 原来没有”$P$”…(晕)">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-18T12:43:37.847Z">
+<meta property="og:updated_time" content="2019-01-05T12:03:25.816Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018-03-17考试">
-<meta name="twitter:description" content="序开考前我看是$NOIP$模拟，结果考了好久都没下考，原来… 原来没有”$P$”…(晕) 结果题目题解T1原本两维息息相关，相当麻烦，容易想到转$45$度坐标，可以使得两维独立。那么原本$x^ny^m$会变成$(\frac{x+y}{2})^n(\frac{x-y}{2})^m$。可以用二项式展开真正使得两维独立，接下来需要解决的是求$E(a^k)$。可以简单设一个dp。用$F_{i,j}$表示$">
+<meta name="twitter:description" content="序开考前我看是$NOIP$模拟，结果考了好久都没下考，原来… 原来没有”$P$”…(晕)">
 
 
 
@@ -151,7 +151,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    23 分钟 读完 (大约 3432 个字)
+                    23 分钟 读完 (大约 3433 个字)
                 </span>
                 
             </div>
@@ -165,6 +165,7 @@
         <div class="content">
             <h3 id="序"><a href="#序" class="headerlink" title="序"></a>序</h3><p>开考前我看是$NOIP$模拟，结果考了好久都没下考，原来…</p>
 <p>原来没有”$P$”…<del>(晕)</del></p>
+<a id="more"></a>
 <h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a><a href="/0317.html">结果</a></h3><h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a><a href="https://files.cnblogs.com/files/cj-xxz/3.17.pdf" target="_blank" rel="noopener">题目</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><h4 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h4><p>原本两维息息相关，相当麻烦，容易想到转$45$度坐标，可以使得两维独立。<br>那么原本$x^ny^m$会变成$(\frac{x+y}{2})^n(\frac{x-y}{2})^m$。<br>可以用二项式展开真正使得两维独立，接下来需要解决的是求$E(a^k)$。<br>可以简单设一个dp。<br>用$F_{i,j}$表示$i$步后$E(a^j)$是多少，同样用二项式展开可以得到转移式。<br>把转移写成矩阵，可以使用矩阵乘法。<br>复杂度$O((n+m)^3\ log\ t)$。<br>计算$F_{i,j}$的过程可以不用矩阵乘法。<br>注意到转移过程中$j$减少的次数不超过$n$次，那么记$g_{i,j}$表示经过$i$次减少量至少为$1$的转移，总的变化是$j$的所有转移的系数乘积和。<br>对于减少量为$0$的转移，$F_{i,j}$会对$F_{i+1,j}$产生$2F_{i,j}$的贡献。<br>所以，最终的和就是$\sum \limits_{i=0}^n\binom t i \times \sum\limits_{j=0}^n g_{i,j}\times x^j\times 2^{t-i}$。<br>复杂度$O((n+m)^3)$。</p>
 <h4 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h4><p>不妨让我们先换一种方式描述积和式。<br>一个边权二分图，一个完美匹配的贡献为匹配边边权的乘积。<br>求所有完美匹配贡献的和。<br>接下来我们认为矩阵上不为$1$的位置对应的就是一条关键边。<br>假设$S$是一个关键边集,任意两条属于边集的边没有相同的端点。<br>令$f(S)$表示有多少种完美匹配方案恰好只包含边集$S$，也就是不包含多余的关建边。<br>令$g(S)$表示有多少种完美匹配方案包含边集$S$，显然$g(S)=(n-|S|)!$。<br>定义$v(S)$表示边集$S$内所有边边权的乘积。$w_e$来表示边$e$的权值。<br>首先显然$g(S)=\sum_{S\subset T}f(T)$</p>
 <p>则显然有$f(S)=\sum_{S\subset T}g(T)*(-1)^{|T|-|S|}$</p>
