@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="题面题解威佐夫博弈 代码1234567891011121314151617181920#include&amp;lt;cstdio&amp;gt;#include&amp;lt;algorithm&amp;gt;#include&amp;lt;cmath&amp;gt;#define RG registerconst double Phi((sqrt(5) + 1.) / 2.);int a, b;inline int abs(int a)">
+    <meta name="description" content="题面题解威佐夫博弈">
 <meta name="keywords" content="博弈论">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【洛谷P2252】取石子游戏">
 <meta property="og:url" content="http://yoursite.com/2018/10/20/【洛谷P2252】取石子游戏/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题面题解威佐夫博弈 代码1234567891011121314151617181920#include&amp;lt;cstdio&amp;gt;#include&amp;lt;algorithm&amp;gt;#include&amp;lt;cmath&amp;gt;#define RG registerconst double Phi((sqrt(5) + 1.) / 2.);int a, b;inline int abs(int a)">
+<meta property="og:description" content="题面题解威佐夫博弈">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-05T12:13:14.842Z">
+<meta property="og:updated_time" content="2019-01-05T12:39:54.676Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【洛谷P2252】取石子游戏">
-<meta name="twitter:description" content="题面题解威佐夫博弈 代码1234567891011121314151617181920#include&amp;lt;cstdio&amp;gt;#include&amp;lt;algorithm&amp;gt;#include&amp;lt;cmath&amp;gt;#define RG registerconst double Phi((sqrt(5) + 1.) / 2.);int a, b;inline int abs(int a)">
+<meta name="twitter:description" content="题面题解威佐夫博弈">
 
 
 
@@ -82,6 +82,8 @@
 
 
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/custom.css">
+
 </head>
 <body class="is-2-column">
     <nav class="navbar navbar-main">
@@ -110,20 +112,14 @@
                 href="/tags">标签</a>
                 
                 <a class="navbar-item"
+                href="/friends">友链</a>
+                
+                <a class="navbar-item"
                 href="/about">关于</a>
                 
             </div>
             
             <div class="navbar-end">
-                
-                    
-                    
-                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
-                        
-                        <i class="fab fa-github"></i>
-                        
-                    </a>
-                    
                 
                 
                 
@@ -139,7 +135,7 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+                <div class="column my-content is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
     
     <div class="card-content article ">
         
@@ -163,8 +159,8 @@
             
         </h1>
         <div class="content">
-            <a id="more"></a>
-<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P2252" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>威佐夫博弈</p>
+            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P2252" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>威佐夫博弈</p>
+<a id="more"></a>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RG register</span></span><br><span class="line"></span><br><span class="line">const double Phi((sqrt(5) + 1.) / 2.);</span><br><span class="line"><span class="hljs-keyword">int</span> a, b;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">abs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a)</span> </span>&#123; <span class="hljs-keyword">return</span> a &lt; <span class="hljs-number">0</span> ? a : -a; &#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">while</span>(~<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d%d"</span>, &amp;a, &amp;b))</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">if</span>(a &gt; b) <span class="hljs-built_in">std</span>::swap(a, b);</span><br><span class="line">		<span class="hljs-keyword">int</span> c = <span class="hljs-built_in">abs</span>(a - b) * Phi;</span><br><span class="line">		<span class="hljs-keyword">if</span>(c == a) <span class="hljs-built_in">puts</span>(<span class="hljs-string">"0"</span>);</span><br><span class="line">		<span class="hljs-keyword">else</span> <span class="hljs-built_in">puts</span>(<span class="hljs-string">"1"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
         </div>
@@ -184,40 +180,6 @@
 </div>
 
 
-
-<div class="card">
-    <div class="card-content">
-        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
-        <div class="buttons is-centered">
-            
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
-
-<div class="notification is-danger">
-    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-        </div>
-    </div>
-</div>
 
 
 
@@ -245,12 +207,13 @@
 
 </div>
                 
+
                 
 
 
 
 
-<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
+<div class="column my-sidebar is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
     
         
 <div class="card widget">
@@ -764,6 +727,7 @@
     
     
 </div>
+
 
             </div>
         </div>

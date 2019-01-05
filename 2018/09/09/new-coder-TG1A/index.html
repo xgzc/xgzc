@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="题面题解 对于第一档数据,可以枚举选取的合法的子区间,再重新排序, 直接得到中位数。时间复杂度$O(n^3)$。 对于第二档数据,可以枚举子区间的左端点,依次往右增加新的数,现在要做的就是往一个有序列表里加数,然后查询第k小的值。这个可以用平衡树维护。总复杂度就是$O(n^2logn)$。 对于第三档数据,直接枚举最终可能的答案x。把数字大于等于$x$的记为1,小于$x$的记为-1。检验是否存在">
+    <meta name="description" content="题面">
 <meta name="keywords" content="二分答案">
 <meta property="og:type" content="article">
 <meta property="og:title" content="牛客网NOIP赛前集训营-提高组（第一场）中位数">
 <meta property="og:url" content="http://yoursite.com/2018/09/09/new-coder-TG1A/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题面题解 对于第一档数据,可以枚举选取的合法的子区间,再重新排序, 直接得到中位数。时间复杂度$O(n^3)$。 对于第二档数据,可以枚举子区间的左端点,依次往右增加新的数,现在要做的就是往一个有序列表里加数,然后查询第k小的值。这个可以用平衡树维护。总复杂度就是$O(n^2logn)$。 对于第三档数据,直接枚举最终可能的答案x。把数字大于等于$x$的记为1,小于$x$的记为-1。检验是否存在">
+<meta property="og:description" content="题面">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-05T12:08:12.444Z">
+<meta property="og:updated_time" content="2019-01-05T12:36:07.225Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="牛客网NOIP赛前集训营-提高组（第一场）中位数">
-<meta name="twitter:description" content="题面题解 对于第一档数据,可以枚举选取的合法的子区间,再重新排序, 直接得到中位数。时间复杂度$O(n^3)$。 对于第二档数据,可以枚举子区间的左端点,依次往右增加新的数,现在要做的就是往一个有序列表里加数,然后查询第k小的值。这个可以用平衡树维护。总复杂度就是$O(n^2logn)$。 对于第三档数据,直接枚举最终可能的答案x。把数字大于等于$x$的记为1,小于$x$的记为-1。检验是否存在">
+<meta name="twitter:description" content="题面">
 
 
 
@@ -82,6 +82,8 @@
 
 
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/custom.css">
+
 </head>
 <body class="is-2-column">
     <nav class="navbar navbar-main">
@@ -110,20 +112,14 @@
                 href="/tags">标签</a>
                 
                 <a class="navbar-item"
+                href="/friends">友链</a>
+                
+                <a class="navbar-item"
                 href="/about">关于</a>
                 
             </div>
             
             <div class="navbar-end">
-                
-                    
-                    
-                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
-                        
-                        <i class="fab fa-github"></i>
-                        
-                    </a>
-                    
                 
                 
                 
@@ -139,7 +135,7 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+                <div class="column my-content is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
     
     <div class="card-content article ">
         
@@ -163,8 +159,8 @@
             
         </h1>
         <div class="content">
-            <a id="more"></a>
-<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.nowcoder.com/acm/contest/172/A" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><ul>
+            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.nowcoder.com/acm/contest/172/A" target="_blank" rel="noopener">题面</a></h3><a id="more"></a>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><ul>
 <li>对于第一档数据,可以枚举选取的合法的子区间,再重新排序, 直接得到中位数。时间复杂度$O(n^3)$。</li>
 <li>对于第二档数据,可以枚举子区间的左端点,依次往右增加新的数,现在要做的就是往一个有序列表里加数,然后查询第k小的值。这个可以用平衡树维护。总复杂度就是$O(n^2logn)$。</li>
 <li>对于第三档数据,直接枚举最终可能的答案x。把数字大于等于$x$的记为1,小于$x$的记为-1。检验是否存在和$&gt;=0$的区间。可以维护一个前缀和的前缀最大值。时间复杂度$O(Mn)$, M为不同的数的个数。</li>
@@ -189,40 +185,6 @@
 </div>
 
 
-
-<div class="card">
-    <div class="card-content">
-        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
-        <div class="buttons is-centered">
-            
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
-
-<div class="notification is-danger">
-    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-        </div>
-    </div>
-</div>
 
 
 
@@ -250,12 +212,13 @@
 
 </div>
                 
+
                 
 
 
 
 
-<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
+<div class="column my-sidebar is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
     
         
 <div class="card widget">
@@ -769,6 +732,7 @@
     
     
 </div>
+
 
             </div>
         </div>

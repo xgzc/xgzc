@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="题面题解这道题要求关于第k大的东西，所以可以想到用主席树或整体二分 我们可以发现，这道题主要的难点就是路径之间的包含关系，那么我们分情况讨论： 1. LCA不是两个端点令这个盘子的两个端点为$a,b$ 如果被一个水果完全覆盖， 那么，这个水果的两端分别在$a,b$的子树中 设$pos[a]$是$a$的$dfs$序，$end_pos[a]$是子树中最大的$pos$，水果两端分别为$c, d$ 则">
+    <meta name="description" content="题面">
 <meta name="keywords" content="整体二分,扫描线">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【HNOI2015】接水果">
 <meta property="og:url" content="http://yoursite.com/2018/10/20/【HNOI2015】接水果/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题面题解这道题要求关于第k大的东西，所以可以想到用主席树或整体二分 我们可以发现，这道题主要的难点就是路径之间的包含关系，那么我们分情况讨论： 1. LCA不是两个端点令这个盘子的两个端点为$a,b$ 如果被一个水果完全覆盖， 那么，这个水果的两端分别在$a,b$的子树中 设$pos[a]$是$a$的$dfs$序，$end_pos[a]$是子树中最大的$pos$，水果两端分别为$c, d$ 则">
+<meta property="og:description" content="题面">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-05T12:07:39.320Z">
+<meta property="og:updated_time" content="2019-01-05T12:35:38.961Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【HNOI2015】接水果">
-<meta name="twitter:description" content="题面题解这道题要求关于第k大的东西，所以可以想到用主席树或整体二分 我们可以发现，这道题主要的难点就是路径之间的包含关系，那么我们分情况讨论： 1. LCA不是两个端点令这个盘子的两个端点为$a,b$ 如果被一个水果完全覆盖， 那么，这个水果的两端分别在$a,b$的子树中 设$pos[a]$是$a$的$dfs$序，$end_pos[a]$是子树中最大的$pos$，水果两端分别为$c, d$ 则">
+<meta name="twitter:description" content="题面">
 
 
 
@@ -82,6 +82,8 @@
 
 
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/custom.css">
+
 </head>
 <body class="is-2-column">
     <nav class="navbar navbar-main">
@@ -110,20 +112,14 @@
                 href="/tags">标签</a>
                 
                 <a class="navbar-item"
+                href="/friends">友链</a>
+                
+                <a class="navbar-item"
                 href="/about">关于</a>
                 
             </div>
             
             <div class="navbar-end">
-                
-                    
-                    
-                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
-                        
-                        <i class="fab fa-github"></i>
-                        
-                    </a>
-                    
                 
                 
                 
@@ -139,7 +135,7 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+                <div class="column my-content is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
     
     <div class="card-content article ">
         
@@ -163,8 +159,8 @@
             
         </h1>
         <div class="content">
-            <a id="more"></a>
-<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P3242" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>这道题要求关于第k大的东西，所以可以想到用主席树或整体二分</p>
+            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P3242" target="_blank" rel="noopener">题面</a></h3><a id="more"></a>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>这道题要求关于第k大的东西，所以可以想到用主席树或整体二分</p>
 <p>我们可以发现，这道题主要的难点就是路径之间的包含关系，那么我们分情况讨论：</p>
 <h4 id="1-LCA不是两个端点"><a href="#1-LCA不是两个端点" class="headerlink" title="1. LCA不是两个端点"></a>1. LCA不是两个端点</h4><p>令这个盘子的两个端点为$a,b$</p>
 <p>如果被一个水果完全覆盖，</p>
@@ -204,40 +200,6 @@
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
-        <div class="buttons is-centered">
-            
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
-
-<div class="notification is-danger">
-    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-        </div>
-    </div>
-</div>
-
 
 
 <div class="card card-transparent">
@@ -264,12 +226,13 @@
 
 </div>
                 
+
                 
 
 
 
 
-<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
+<div class="column my-sidebar is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
     
         
 <div class="card widget">
@@ -783,6 +746,7 @@
     
     
 </div>
+
 
             </div>
         </div>

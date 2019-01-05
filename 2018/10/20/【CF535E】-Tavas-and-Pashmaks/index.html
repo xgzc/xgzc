@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="题面题解我们可以尝试寻找临界值。枚举，那么令$\frac{A}{a_i}+\frac{B}{b_i}=\frac{A}{a_j}+\frac{B}{b_j}$，如果这对$A,B$在$i,j$取到最值，那么$i,j$有用。 将每个型号看成平面上的点$(\frac1{a_i},\frac1{b_i})$，我们的问题变成了：给定任意$A,B$，最小化$z=Ax+By$（$x,y$即为点的坐标）。因为$">
+    <meta name="description" content="题面">
 <meta name="keywords" content="凸包">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【CF535E】Tavas and Pashmaks">
 <meta property="og:url" content="http://yoursite.com/2018/10/20/【CF535E】-Tavas-and-Pashmaks/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题面题解我们可以尝试寻找临界值。枚举，那么令$\frac{A}{a_i}+\frac{B}{b_i}=\frac{A}{a_j}+\frac{B}{b_j}$，如果这对$A,B$在$i,j$取到最值，那么$i,j$有用。 将每个型号看成平面上的点$(\frac1{a_i},\frac1{b_i})$，我们的问题变成了：给定任意$A,B$，最小化$z=Ax+By$（$x,y$即为点的坐标）。因为$">
+<meta property="og:description" content="题面">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-05T12:06:01.515Z">
+<meta property="og:updated_time" content="2019-01-05T12:34:06.473Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【CF535E】Tavas and Pashmaks">
-<meta name="twitter:description" content="题面题解我们可以尝试寻找临界值。枚举，那么令$\frac{A}{a_i}+\frac{B}{b_i}=\frac{A}{a_j}+\frac{B}{b_j}$，如果这对$A,B$在$i,j$取到最值，那么$i,j$有用。 将每个型号看成平面上的点$(\frac1{a_i},\frac1{b_i})$，我们的问题变成了：给定任意$A,B$，最小化$z=Ax+By$（$x,y$即为点的坐标）。因为$">
+<meta name="twitter:description" content="题面">
 
 
 
@@ -82,6 +82,8 @@
 
 
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/custom.css">
+
 </head>
 <body class="is-2-column">
     <nav class="navbar navbar-main">
@@ -110,20 +112,14 @@
                 href="/tags">标签</a>
                 
                 <a class="navbar-item"
+                href="/friends">友链</a>
+                
+                <a class="navbar-item"
                 href="/about">关于</a>
                 
             </div>
             
             <div class="navbar-end">
-                
-                    
-                    
-                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
-                        
-                        <i class="fab fa-github"></i>
-                        
-                    </a>
-                    
                 
                 
                 
@@ -139,7 +135,7 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+                <div class="column my-content is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
     
     <div class="card-content article ">
         
@@ -163,8 +159,8 @@
             
         </h1>
         <div class="content">
-            <a id="more"></a>
-<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="http://codeforces.com/contest/535/problem/E" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>我们可以尝试寻找临界值。枚举，那么令$\frac{A}{a_i}+\frac{B}{b_i}=\frac{A}{a_j}+\frac{B}{b_j}$，如果这对$A,B$在$i,j$取到最值，那么$i,j$有用。</p>
+            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="http://codeforces.com/contest/535/problem/E" target="_blank" rel="noopener">题面</a></h3><a id="more"></a>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>我们可以尝试寻找临界值。枚举，那么令$\frac{A}{a_i}+\frac{B}{b_i}=\frac{A}{a_j}+\frac{B}{b_j}$，如果这对$A,B$在$i,j$取到最值，那么$i,j$有用。</p>
 <p>将每个型号看成平面上的点$(\frac1{a_i},\frac1{b_i})$，我们的问题变成了：给定任意$A,B$，最小化$z=Ax+By$（$x,y$即为点的坐标）。因为$A,B$为正实数,所以目标函数的斜率为负。于是，有用的点分布在该点集的左下凸包上。使用类似斜率优化的方法求出凸包即可。</p>
 <p>时间复杂度$O(nlogn)$</p>
 <figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RG register</span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> clear(x, y) memset(x, y, sizeof(x));</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> data = <span class="hljs-number">0</span>, w = <span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">char</span> ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch != <span class="hljs-string">'-'</span> &amp;&amp; (ch &lt; <span class="hljs-string">'0'</span> || ch &gt; <span class="hljs-string">'9'</span>)) ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">if</span>(ch == <span class="hljs-string">'-'</span>) w = <span class="hljs-number">-1</span>, ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch &gt;= <span class="hljs-string">'0'</span> &amp;&amp; ch &lt;= <span class="hljs-string">'9'</span>) data = data * <span class="hljs-number">10</span> + (ch ^ <span class="hljs-number">48</span>), ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">return</span> data*w;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> <span class="hljs-title">maxn</span><span class="hljs-params">(<span class="hljs-number">3e5</span> + <span class="hljs-number">10</span>)</span></span>;</span><br><span class="line"><span class="hljs-keyword">int</span> q[maxn], top, next[maxn], ok[maxn], n;</span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">point</span> &#123;</span> <span class="hljs-keyword">int</span> x, y, id; &#125; p[maxn];</span><br><span class="line"><span class="hljs-keyword">double</span> k[maxn];</span><br><span class="line"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">bool</span> <span class="hljs-keyword">operator</span> &lt; (<span class="hljs-keyword">const</span> point &amp;lhs, <span class="hljs-keyword">const</span> point &amp;rhs)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="hljs-keyword">return</span> lhs.x &gt; rhs.x || (lhs.x == rhs.x &amp;&amp; lhs.y &gt; rhs.y);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">double</span> <span class="hljs-title">slope</span><span class="hljs-params">(<span class="hljs-keyword">const</span> point &amp;i, <span class="hljs-keyword">const</span> point &amp;j)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">1.</span> * i.x * j.x * (j.y - i.y) / (<span class="hljs-number">1.</span> * i.y * j.y * (j.x - i.x));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	n = read(); <span class="hljs-keyword">int</span> minx, miny = <span class="hljs-number">0</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		p[i] = (point) &#123;read(), read(), i&#125;;</span><br><span class="line">		<span class="hljs-keyword">if</span>(miny &lt; p[i].y || (miny == p[i].y &amp;&amp; minx &lt; p[i].x))</span><br><span class="line">			minx = p[i].x, miny = p[i].y;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="hljs-built_in">std</span>::sort(p + <span class="hljs-number">1</span>, p + n + <span class="hljs-number">1</span>);</span><br><span class="line">	q[top = <span class="hljs-number">1</span>] = <span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i = <span class="hljs-number">2</span>; i &lt;= n &amp;&amp; minx &lt;= p[i].x; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">if</span>(p[q[top]].x == p[i].x)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="hljs-keyword">if</span>(p[q[top]].y == p[i].y)</span><br><span class="line">				next[p[i].id] = next[p[q[top]].id], next[p[q[top]].id] = p[i].id;</span><br><span class="line">			<span class="hljs-keyword">continue</span>;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="hljs-keyword">while</span>(top &gt; <span class="hljs-number">1</span> &amp;&amp; k[top] &gt; slope(p[q[top]], p[i])) --top;</span><br><span class="line">		q[++top] = i; k[top] = slope(p[q[top - <span class="hljs-number">1</span>]], p[i]);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i = top; i; --i)</span><br><span class="line">		<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> j = p[q[i]].id; j; j = next[j]) ok[j] = <span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) <span class="hljs-keyword">if</span>(ok[i]) <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>, i);</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -186,40 +182,6 @@
 </div>
 
 
-
-<div class="card">
-    <div class="card-content">
-        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
-        <div class="buttons is-centered">
-            
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
-
-<div class="notification is-danger">
-    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-        </div>
-    </div>
-</div>
 
 
 
@@ -247,12 +209,13 @@
 
 </div>
                 
+
                 
 
 
 
 
-<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
+<div class="column my-sidebar is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
     
         
 <div class="card widget">
@@ -766,6 +729,7 @@
     
     
 </div>
+
 
             </div>
         </div>

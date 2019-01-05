@@ -77,6 +77,8 @@
 
 
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/custom.css">
+
 </head>
 <body class="is-2-column">
     <nav class="navbar navbar-main">
@@ -105,20 +107,14 @@
                 href="/tags">标签</a>
                 
                 <a class="navbar-item"
+                href="/friends">友链</a>
+                
+                <a class="navbar-item"
                 href="/about">关于</a>
                 
             </div>
             
             <div class="navbar-end">
-                
-                    
-                    
-                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
-                        
-                        <i class="fab fa-github"></i>
-                        
-                    </a>
-                    
                 
                 
                 
@@ -134,7 +130,7 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+                <div class="column my-content is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
     <div class="card-content">
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
@@ -169,16 +165,17 @@
             
         </h1>
         <div class="content">
-            <a id="more"></a>
-<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P3195" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>可以发现原方程为:<br>$$f[i]=min_{0&lt;=j&lt;i} (f[j]+((i+sum[i]-L-1)-(sum[j]+j))^2)$$</p>
-<p>设$a[i]=i+sum[i]-L-1,b[j]=sum[j]+j$,</p>
-<p>则$f[i]=min_{0&lt;=j&lt;i} (f[j]+(a[i]-b[j])^2)=min_{0&lt;=j&lt;i} (f[j]+a[i]^2+b[j]^2-2a[i]b[j])$</p>
-<p>再设$x[i]=b[j],y[j]=f[j]+b[j]^2$</p>
-<p>则可以发现a和x都单调递增，所以斜率是单调递减的。用单调队列维护凸壳，每次从队首不断出队以找出最优决策。</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RG register</span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> clear(x, y) memset(x, y, sizeof(x));</span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> data=<span class="hljs-number">0</span>, w=<span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">char</span> ch=getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch!=<span class="hljs-string">'-'</span>&amp;&amp;(ch&lt;<span class="hljs-string">'0'</span>||ch&gt;<span class="hljs-string">'9'</span>)) ch=getchar();</span><br><span class="line">	<span class="hljs-keyword">if</span>(ch==<span class="hljs-string">'-'</span>) w=<span class="hljs-number">-1</span>, ch=getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch&gt;=<span class="hljs-string">'0'</span>&amp;&amp;ch&lt;=<span class="hljs-string">'9'</span>) data=(data&lt;&lt;<span class="hljs-number">3</span>)+(data&lt;&lt;<span class="hljs-number">1</span>)+(ch^<span class="hljs-number">48</span>), ch=getchar();</span><br><span class="line">	<span class="hljs-keyword">return</span> data*w;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> <span class="hljs-title">maxn</span><span class="hljs-params">(<span class="hljs-number">50010</span>)</span></span>;</span><br><span class="line"><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> ll;</span><br><span class="line"><span class="hljs-keyword">int</span> n, L, head, tail, q[maxn];</span><br><span class="line"><span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> f[maxn], sum[maxn];</span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> a(i) (sum[i]+(i))</span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> b(i) (a(i)+L+1)</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">double</span> <span class="hljs-title">sqr</span><span class="hljs-params">(<span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> x)</span> </span>&#123; <span class="hljs-keyword">return</span> ((<span class="hljs-keyword">double</span>)x)*x; &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> <span class="hljs-title">sqrl</span><span class="hljs-params">(<span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> x)</span> </span>&#123; <span class="hljs-keyword">return</span> x*x; &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">double</span> <span class="hljs-title">x</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i)</span> </span>&#123; <span class="hljs-keyword">return</span> (<span class="hljs-keyword">double</span>)b(i); &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">double</span> <span class="hljs-title">y</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i)</span> </span>&#123; <span class="hljs-keyword">return</span> f[i]+sqr(b(i)); &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">double</span> <span class="hljs-title">slope</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i, <span class="hljs-keyword">int</span> j)</span> </span>&#123; <span class="hljs-keyword">return</span> (y(i)-y(j))/(x(i)-x(j)); &#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	n=read(); L=read();</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++) sum[i]=sum[i<span class="hljs-number">-1</span>]+read();</span><br><span class="line">	head=tail=<span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">while</span>(head^tail&amp;&amp;slope(q[head], q[head+<span class="hljs-number">1</span>])&lt;<span class="hljs-number">2</span>*a(i)) ++head;</span><br><span class="line">		f[i]+=f[q[head]]+sqrl(a(i)-b(q[head]));</span><br><span class="line">		<span class="hljs-keyword">while</span>(head^tail&amp;&amp;slope(q[tail<span class="hljs-number">-1</span>], i)&lt;slope(q[tail<span class="hljs-number">-1</span>], q[tail])) --tail;</span><br><span class="line">		q[++tail]=i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%lld\n"</span>, f[n]);</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P3195" target="_blank" rel="noopener">题面</a></h3>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2018/04/13/【HNOI2008】玩具装箱/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -193,12 +190,13 @@
 
 </div>
                 
+
                 
 
 
 
 
-<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
+<div class="column my-sidebar is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
     
         
 <div class="card widget">
@@ -712,6 +710,7 @@
     
     
 </div>
+
 
             </div>
         </div>

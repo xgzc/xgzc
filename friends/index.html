@@ -2,23 +2,22 @@
 <html  lang="zh">
 <head>
     <meta charset="utf-8">
-<title>【BZOJ2957】楼房重建 - xgzc的Blogs</title>
+<title>xgzc的Blogs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 
 
-    <meta name="description" content="题面">
-<meta name="keywords" content="线段树">
-<meta property="og:type" content="article">
-<meta property="og:title" content="【BZOJ2957】楼房重建">
-<meta property="og:url" content="http://yoursite.com/2018/09/17/楼房重建/index.html">
+    <meta name="description" content="友链同届大佬heyujun大佬 https://www.cnblogs.com/heyujun/p/10225419.html water_mi大佬 https://www.cnblogs.com/water-mi Biscuit46大佬 https://www.cnblogs.com/biscuit46 zzy大佬 https://www.cnblogs.com/zzy2005 M_sea大佬">
+<meta property="og:type" content="website">
+<meta property="og:title" content="xgzc的Blogs">
+<meta property="og:url" content="http://yoursite.com/friends/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题面">
+<meta property="og:description" content="友链同届大佬heyujun大佬 https://www.cnblogs.com/heyujun/p/10225419.html water_mi大佬 https://www.cnblogs.com/water-mi Biscuit46大佬 https://www.cnblogs.com/biscuit46 zzy大佬 https://www.cnblogs.com/zzy2005 M_sea大佬">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-05T12:38:47.450Z">
+<meta property="og:updated_time" content="2019-01-05T12:55:48.535Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【BZOJ2957】楼房重建">
-<meta name="twitter:description" content="题面">
+<meta name="twitter:title" content="xgzc的Blogs">
+<meta name="twitter:description" content="友链同届大佬heyujun大佬 https://www.cnblogs.com/heyujun/p/10225419.html water_mi大佬 https://www.cnblogs.com/water-mi Biscuit46大佬 https://www.cnblogs.com/biscuit46 zzy大佬 https://www.cnblogs.com/zzy2005 M_sea大佬">
 
 
 
@@ -111,7 +110,7 @@
                 <a class="navbar-item"
                 href="/tags">标签</a>
                 
-                <a class="navbar-item"
+                <a class="navbar-item is-active"
                 href="/friends">友链</a>
                 
                 <a class="navbar-item"
@@ -139,43 +138,22 @@
     
     <div class="card-content article ">
         
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-09-17T14:39:06.000Z">2018-09-17</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 分钟 读完 (大约 299 个字)
-                </span>
-                
-            </div>
-        </div>
-        
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                【BZOJ2957】楼房重建
+                
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.lydsy.com/JudgeOnline/problem.php?id=2957" target="_blank" rel="noopener">题面</a></h3><a id="more"></a>
-<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>这是一种线段树套路，$CJK$美其名曰”楼房重建版线段树”</p>
-<blockquote>
-<p>先把每个点的高度转为斜率<br>我们用线段树维护区间的最长上升子序列<br>合并两个儿子的信息时分最大值大于或小于当前节点左儿子最大值考虑即可</p>
-</blockquote>
-<p>时间复杂度$O(nlog^2n)$</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RG register</span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> clear(x, y) memset(x, y, sizeof(x));</span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> data=<span class="hljs-number">0</span>, w=<span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">char</span> ch=getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch!=<span class="hljs-string">'-'</span>&amp;&amp;(ch&lt;<span class="hljs-string">'0'</span>||ch&gt;<span class="hljs-string">'9'</span>)) ch=getchar();</span><br><span class="line">	<span class="hljs-keyword">if</span>(ch==<span class="hljs-string">'-'</span>) w=<span class="hljs-number">-1</span>, ch=getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch&gt;=<span class="hljs-string">'0'</span>&amp;&amp;ch&lt;=<span class="hljs-string">'9'</span>) data=(data&lt;&lt;<span class="hljs-number">3</span>)+(data&lt;&lt;<span class="hljs-number">1</span>)+(ch^<span class="hljs-number">48</span>), ch=getchar();</span><br><span class="line">	<span class="hljs-keyword">return</span> data*w;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> <span class="hljs-title">maxn</span><span class="hljs-params">(<span class="hljs-number">100010</span>)</span></span>;</span><br><span class="line"><span class="hljs-keyword">int</span> n, m, tree[maxn &lt;&lt; <span class="hljs-number">2</span>];</span><br><span class="line"><span class="hljs-keyword">double</span> val[maxn &lt;&lt; <span class="hljs-number">2</span>];</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> son(i) (root &lt;&lt; 1 | i)</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">calc</span><span class="hljs-params">(<span class="hljs-keyword">double</span> v, <span class="hljs-keyword">int</span> root, <span class="hljs-keyword">int</span> l, <span class="hljs-keyword">int</span> r)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">if</span>(l == r) <span class="hljs-keyword">return</span> val[root] &gt; v;</span><br><span class="line">	<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">mid</span><span class="hljs-params">(l + r &gt;&gt; <span class="hljs-number">1</span>)</span></span>;</span><br><span class="line">	<span class="hljs-keyword">if</span>(val[son(<span class="hljs-number">0</span>)] &lt;= v) <span class="hljs-keyword">return</span> calc(v, son(<span class="hljs-number">1</span>), mid + <span class="hljs-number">1</span>, r);</span><br><span class="line">	<span class="hljs-keyword">return</span> tree[root] - tree[son(<span class="hljs-number">0</span>)] + calc(v, son(<span class="hljs-number">0</span>), l, mid);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">modify</span><span class="hljs-params">(<span class="hljs-keyword">int</span> pos, <span class="hljs-keyword">double</span> v, <span class="hljs-keyword">int</span> root = <span class="hljs-number">1</span>, <span class="hljs-keyword">int</span> l = <span class="hljs-number">1</span>, <span class="hljs-keyword">int</span> r = n)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">if</span>(l == r) &#123; tree[root] = <span class="hljs-number">1</span>, val[root] = v; <span class="hljs-keyword">return</span>; &#125;</span><br><span class="line">	<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">mid</span><span class="hljs-params">(l + r &gt;&gt; <span class="hljs-number">1</span>)</span></span>;</span><br><span class="line">	<span class="hljs-keyword">if</span>(pos &lt;= mid) modify(pos, v, son(<span class="hljs-number">0</span>), l, mid);</span><br><span class="line">	<span class="hljs-keyword">else</span> modify(pos, v, son(<span class="hljs-number">1</span>), mid + <span class="hljs-number">1</span>, r);</span><br><span class="line">	val[root] = max(val[son(<span class="hljs-number">0</span>)], val[son(<span class="hljs-number">1</span>)]);</span><br><span class="line">	tree[root] = tree[son(<span class="hljs-number">0</span>)] + calc(val[son(<span class="hljs-number">0</span>)], son(<span class="hljs-number">1</span>), mid + <span class="hljs-number">1</span>, r);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	n = read(); m = read();</span><br><span class="line">	<span class="hljs-keyword">while</span>(m--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">int</span> x = read(), y = read();</span><br><span class="line">		modify(x, (<span class="hljs-keyword">double</span>)y / x);</span><br><span class="line">		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>, tree[<span class="hljs-number">1</span>]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <h1 id="友链"><a href="#友链" class="headerlink" title="友链"></a>友链</h1><h2 id="同届大佬"><a href="#同届大佬" class="headerlink" title="同届大佬"></a>同届大佬</h2><p><strong>heyujun大佬 <a href="https://www.cnblogs.com/heyujun/p/10225419.html" target="_blank" rel="noopener">https://www.cnblogs.com/heyujun/p/10225419.html</a></strong></p>
+<p><strong>water_mi大佬 <a href="https://www.cnblogs.com/water-mi" target="_blank" rel="noopener">https://www.cnblogs.com/water-mi</a></strong></p>
+<p><strong>Biscuit46大佬 <a href="https://www.cnblogs.com/biscuit46" target="_blank" rel="noopener">https://www.cnblogs.com/biscuit46</a></strong></p>
+<p><strong>zzy大佬 <a href="https://www.cnblogs.com/zzy2005" target="_blank" rel="noopener">https://www.cnblogs.com/zzy2005</a></strong></p>
+<p><strong>M_sea大佬 <a href="http://m-sea-blog.com" target="_blank" rel="noopener">http://m-sea-blog.com</a></strong></p>
+<p><strong>Ghost genious <a href="https://www.cnblogs.com/hbxblog" target="_blank" rel="noopener">https://www.cnblogs.com/hbxblog</a></strong></p>
+<h2 id="学长们"><a href="#学长们" class="headerlink" title="学长们"></a>学长们</h2><p><strong>yyb巨佬 <a href="http://www.cnblogs.com/cjyyb" target="_blank" rel="noopener">http://www.cnblogs.com/cjyyb</a></strong></p>
+<p><strong>gsy巨佬 <a href="https://www.cnblogs.com/zhoushuyu" target="_blank" rel="noopener">https://www.cnblogs.com/zhoushuyu</a></strong></p>
+<h2 id="外校的大佬"><a href="#外校的大佬" class="headerlink" title="外校的大佬"></a>外校的大佬</h2><p><strong>阿克普及组的tiger0132 <a href="http://ac.tiger0132.tk" target="_blank" rel="noopener">http://ac.tiger0132.tk</a></strong></p>
 
-        </div>
-        
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
-                <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/线段树/">线段树</a>
-                </div>
-            </div>
         </div>
         
         
@@ -186,27 +164,6 @@
 
 
 
-
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2018/09/23/【模板】二分图匹配/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">【模板】二分图匹配</span>
-            </a>
-        </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2018/09/09/new-coder-TG1A/">
-                <span class="level-item">牛客网NOIP赛前集训营-提高组（第一场）中位数</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
-    </div>
-</div>
 
 
 </div>

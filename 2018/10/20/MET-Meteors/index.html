@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="题面题解首先我们尝试暴力，那么就对每个点二分一下即可。 我们发现单独二分复杂度太高，而且有些地方很浪费，如求前缀和等。 那么我们就想，能否将它们合并在一起二分呢？ 于是就有了整体二分 整体二分即可。 代码1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253">
+    <meta name="description" content="题面">
 <meta name="keywords" content="二分答案,整体二分">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【POI2011】MET-Meteors">
 <meta property="og:url" content="http://yoursite.com/2018/10/20/MET-Meteors/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题面题解首先我们尝试暴力，那么就对每个点二分一下即可。 我们发现单独二分复杂度太高，而且有些地方很浪费，如求前缀和等。 那么我们就想，能否将它们合并在一起二分呢？ 于是就有了整体二分 整体二分即可。 代码1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253">
+<meta property="og:description" content="题面">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-05T12:07:47.150Z">
+<meta property="og:updated_time" content="2019-01-05T12:35:49.663Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【POI2011】MET-Meteors">
-<meta name="twitter:description" content="题面题解首先我们尝试暴力，那么就对每个点二分一下即可。 我们发现单独二分复杂度太高，而且有些地方很浪费，如求前缀和等。 那么我们就想，能否将它们合并在一起二分呢？ 于是就有了整体二分 整体二分即可。 代码1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253">
+<meta name="twitter:description" content="题面">
 
 
 
@@ -82,6 +82,8 @@
 
 
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/custom.css">
+
 </head>
 <body class="is-2-column">
     <nav class="navbar navbar-main">
@@ -110,20 +112,14 @@
                 href="/tags">标签</a>
                 
                 <a class="navbar-item"
+                href="/friends">友链</a>
+                
+                <a class="navbar-item"
                 href="/about">关于</a>
                 
             </div>
             
             <div class="navbar-end">
-                
-                    
-                    
-                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
-                        
-                        <i class="fab fa-github"></i>
-                        
-                    </a>
-                    
                 
                 
                 
@@ -139,7 +135,7 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+                <div class="column my-content is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
     
     <div class="card-content article ">
         
@@ -163,8 +159,8 @@
             
         </h1>
         <div class="content">
-            <a id="more"></a>
-<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P3527" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>首先我们尝试暴力，那么就对每个点二分一下即可。</p>
+            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P3527" target="_blank" rel="noopener">题面</a></h3><a id="more"></a>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>首先我们尝试暴力，那么就对每个点二分一下即可。</p>
 <p>我们发现单独二分复杂度太高，而且有些地方很浪费，如求前缀和等。</p>
 <p>那么我们就想，能否将它们合并在一起二分呢？</p>
 <p><del>于是就有了整体二分</del></p>
@@ -188,40 +184,6 @@
 </div>
 
 
-
-<div class="card">
-    <div class="card-content">
-        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
-        <div class="buttons is-centered">
-            
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
-
-<div class="notification is-danger">
-    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-        </div>
-    </div>
-</div>
 
 
 
@@ -249,12 +211,13 @@
 
 </div>
                 
+
                 
 
 
 
 
-<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
+<div class="column my-sidebar is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
     
         
 <div class="card widget">
@@ -768,6 +731,7 @@
     
     
 </div>
+
 
             </div>
         </div>

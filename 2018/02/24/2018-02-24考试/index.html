@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="题目T1: [POI2006]KRA-The DisksT2: [POI2007]POW-The FloodT3: [POI2007]MEG-MegalopolisT4: [POI2006]ORK-Ploughing 结果主要题解T2我们知道，如果一个点和一个海拔不高于它的点相连那么连在那个点是更优的，所以考虑按照每个点的海拔排序既然按照海拔排序，相邻的海拔递增的点可以放在同一个集合里面讨论考虑">
+    <meta name="description" content="题目">
 <meta name="keywords" content="考试">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2018-02-24考试">
 <meta property="og:url" content="http://yoursite.com/2018/02/24/2018-02-24考试/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题目T1: [POI2006]KRA-The DisksT2: [POI2007]POW-The FloodT3: [POI2007]MEG-MegalopolisT4: [POI2006]ORK-Ploughing 结果主要题解T2我们知道，如果一个点和一个海拔不高于它的点相连那么连在那个点是更优的，所以考虑按照每个点的海拔排序既然按照海拔排序，相邻的海拔递增的点可以放在同一个集合里面讨论考虑">
+<meta property="og:description" content="题目">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-05T12:01:27.195Z">
+<meta property="og:updated_time" content="2019-01-05T12:31:38.828Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018-02-24考试">
-<meta name="twitter:description" content="题目T1: [POI2006]KRA-The DisksT2: [POI2007]POW-The FloodT3: [POI2007]MEG-MegalopolisT4: [POI2006]ORK-Ploughing 结果主要题解T2我们知道，如果一个点和一个海拔不高于它的点相连那么连在那个点是更优的，所以考虑按照每个点的海拔排序既然按照海拔排序，相邻的海拔递增的点可以放在同一个集合里面讨论考虑">
+<meta name="twitter:description" content="题目">
 
 
 
@@ -82,6 +82,8 @@
 
 
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/custom.css">
+
 </head>
 <body class="is-2-column">
     <nav class="navbar navbar-main">
@@ -110,20 +112,14 @@
                 href="/tags">标签</a>
                 
                 <a class="navbar-item"
+                href="/friends">友链</a>
+                
+                <a class="navbar-item"
                 href="/about">关于</a>
                 
             </div>
             
             <div class="navbar-end">
-                
-                    
-                    
-                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
-                        
-                        <i class="fab fa-github"></i>
-                        
-                    </a>
-                    
                 
                 
                 
@@ -139,7 +135,7 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+                <div class="column my-content is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
     
     <div class="card-content article ">
         
@@ -163,8 +159,8 @@
             
         </h1>
         <div class="content">
-            <a id="more"></a>
-<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p><strong><a href="https://www.luogu.org/problemnew/show/P3434" target="_blank" rel="noopener">T1: [POI2006]KRA-The Disks</a></strong><br><strong><a href="https://www.luogu.org/problemnew/show/P3457" target="_blank" rel="noopener">T2: [POI2007]POW-The Flood</a></strong><br><strong><a href="https://www.luogu.org/problemnew/show/P3459" target="_blank" rel="noopener">T3: [POI2007]MEG-Megalopolis</a></strong><br><strong><a href="https://www.luogu.org/problemnew/show/P3444" target="_blank" rel="noopener">T4: [POI2006]ORK-Ploughing</a></strong></p>
+            <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><a id="more"></a>
+<p><strong><a href="https://www.luogu.org/problemnew/show/P3434" target="_blank" rel="noopener">T1: [POI2006]KRA-The Disks</a></strong><br><strong><a href="https://www.luogu.org/problemnew/show/P3457" target="_blank" rel="noopener">T2: [POI2007]POW-The Flood</a></strong><br><strong><a href="https://www.luogu.org/problemnew/show/P3459" target="_blank" rel="noopener">T3: [POI2007]MEG-Megalopolis</a></strong><br><strong><a href="https://www.luogu.org/problemnew/show/P3444" target="_blank" rel="noopener">T4: [POI2006]ORK-Ploughing</a></strong></p>
 <h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a><a href="/0224.html">结果</a></h3><h3 id="主要题解"><a href="#主要题解" class="headerlink" title="主要题解"></a>主要题解</h3><h4 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h4><p>我们知道，如果一个点和一个海拔不高于它的点相连<br>那么连在那个点是更优的，所以考虑按照每个点的海拔排序<br>既然按照海拔排序，相邻的海拔递增的点可以放在同一个集合里面讨论<br>考虑使用并查集，每一个集合中只需要有一个抽水机即可</p>
 <p>每次从海拔最低的点中选出一个点<br>将它和它周围的海拔比当前海拔低的点直接链接在一起<br>同时，维护每个并查集是否存在抽水机<br>如果当前点是城市，并且所在的并查集中有抽水机了<br>显然是不用再额外增加抽水机了<br>但是，如果当前点和周围的点合并完之后，所在集合依然没有抽水机<br>因为它所在的集合周围的点海拔一定更高，不可能有抽水机<br>所以在当前集合中一点要放一个抽水机，<br>那么，给当前集合放一个抽水机，同时答案加一即可</p>
 <h4 id="T4"><a href="#T4" class="headerlink" title="T4"></a>T4</h4><p><strong>难度较大</strong><br>我们知道，如果我们选定了以横向为主，或者纵向为主，<br>那么就有尽可能减少另一个方向上耕地的次数</p>
@@ -195,40 +191,6 @@
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
-        <div class="buttons is-centered">
-            
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
-
-<div class="notification is-danger">
-    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-        </div>
-    </div>
-</div>
-
 
 
 <div class="card card-transparent">
@@ -255,12 +217,13 @@
 
 </div>
                 
+
                 
 
 
 
 
-<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
+<div class="column my-sidebar is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
     
         
 <div class="card widget">
@@ -774,6 +737,7 @@
     
     
 </div>
+
 
             </div>
         </div>

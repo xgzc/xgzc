@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="题面题解LCT维护链上求和，下放懒标记模板。记得先乘后加即可。 代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687">
+    <meta name="description" content="题面">
 <meta name="keywords" content="洛谷,Link_Cut_Tree,CJOJ">
 <meta property="og:type" content="article">
 <meta property="og:title" content="洛谷P1501【国家集训队】Tree_II">
 <meta property="og:url" content="http://yoursite.com/2018/02/25/洛谷P1501【国家集训队】Tree-II/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题面题解LCT维护链上求和，下放懒标记模板。记得先乘后加即可。 代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687">
+<meta property="og:description" content="题面">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-05T12:11:46.613Z">
+<meta property="og:updated_time" content="2019-01-05T12:38:57.403Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="洛谷P1501【国家集训队】Tree_II">
-<meta name="twitter:description" content="题面题解LCT维护链上求和，下放懒标记模板。记得先乘后加即可。 代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687">
+<meta name="twitter:description" content="题面">
 
 
 
@@ -82,6 +82,8 @@
 
 
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/custom.css">
+
 </head>
 <body class="is-2-column">
     <nav class="navbar navbar-main">
@@ -110,20 +112,14 @@
                 href="/tags">标签</a>
                 
                 <a class="navbar-item"
+                href="/friends">友链</a>
+                
+                <a class="navbar-item"
                 href="/about">关于</a>
                 
             </div>
             
             <div class="navbar-end">
-                
-                    
-                    
-                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
-                        
-                        <i class="fab fa-github"></i>
-                        
-                    </a>
-                    
                 
                 
                 
@@ -139,7 +135,7 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+                <div class="column my-content is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
     
     <div class="card-content article ">
         
@@ -163,8 +159,8 @@
             
         </h1>
         <div class="content">
-            <a id="more"></a>
-<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P1501" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>LCT维护链上求和，下放懒标记模板。<br>记得先乘后加即可。</p>
+            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.org/problemnew/show/P1501" target="_blank" rel="noopener">题面</a></h3><a id="more"></a>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>LCT维护链上求和，下放懒标记模板。<br>记得先乘后加即可。</p>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RG register</span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> file(x) freopen(#x<span class="hljs-meta-string">".in"</span>, <span class="hljs-meta-string">"rb"</span>, stdin);freopen(#x<span class="hljs-meta-string">".out"</span>, <span class="hljs-meta-string">"w+"</span>, stdout);</span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> clear(x, y) memset(x, y, sizeof(x));</span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> data=<span class="hljs-number">0</span>, w=<span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">char</span> ch=getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch!=<span class="hljs-string">'-'</span>&amp;&amp;(ch&lt;<span class="hljs-string">'0'</span>||ch&gt;<span class="hljs-string">'9'</span>)) ch=getchar();</span><br><span class="line">	<span class="hljs-keyword">if</span>(ch==<span class="hljs-string">'-'</span>) w=<span class="hljs-number">-1</span>, ch=getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch&gt;=<span class="hljs-string">'0'</span>&amp;&amp;ch&lt;=<span class="hljs-string">'9'</span>) data=(data&lt;&lt;<span class="hljs-number">3</span>)+(data&lt;&lt;<span class="hljs-number">1</span>)+(ch^<span class="hljs-number">48</span>), ch=getchar();</span><br><span class="line">	<span class="hljs-keyword">return</span> data*w;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const int maxn(100010), mod(51061);</span><br><span class="line"><span class="hljs-keyword">int</span> n, q;</span><br><span class="line"><span class="hljs-keyword">int</span> val[maxn], sum[maxn], lzmul[maxn], lzadd[maxn], fa[maxn], son[<span class="hljs-number">2</span>][maxn], st[maxn], top, size[maxn];</span><br><span class="line"><span class="hljs-keyword">bool</span> rev[maxn];</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">isroot</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span> </span>&#123; <span class="hljs-keyword">return</span> son[<span class="hljs-number">0</span>][fa[x]]!=x &amp;&amp; son[<span class="hljs-number">1</span>][fa[x]]!=x; &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">get_son</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span> </span>&#123; <span class="hljs-keyword">return</span> son[<span class="hljs-number">1</span>][fa[x]]==x; &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">update</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span> </span>&#123; sum[x]=(<span class="hljs-number">1l</span>l*sum[son[<span class="hljs-number">0</span>][x]]+sum[son[<span class="hljs-number">1</span>][x]]+val[x])%mod; size[x]=size[son[<span class="hljs-number">0</span>][x]]+size[son[<span class="hljs-number">1</span>][x]]+<span class="hljs-number">1</span>; &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">psmul</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> v)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">if</span>(x==<span class="hljs-number">0</span>) <span class="hljs-keyword">return</span>;</span><br><span class="line">	sum[x]=<span class="hljs-number">1l</span>l*sum[x]*v%mod;</span><br><span class="line">	lzmul[x]=<span class="hljs-number">1l</span>l*lzmul[x]*v%mod;</span><br><span class="line">	val[x]=<span class="hljs-number">1l</span>l*val[x]*v%mod;</span><br><span class="line">	lzadd[x]=<span class="hljs-number">1l</span>l*lzadd[x]*v%mod;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">psadd</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> v)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">if</span>(x==<span class="hljs-number">0</span>) <span class="hljs-keyword">return</span>;</span><br><span class="line">	sum[x]=(<span class="hljs-number">1l</span>l*sum[x]+<span class="hljs-number">1l</span>l*size[x]*v)%mod;</span><br><span class="line">	val[x]=(<span class="hljs-number">1l</span>l*val[x]+v)%mod;</span><br><span class="line">	lzadd[x]=(<span class="hljs-number">1l</span>l*lzadd[x]+v)%mod;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">pushdown</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">if</span>(lzmul[x]!=<span class="hljs-number">1</span>) psmul(son[<span class="hljs-number">0</span>][x], lzmul[x]), psmul(son[<span class="hljs-number">1</span>][x], lzmul[x]), lzmul[x]=<span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">if</span>(lzadd[x]) psadd(son[<span class="hljs-number">0</span>][x], lzadd[x]), psadd(son[<span class="hljs-number">1</span>][x], lzadd[x]), lzadd[x]=<span class="hljs-number">0</span>;</span><br><span class="line">	<span class="hljs-keyword">if</span>(rev[x])</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">if</span>(son[<span class="hljs-number">0</span>][x]) rev[son[<span class="hljs-number">0</span>][x]]^=<span class="hljs-number">1</span>;</span><br><span class="line">		<span class="hljs-keyword">if</span>(son[<span class="hljs-number">1</span>][x]) rev[son[<span class="hljs-number">1</span>][x]]^=<span class="hljs-number">1</span>;</span><br><span class="line">		rev[x]=<span class="hljs-number">0</span>;</span><br><span class="line">		swap(son[<span class="hljs-number">0</span>][x], son[<span class="hljs-number">1</span>][x]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">rotate</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> f=fa[x], g=fa[f], l=get_son(x), r=l^<span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">if</span>(!isroot(f)) son[get_son(f)][g]=x;</span><br><span class="line">	fa[x]=g; fa[f]=x; fa[son[r][x]]=f;</span><br><span class="line">	son[l][f]=son[r][x]; son[r][x]=f;</span><br><span class="line">	update(f); update(x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">splay</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	top=<span class="hljs-number">1</span>; st[top]=x;</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i=x;!isroot(i);i=fa[i]) st[++top]=fa[i];</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i=top;i;i--) pushdown(st[i]);</span><br><span class="line">	<span class="hljs-keyword">for</span>(;!isroot(x);rotate(x)) <span class="hljs-keyword">if</span>(!isroot(fa[x])) rotate(get_son(fa[x])^get_son(x)?x:fa[x]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">access</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span> </span>&#123; <span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> t=<span class="hljs-number">0</span>;x;t=x, x=fa[x]) splay(x), son[<span class="hljs-number">1</span>][x]=t, update(x); &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">makeroot</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span> </span>&#123; access(x); splay(x); rev[x]^=<span class="hljs-number">1</span>; &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">split</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>&#123; makeroot(x); access(y); splay(y); &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">link</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>&#123; makeroot(x); fa[x]=y; &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">cut</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>&#123; split(x, y); <span class="hljs-keyword">if</span>(son[<span class="hljs-number">0</span>][y]==x) son[<span class="hljs-number">0</span>][y]=<span class="hljs-number">0</span>; fa[x]=<span class="hljs-number">0</span>; &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">mul</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">int</span> v)</span> </span>&#123; split(x, y); psmul(y, v); &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">int</span> v)</span> </span>&#123; split(x, y); psadd(y, v); &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">query</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>&#123; split(x, y); <span class="hljs-keyword">return</span> sum[y]; &#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">int</span> a, b, c, d;</span><br><span class="line"><span class="hljs-keyword">char</span> s[<span class="hljs-number">3</span>];</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	n=read(); q=read();</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++) val[i]=size[i]=lzmul[i]=<span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;n;i++) a=read(), b=read(), link(a, b);</span><br><span class="line">	<span class="hljs-keyword">while</span>(q--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%s"</span>, s);</span><br><span class="line">		a=read(); b=read();</span><br><span class="line">		<span class="hljs-keyword">if</span>(s[<span class="hljs-number">0</span>]==<span class="hljs-string">'+'</span>) c=read(), add(a, b, c);</span><br><span class="line">		<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(s[<span class="hljs-number">0</span>]==<span class="hljs-string">'-'</span>) c=read(), d=read(), cut(a, b), link(c, d);</span><br><span class="line">		<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(s[<span class="hljs-number">0</span>]==<span class="hljs-string">'*'</span>) c=read(), mul(a, b, c);</span><br><span class="line">		<span class="hljs-keyword">else</span> <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>, query(a, b));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
         </div>
@@ -184,40 +180,6 @@
 </div>
 
 
-
-<div class="card">
-    <div class="card-content">
-        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
-        <div class="buttons is-centered">
-            
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
-
-<div class="notification is-danger">
-    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-        </div>
-    </div>
-</div>
 
 
 
@@ -245,12 +207,13 @@
 
 </div>
                 
+
                 
 
 
 
 
-<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
+<div class="column my-sidebar is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
     
         
 <div class="card widget">
@@ -764,6 +727,7 @@
     
     
 </div>
+
 
             </div>
         </div>
