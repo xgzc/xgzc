@@ -2,23 +2,18 @@
 <html  lang="zh">
 <head>
     <meta charset="utf-8">
-<title>【POJ2598】Match Throwing Game - xgzc的Blogs</title>
+<title>标签: Data Structure --- 长链剖分 - xgzc的Blogs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 
 
-    <meta name="description" content="题面">
-<meta name="keywords" content="数学方法 --- 概率论">
-<meta property="og:type" content="article">
-<meta property="og:title" content="【POJ2598】Match Throwing Game">
-<meta property="og:url" content="http://yoursite.com/2018/08/15/【POJ2598】扔火柴/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="xgzc的Blogs">
+<meta property="og:url" content="http://yoursite.com/tags/Data-Structure-长链剖分/index.html">
 <meta property="og:site_name" content="xgzc的Blogs">
-<meta property="og:description" content="题面">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-06T04:41:50.580Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【POJ2598】Match Throwing Game">
-<meta name="twitter:description" content="题面">
+<meta name="twitter:title" content="xgzc的Blogs">
 
 
 
@@ -133,18 +128,29 @@
         <div class="container">
             <div class="columns">
                 <div class="column my-content is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">标签</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Data Structure --- 长链剖分</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-08-15T05:33:51.000Z">2018-08-15</time>
+                <time class="level-item has-text-grey" datetime="2019-01-06T09:48:22.000Z">2019-01-06</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 150 个字)
+                    5 分钟 读完 (大约 758 个字)
                 </span>
                 
             </div>
@@ -152,23 +158,27 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                【POJ2598】Match Throwing Game
+                <a class="has-link-black-ter" href="/2019/01/06/【BZOJ4543】Hotel加强版/">BZOJ4543 Hotel加强版</a>
             
         </h1>
         <div class="content">
-            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="http://poj.org/problem?id=2598" target="_blank" rel="noopener">题面</a></h3><a id="more"></a>
-<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>忘了，只记得是用$sin(x)$的积分搞<br>还要进行伯努利实验判断输出多少</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RG register</span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"></span><br><span class="line">const double PI(acos(-1));</span><br><span class="line"><span class="hljs-keyword">double</span> L, p, sum[<span class="hljs-number">1010</span>];</span><br><span class="line"><span class="hljs-keyword">int</span> x, y;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">double</span> <span class="hljs-title">Bernulli</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n, <span class="hljs-keyword">int</span> m, <span class="hljs-keyword">double</span> p, <span class="hljs-keyword">double</span> q)</span> </span>&#123; <span class="hljs-keyword">return</span> <span class="hljs-built_in">log</span>(p) * m + <span class="hljs-built_in">log</span>(q) * (n - m) + sum[n] - sum[n-m] - sum[m]; &#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;<span class="hljs-number">1010</span>;i++) sum[i] = sum[i<span class="hljs-number">-1</span>] + <span class="hljs-built_in">log</span>(i);</span><br><span class="line">    <span class="hljs-keyword">while</span>(~<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%lf"</span>, &amp;L))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span>(L &lt; <span class="hljs-number">1</span>) p = <span class="hljs-number">2</span> * L;</span><br><span class="line">        <span class="hljs-keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="hljs-keyword">double</span> k = <span class="hljs-built_in">asin</span>(<span class="hljs-keyword">double</span>(<span class="hljs-number">1</span> / L));</span><br><span class="line">            p = <span class="hljs-number">2</span> * L * (<span class="hljs-number">1</span> - <span class="hljs-built_in">cos</span>(k)) + PI - <span class="hljs-number">2</span> * k;</span><br><span class="line">        &#125;</span><br><span class="line">        p /= PI;</span><br><span class="line">        y = (x = <span class="hljs-keyword">int</span>(p * <span class="hljs-number">1000</span>)) + <span class="hljs-number">1</span>;</span><br><span class="line">        <span class="hljs-keyword">double</span> l = Bernulli(<span class="hljs-number">1000</span>, x, p, <span class="hljs-number">1</span>-p), r = Bernulli(<span class="hljs-number">1000</span>, y, p, <span class="hljs-number">1</span>-p);</span><br><span class="line">        <span class="hljs-keyword">if</span>(l &lt; r) swap(x, y);</span><br><span class="line">        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>, x);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-        </div>
-        
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
-                <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7"><i class="fa fa-tag"></i></span>
-                    <a class="has-link-grey -link" href="/tags/数学方法-概率论/">数学方法 --- 概率论</a>
-                </div>
-            </div>
+            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p><a href="https://www.lydsy.com/JudgeOnline/problem.php?id=4543" target="_blank" rel="noopener">$\text{BZOJ}$间接权限题</a></p>
+<p><a href="https://www.luogu.org/problemnew/show/P3565" target="_blank" rel="noopener">洛谷的弱化版</a></p>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>三点距离两两相等要满足以下条件：</p>
+<p>有一个相同的$\text{LCA}$</p>
+<p>所以如果存在一个点，使得另外两个点在它子树中，距离为$d$，且$\text{LCA}$距这个点为$d$，</p>
+<p>那么这三个点就距离两两相等。</p>
+<p>设$f[i][j]$表示以$i$为根的子树中距$i$为$j$的点的数量</p>
+<p>$g[i][j]$表示以$i$为根的子树中，两个点到$LCA$的距离为$d$，并且他们的$LCA$到$i$的距离为$d−j$的点对数。</p>
+<p>看到合并时的转移：<br>$$<br>ans\text{+=}g[i][0] \<br>ans\text{+=}g[i][j]*f[son][j-1] \<br>f[i][j]=\sum f[son][j-1] \<br>g[i][j]=\sum g[son][j+1]<br>$$<br>复杂度为$\text{O}(n^2)$</p>
+<p>而转移方程下面两个柿子<br>$$<br>f[i][j]=\sum f[son][j-1] \<br>g[i][j]=\sum g[son][j+1]<br>$$<br>如果我们选择一个转移代价最高的儿子直接继承过来的话，复杂度就会大大降低</p>
+<p>而转移代价最高的儿子显然就是长链剖分后那个点的重儿子</p>
+<p>那么用指针描述就是：<br>$$<br>f[i]=f[heavy[i]] - 1,\; g[i] = g[heavy[i]] + 1<br>$$<br>这样可以快速继承。</p>
+<p>于是我们就将整棵树进行长链剖分，钦定从重儿子转移，其他儿子重新计算</p>
+<p>于是从重儿子转移$O(1)$，从轻儿子转移$O($链长$)$</p>
+<p>总时间复杂度$O(n+\sum$链长$)=O(n)$</p>
+<p>同时因为使用指针，所以<del>常数小</del>出现了一些玄学问题</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RG register</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> data = <span class="hljs-number">0</span>, w = <span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">char</span> ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch != <span class="hljs-string">'-'</span> &amp;&amp; (ch &lt; <span class="hljs-string">'0'</span> || ch &gt; <span class="hljs-string">'9'</span>)) ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">if</span>(ch == <span class="hljs-string">'-'</span>) w = <span class="hljs-number">-1</span>, ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">while</span>(ch &gt;= <span class="hljs-string">'0'</span> &amp;&amp; ch &lt;= <span class="hljs-string">'9'</span>) data = data * <span class="hljs-number">10</span> + (ch ^ <span class="hljs-number">48</span>), ch = getchar();</span><br><span class="line">	<span class="hljs-keyword">return</span> data * w;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> <span class="hljs-title">maxn</span><span class="hljs-params">(<span class="hljs-number">100010</span>)</span></span>;</span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">edge</span> &#123;</span> <span class="hljs-keyword">int</span> next, to; &#125; e[maxn &lt;&lt; <span class="hljs-number">1</span>];</span><br><span class="line"><span class="hljs-keyword">int</span> head[maxn], e_num, n;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add_edge</span><span class="hljs-params">(<span class="hljs-keyword">int</span> from, <span class="hljs-keyword">int</span> to)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	e[++e_num] = (edge) &#123;head[from], to&#125;;</span><br><span class="line">	head[from] = e_num;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">int</span> dep[maxn], heavy[maxn], maxdep[maxn];</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">dfs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> fa)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-comment">// maxdep[x] = dep[x] = dep[fa] + 1;</span></span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i = head[x]; i; i = e[i].next)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">int</span> to = e[i].to; <span class="hljs-keyword">if</span>(to == fa) <span class="hljs-keyword">continue</span>;</span><br><span class="line">		dfs(to, x); maxdep[x] = <span class="hljs-built_in">std</span>::max(maxdep[x], maxdep[to]);</span><br><span class="line">		<span class="hljs-keyword">if</span>(maxdep[to] &gt; maxdep[heavy[x]]) heavy[x] = to;</span><br><span class="line">	&#125;</span><br><span class="line">	maxdep[x] = maxdep[heavy[x]] + <span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-comment">// 玄学问题，将第28行注释去掉并注释掉上一行，交到BZOJ就会RE</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> *f[maxn], *g[maxn], pool[maxn &lt;&lt; <span class="hljs-number">2</span>], *id = pool, ans;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calc</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> fa)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">if</span>(heavy[x]) f[heavy[x]] = f[x] + <span class="hljs-number">1</span>,</span><br><span class="line">		g[heavy[x]] = g[x] - <span class="hljs-number">1</span>, calc(heavy[x], x);</span><br><span class="line">	f[x][<span class="hljs-number">0</span>] = <span class="hljs-number">1</span>, ans += g[x][<span class="hljs-number">0</span>];</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i = head[x]; i; i = e[i].next)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">int</span> to = e[i].to; <span class="hljs-keyword">if</span>(to == fa || to == heavy[x]) <span class="hljs-keyword">continue</span>;</span><br><span class="line">		f[to] = id; id += maxdep[to] &lt;&lt; <span class="hljs-number">1</span>; g[to] = id; id += maxdep[to] &lt;&lt; <span class="hljs-number">1</span>;</span><br><span class="line">		calc(to, x);</span><br><span class="line">		<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; maxdep[to]; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="hljs-keyword">if</span>(j) ans += f[x][j - <span class="hljs-number">1</span>] * g[to][j];</span><br><span class="line">			ans += g[x][j + <span class="hljs-number">1</span>] * f[to][j];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; maxdep[to]; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			g[x][j + <span class="hljs-number">1</span>] += f[x][j + <span class="hljs-number">1</span>] * f[to][j];</span><br><span class="line">			<span class="hljs-keyword">if</span>(j) g[x][j - <span class="hljs-number">1</span>] += g[to][j];</span><br><span class="line">			f[x][j + <span class="hljs-number">1</span>] += f[to][j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	n = read();</span><br><span class="line">	<span class="hljs-keyword">for</span>(RG <span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>, a, b; i &lt; n; i++)</span><br><span class="line">		a = read(), b = read(), add_edge(a, b), add_edge(b, a);</span><br><span class="line">	dfs(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>); f[<span class="hljs-number">1</span>] = id; id += maxdep[<span class="hljs-number">1</span>] &lt;&lt; <span class="hljs-number">1</span>; g[<span class="hljs-number">1</span>] = id; id += maxdep[<span class="hljs-number">1</span>] &lt;&lt; <span class="hljs-number">1</span>;</span><br><span class="line">	calc(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>); <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%lld\n"</span>, ans);</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         </div>
         
         
@@ -180,26 +190,8 @@
 
 
 
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2018/09/08/sort-in-NOI-AC/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">NOI.AC[32] 排序</span>
-            </a>
-        </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2018/08/12/备忘/">
-                <span class="level-item">备忘</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
-    </div>
-</div>
+
+
 
 
 
