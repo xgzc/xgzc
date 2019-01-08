@@ -5,3 +5,11 @@
 .my-content {
 	width: 71% !important;
 }
+@media screen and (max-width: 1000px) {
+  	.my-content {
+    	width: 100% !important;
+  	}
+  	.my-sidebar {
+    	display: none;
+  	}
+}
