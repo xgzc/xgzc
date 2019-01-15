@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="xgzc的Blogs">
 <meta property="og:description" content="具体就是求特征方程啊。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-15T12:38:48.731Z">
+<meta property="og:updated_time" content="2019-01-15T12:57:26.346Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于齐次数列通项公式的一点点看法">
 <meta name="twitter:description" content="具体就是求特征方程啊。">
@@ -146,7 +146,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 141 个字)
+                    1 分钟 读完 (大约 218 个字)
                 </span>
                 
             </div>
@@ -171,11 +171,14 @@
 <p>将${a_n}$的初值代入即可。</p>
 <h3 id="情况二"><a href="#情况二" class="headerlink" title="情况二:"></a>情况二:</h3><p>$x$是$k$重根</p>
 <p>则在通项内加入：</p>
-<p>$$x^nf(n)​$$，$f(n)​$为一个$k​$次多项式，其系数待定</p>
-<h3 id="情况三"><a href="#情况三" class="headerlink" title="情况三:"></a>情况三:</h3><p>若一对$x$是共轭复根$a±b$</p>
+<p>$x^nf(n)$，$f(n)$为一个$k$次多项式，其系数待定</p>
+<h3 id="情况三"><a href="#情况三" class="headerlink" title="情况三:"></a>情况三:</h3><p>若一对$x$是共轭复根$a±bi$</p>
 <p>则在通项内加入：</p>
 <p>$$r^n(\alpha cos(nθ)+\beta sin(nθ)),\;θ=arctan(\frac{b}{a}),\;r=\sqrt{a^2+b^2}$$</p>
-<h3 id="Over"><a href="#Over" class="headerlink" title="Over"></a>Over</h3>
+<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><h4 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h4><p>求<br>$$<br>\left\lceil (a + \sqrt b) ^ n\right\rceil \% m,(a-1)^2 &lt; b &lt; a^2<br>$$<br>解：原式为<br>$$<br>(a+\sqrt b)^n + (a - \sqrt b)^n<br>$$<br>是不是像情况$1$的时候的通项公式？？？</p>
+<p>我们可以使用韦达定理还原特征方程，求出递推式，矩阵快速幂即可。</p>
+<h4 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h4><p><del>咕咕咕</del></p>
+
         </div>
         
         <div class="level is-size-7 is-uppercase">
